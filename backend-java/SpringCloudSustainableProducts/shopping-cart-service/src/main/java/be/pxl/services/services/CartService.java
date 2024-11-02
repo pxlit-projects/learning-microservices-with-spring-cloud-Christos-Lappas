@@ -2,7 +2,7 @@ package be.pxl.services.services;
 
 import be.pxl.services.domain.Cart;
 import be.pxl.services.domain.dto.CartResponse;
-import be.pxl.services.repository.ICartRepository;
+import be.pxl.services.repository.CartRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class CartService implements ICartService {
 
-    private final ICartRepository shoppingCartRepository;
+    private final CartRepository shoppingCartRepository;
 
 
     @Override
