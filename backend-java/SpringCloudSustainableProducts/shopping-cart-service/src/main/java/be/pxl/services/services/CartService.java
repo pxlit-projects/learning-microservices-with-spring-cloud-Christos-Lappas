@@ -47,10 +47,6 @@ public class CartService implements ICartService {
         Cart cart = new Cart();
         cart.setCustomerId(customerId);
 
-        List<Product> products = productClient.getAllProduct().stream().map(p -> mapToProduct(p)).toList();
-
-        cart.setItems(products);
-
         shoppingCartRepository.save(cart);
         return mapToCartResponse(cart);
     }
