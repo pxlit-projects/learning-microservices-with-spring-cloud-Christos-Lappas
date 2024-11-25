@@ -33,4 +33,6 @@ public class CartController {
         return new ResponseEntity(cartService.removeItemFromCart(customerId, productId), HttpStatus.OK);
     }
 
+    // TODO: Delete toevoegen om cart te kunnen annuleren
+
 }

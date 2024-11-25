@@ -26,6 +26,8 @@ public class Product {
     private Category category;
     @Enumerated(EnumType.STRING)
     private Score score;
+    // TODO: Label implementeren
+    // private String label;
 
 
 }

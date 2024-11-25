@@ -7,6 +7,17 @@ spring:
       discovery:
         locator:
           enabled: true
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - "*"
+            allowedHeaders:
+              - "*"
+            allowCredentials: false
+
       routes:
         - id: product-catalog-service
           uri: lb://product-catalog-service
@@ -26,6 +37,7 @@ spring:
             - Path=/cart/**
           filters:
             - RewritePath=/logbook/(?<path>.*), /$\{path}
+
 
 
 eureka:

@@ -19,9 +19,12 @@ public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    // TODO: Kan best vervangen worden door in de frontend een toggle ofzo te zetten en switchen tussen admin/user
     private Long customerId;
     @Transient
     private List<Product> items = new ArrayList<>();
+    // TODO: Afrekenen overal implementeren
+    // private boolean ordered;
 
     public void addItem(Product item) {
         items.add(item);
