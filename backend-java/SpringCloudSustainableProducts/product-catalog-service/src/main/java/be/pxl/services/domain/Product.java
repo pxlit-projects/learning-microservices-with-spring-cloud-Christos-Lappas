@@ -29,5 +29,4 @@ public class Product {
     // TODO: Label implementeren
     // private String label;
 
-
 }

@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,12 +20,11 @@ public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    // TODO: Kan best vervangen worden door in de frontend een toggle ofzo te zetten en switchen tussen admin/user
-    private Long customerId;
+    private String customer = "customer";
     @Transient
     private List<Product> items = new ArrayList<>();
-    // TODO: Afrekenen overal implementeren
-    // private boolean ordered;
+    private BigDecimal total;
+    private boolean ordered;
 
     public void addItem(Product item) {
         items.add(item);

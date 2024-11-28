@@ -1,0 +1,86 @@
+2024-11-27T10:31:27.835+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 68628 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-27T10:31:27.836+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-27T10:31:27.837+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-27T10:31:32.277+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.472 seconds (process running for 6.176)
+2024-11-27T10:39:43.548+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Getting product...
+2024-11-27T10:46:33.813+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 15376 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-27T10:46:33.815+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-27T10:46:33.815+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-27T10:46:37.917+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.071 seconds (process running for 5.693)
+2024-11-27T10:49:07.684+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Starting update for product with id: 2
+2024-11-27T10:49:07.750+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Updating product fields for id: 2
+2024-11-27T10:49:07.782+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Product with id 2 successfully updated
+2024-11-27T10:56:47.105+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 30744 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-27T10:56:47.106+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-27T10:56:47.107+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-27T10:56:51.222+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.078 seconds (process running for 5.717)
+2024-11-27T10:59:50.285+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Starting to add a new product with name: Kaars
+2024-11-27T10:59:50.343+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Product with name 'Kaars' successfully added to the database
+2024-11-27T11:00:10.932+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Starting to add a new product with name: Kaars
+2024-11-27T11:00:10.938+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Product with name 'Kaars' successfully added to the database
+2024-11-27T11:02:22.421+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-11-27T11:02:22.542+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 3 products from the database
+2024-11-27T11:02:22.543+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 3 products in 122 ms
+2024-11-27T11:03:34.483+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Getting product...
+2024-11-27T11:03:34.494+0100 ERROR              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Error occurred while getting product
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at be.pxl.services.services.ProductService.getProduct(ProductService.java:86)
+	at be.pxl.services.controller.ProductController.getProduct(ProductController.java:24)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-11-27T11:04:50.717+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: sham
+2024-11-27T11:04:50.751+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-11-27T11:04:50.751+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-27T11:05:22.729+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: kaa
+2024-11-27T11:05:22.733+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-11-27T11:05:22.733+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-27T11:06:04.936+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: bestaatniet
+2024-11-27T11:06:04.940+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-11-27T11:06:04.940+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products

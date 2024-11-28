@@ -13,26 +13,35 @@ import org.springframework.web.bind.annotation.*;
 public class CartController {
     private final ICartService cartService;
 
-    @GetMapping("/{customerId}")
-    public ResponseEntity getCart(@PathVariable Long customerId) {
-        return new ResponseEntity(cartService.getByCustomerId(customerId), HttpStatus.OK);
+    @GetMapping("/{id}")
+    public ResponseEntity getCart(@PathVariable Long id) {
+        return new ResponseEntity(cartService.getById(id), HttpStatus.OK);
     }
 
-    @PostMapping("/{customerId}")
-    public ResponseEntity createCart(@PathVariable Long customerId) {
-        return new ResponseEntity(cartService.createCart(customerId), HttpStatus.CREATED);
+    @PostMapping
+    public ResponseEntity createCart() {
+        return new ResponseEntity(cartService.createCart(), HttpStatus.CREATED);
     }
 
-    @PostMapping("/{customerId}/add/{productId}")
+    @PostMapping("/{id}/add/{productId}")
     public ResponseEntity addItemToCart(@PathVariable Long customerId, @PathVariable Long productId) {
         return new ResponseEntity(cartService.addItemToCart(customerId, productId), HttpStatus.OK);
     }
 
-    @PostMapping("/{customerId}/remove/{productId}")
+    @PostMapping("/{id}/remove/{productId}")
     public ResponseEntity removeItemFromCart(@PathVariable Long customerId, @PathVariable Long productId) {
         return new ResponseEntity(cartService.removeItemFromCart(customerId, productId), HttpStatus.OK);
     }
 
-    // TODO: Delete toevoegen om cart te kunnen annuleren
+    @PatchMapping("/{id}/order")
+    public ResponseEntity orderCart(@PathVariable Long id, @RequestBody Boolean ordered) {
+        return new ResponseEntity(cartService.order(id, ordered), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteCart(@PathVariable Long id) {
+        cartService.deleteCart(id);
+        return new ResponseEntity(HttpStatus.OK);
+    }
 
 }

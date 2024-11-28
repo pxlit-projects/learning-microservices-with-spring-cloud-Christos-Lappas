@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class LogResponse {
     private LocalDateTime time;
-    private Long userId;
+    private String user;
     private Long productId;
-    private String update;
+    private String changes;
 }

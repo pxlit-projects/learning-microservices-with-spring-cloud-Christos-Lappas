@@ -7,6 +7,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CartRequest {
-    private Long customerId;
+    private String customer;
     private List<Product> items = new ArrayList<>();
 
     public void addItem(Product item) {
@@ -25,4 +26,6 @@ public class CartRequest {
     public void removeItem(Product item) {
         items.remove(item);
     }
+    private BigDecimal total;
+    private boolean ordered;
 }
