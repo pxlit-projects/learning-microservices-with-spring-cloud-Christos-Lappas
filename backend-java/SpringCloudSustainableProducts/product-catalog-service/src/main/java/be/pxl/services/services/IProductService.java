@@ -13,9 +13,5 @@ public interface IProductService {
 
     ProductResponse getProduct(Long id);
     ProductResponse updateProduct(Long id, ProductRequest productRequest);
-
-//    List<ProductResponse> getProductsByCategory(Category category);
-//    List<ProductResponse> getProductsByScore(Score score);
-
     List<ProductResponse> getFilteredProducts(Category category, Score score,String name);
 }

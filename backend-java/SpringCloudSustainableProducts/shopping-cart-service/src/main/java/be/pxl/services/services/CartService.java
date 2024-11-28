@@ -14,11 +14,9 @@ import org.slf4j.LoggerFactory;
 @Service
 @RequiredArgsConstructor
 public class CartService implements ICartService {
-
     private final CartRepository shoppingCartRepository;
     private final ProductClient productClient;
     private static final Logger logger = LoggerFactory.getLogger(CartService.class);
-
 
     @Override
     public CartResponse getById(Long id) {

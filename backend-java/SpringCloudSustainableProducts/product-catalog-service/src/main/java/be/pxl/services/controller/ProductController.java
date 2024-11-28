@@ -35,16 +35,6 @@ public class ProductController {
         return new ResponseEntity(productService.updateProduct(id, productRequest), HttpStatus.OK);
     }
 
-//    @GetMapping("/{category}")
-//    public ResponseEntity getProductsByCategory(@PathVariable Category category) {
-//        return new ResponseEntity(productService.getProductsByCategory(category), HttpStatus.OK);
-//    }
-//
-//    @GetMapping("/{score}")
-//    public ResponseEntity getProductsByScore(Score score) {
-//        return new ResponseEntity(productService.getProductsByScore(score), HttpStatus.OK);
-//    }
-
     @GetMapping("/filter")
     public ResponseEntity searchProducts(
             @RequestParam(required = false) Category category,

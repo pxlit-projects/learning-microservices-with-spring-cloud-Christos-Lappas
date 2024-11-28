@@ -185,19 +185,6 @@ public class ProductService implements IProductService{
         return mapToProductResponse(product);
     }
 
-
-//    @Override
-//    public List<ProductResponse> getProductsByCategory(Category category) {
-//        List<Product> products = productRepository.findProductsByCategory(category);
-//        return products.stream().map(product -> mapToProductResponse(product)).toList();
-//    }
-//
-//    @Override
-//    public List<ProductResponse> getProductsByScore(Score score) {
-//        List<Product> products = productRepository.findProductsByScore(score);
-//        return products.stream().map(product -> mapToProductResponse(product)).toList();
-//    }
-
     @Override
     public List<ProductResponse> getFilteredProducts(Category category, Score score, String name) {
         logger.info("Fetching filtered products with criteria - Category: {}, Score: {}, Name: {}",
