@@ -18,4 +18,6 @@ public class Product {
     private BigDecimal price;
     private Category category;
     private Score score;
+    private String labels;
+    private int quantity = 1;
 }

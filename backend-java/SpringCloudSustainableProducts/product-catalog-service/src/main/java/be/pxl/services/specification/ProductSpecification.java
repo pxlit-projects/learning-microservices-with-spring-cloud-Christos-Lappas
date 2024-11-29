@@ -20,4 +20,9 @@ public class ProductSpecification {
         return (root, query, criteriaBuilder) ->
                 (name == null || name.isEmpty()) ? null : criteriaBuilder.like(criteriaBuilder.lower(root.get("name")), "%" + name.toLowerCase() + "%");
     }
+
+    public static Specification<Product> hasLabel(String label) {
+        return (root, query, criteriaBuilder) ->
+                (label == null || label.isEmpty()) ? null : criteriaBuilder.like(criteriaBuilder.lower(root.get("labels")), "%" + label.toLowerCase() + "%");
+    }
 }

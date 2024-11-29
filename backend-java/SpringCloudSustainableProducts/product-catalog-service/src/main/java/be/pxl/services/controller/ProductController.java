@@ -3,6 +3,7 @@ package be.pxl.services.controller;
 import be.pxl.services.domain.Category;
 import be.pxl.services.domain.Score;
 import be.pxl.services.domain.dto.ProductRequest;
+import be.pxl.services.domain.dto.ProductResponse;
 import be.pxl.services.services.IProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -30,6 +31,12 @@ public class ProductController {
         productService.addProduct(productRequest);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity deleteProduct(@PathVariable Long id) {
+        productService.removeProduct(id);
+        return new ResponseEntity(HttpStatus.OK);
+    }
+
     @PutMapping("/{id}")
     public ResponseEntity updateProduct(@PathVariable Long id, @RequestBody ProductRequest productRequest) {
         return new ResponseEntity(productService.updateProduct(id, productRequest), HttpStatus.OK);
@@ -39,9 +46,27 @@ public class ProductController {
     public ResponseEntity searchProducts(
             @RequestParam(required = false) Category category,
             @RequestParam(required = false) Score score,
-            @RequestParam(required = false) String name) {
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String label) {
 
-        return new ResponseEntity(productService.getFilteredProducts(category, score, name), HttpStatus.OK);
+        return new ResponseEntity(productService.getFilteredProducts(category, score, name, label), HttpStatus.OK);
+    }
+
+    @PostMapping("/{id}/labels")
+    public ResponseEntity<ProductResponse> addLabelToProduct(
+            @PathVariable Long id,
+            @RequestParam String label
+    ) {
+        return new ResponseEntity(productService.addLabelToProduct(id, label), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/{id}/labels")
+    public ResponseEntity removeLabelFromProduct(
+            @PathVariable Long id,
+            @RequestParam String label
+    ) {
+        productService.removeLabelFromProduct(id, label);
+        return new ResponseEntity(HttpStatus.OK);
     }
 
 

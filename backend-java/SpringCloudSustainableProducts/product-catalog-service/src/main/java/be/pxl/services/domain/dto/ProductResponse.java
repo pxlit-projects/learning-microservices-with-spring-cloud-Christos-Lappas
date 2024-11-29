@@ -20,4 +20,5 @@ public class ProductResponse {
     private int stock;
     private Category category;
     private Score score;
+    private String labels;
 }

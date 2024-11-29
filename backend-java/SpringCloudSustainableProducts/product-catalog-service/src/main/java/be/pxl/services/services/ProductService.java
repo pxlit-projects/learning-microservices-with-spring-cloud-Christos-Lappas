@@ -61,6 +61,7 @@ public class ProductService implements IProductService{
                 .stock(product.getStock())
                 .category(product.getCategory())
                 .score(product.getScore())
+                .labels(product.getLabels())
                 .build();
     }
 
@@ -75,6 +76,7 @@ public class ProductService implements IProductService{
                 .stock(productRequest.getStock())
                 .category(productRequest.getCategory())
                 .score(productRequest.getScore())
+                .labels(productRequest.getLabels())
                 .build();
 
         try {
@@ -82,6 +84,29 @@ public class ProductService implements IProductService{
             logger.info("Product with name '{}' successfully added to the database", product.getName());
         } catch (Exception e) {
             logger.error("Failed to add product with name '{}': {}", productRequest.getName(), e.getMessage(), e);
+            throw e;
+        }
+
+    }
+
+    @Override
+    public void removeProduct(Long id) {
+        logger.info("Attempting to delete product with ID {}", id);
+
+        Product product;
+
+        try {
+            product = productRepository.findById(id)
+                    .orElseThrow(() -> new NotFoundException("Product with ID " + id + " not found"));
+            logger.debug("Successfully fetched product with ID {}", id);
+
+            productRepository.delete(product);
+            logger.info("Successfully deleted product with ID {}", id);
+        } catch (NotFoundException e) {
+            logger.warn("Entity not found: {}", e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            logger.error("Error occurred while deleting product with ID {}: {}", id, e.getMessage(), e);
             throw e;
         }
 
@@ -186,13 +211,14 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public List<ProductResponse> getFilteredProducts(Category category, Score score, String name) {
-        logger.info("Fetching filtered products with criteria - Category: {}, Score: {}, Name: {}",
-                category, score, name);
+    public List<ProductResponse> getFilteredProducts(Category category, Score score, String name, String label) {
+        logger.info("Fetching filtered products with criteria - Category: {}, Score: {}, Name: {}, Label: {}",
+                category, score, name, label);
 
         Specification<Product> spec = Specification.where(ProductSpecification.hasCategory(category))
                 .and(ProductSpecification.hasScore(score))
-                .and(ProductSpecification.hasName(name));
+                .and(ProductSpecification.hasName(name))
+                .and(ProductSpecification.hasLabel(label));
 
         List<ProductResponse> productResponses;
         try {
@@ -208,5 +234,55 @@ public class ProductService implements IProductService{
 
         logger.info("Successfully retrieved filtered products");
         return productResponses;
+    }
+
+    @Override
+    public ProductResponse addLabelToProduct(Long id, String label) {
+        logger.info("Attempting to add {} label to product with ID {}",label, id);
+
+        Product product;
+
+        try {
+            product = productRepository.findById(id)
+                    .orElseThrow(() -> new NotFoundException("Product with ID " + id + " not found"));
+            logger.debug("Successfully fetched product with ID {}", id);
+
+            product.addLabel(label);
+            productRepository.save(product);
+            logger.info("Successfully added  {} label to product with ID {}", label, id);
+        } catch (NotFoundException e) {
+            logger.warn("Entity not found: {}", e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            logger.error("Error occurred while adding {} label to product with ID {}: {}",label, id, e.getMessage(), e);
+            throw e;
+        }
+
+        return mapToProductResponse(product);
+
+    }
+
+    @Override
+    public void removeLabelFromProduct(Long id, String label) {
+        logger.info("Attempting to delete {} label from product with ID {}",label, id);
+
+        Product product;
+
+        try {
+            product = productRepository.findById(id)
+                    .orElseThrow(() -> new NotFoundException("Product with ID " + id + " not found"));
+            logger.debug("Successfully fetched product with ID {}", id);
+
+            product.removeLabel(label);
+            productRepository.save(product);
+            logger.info("Successfully deleted {} label from product with ID {}", label, id);
+        } catch (NotFoundException e) {
+            logger.warn("Entity not found: {}", e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            logger.error("Error occurred while deleting {} label from product with ID {}: {}",label, id, e.getMessage(), e);
+            throw e;
+        }
+
     }
 }

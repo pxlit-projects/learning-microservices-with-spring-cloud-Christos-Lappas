@@ -7,6 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="product")
@@ -26,7 +29,28 @@ public class Product {
     private Category category;
     @Enumerated(EnumType.STRING)
     private Score score;
-    // TODO: Label implementeren
-    // private String label;
+    private String labels;
+
+    public Set<String> getLabelSet() {
+        return labels == null || labels.isEmpty()
+                ? new HashSet<>()
+                : new HashSet<>(Arrays.asList(labels.split(",")));
+    }
+
+    public void setLabelSet(Set<String> labelSet) {
+        this.labels = String.join(",", labelSet);
+    }
+
+    public void addLabel(String label) {
+        Set<String> labelSet = getLabelSet();
+        labelSet.add(label);
+        setLabelSet(labelSet);
+    }
+
+    public void removeLabel(String label) {
+        Set<String> labelSet = getLabelSet();
+        labelSet.remove(label);
+        setLabelSet(labelSet);
+    }
 
 }

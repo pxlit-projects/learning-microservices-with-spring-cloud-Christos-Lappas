@@ -24,13 +24,13 @@ public class CartController {
     }
 
     @PostMapping("/{id}/add/{productId}")
-    public ResponseEntity addItemToCart(@PathVariable Long customerId, @PathVariable Long productId) {
-        return new ResponseEntity(cartService.addItemToCart(customerId, productId), HttpStatus.OK);
+    public ResponseEntity addItemToCart(@PathVariable Long id, @PathVariable Long productId) {
+        return new ResponseEntity(cartService.addItemToCart(id, productId), HttpStatus.OK);
     }
 
     @PostMapping("/{id}/remove/{productId}")
-    public ResponseEntity removeItemFromCart(@PathVariable Long customerId, @PathVariable Long productId) {
-        return new ResponseEntity(cartService.removeItemFromCart(customerId, productId), HttpStatus.OK);
+    public ResponseEntity removeItemFromCart(@PathVariable Long id, @PathVariable Long productId) {
+        return new ResponseEntity(cartService.removeItemFromCart(id, productId), HttpStatus.OK);
     }
 
     @PatchMapping("/{id}/order")
