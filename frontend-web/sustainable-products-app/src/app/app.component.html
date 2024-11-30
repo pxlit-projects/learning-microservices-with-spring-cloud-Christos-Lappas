@@ -1,14 +1,40 @@
-@if (isAdmin()) {
-    <app-admin></app-admin>
-} @else if(isCustomer()) {
-    <app-customer></app-customer>
-
-} @else {
+@if (isNothing()) {
     <div>
-        <form (ngSubmit)="setUserRole()">
+        <form (ngSubmit)="login()">
           <input type="text" [(ngModel)]="username" name="username" placeholder="Username" required />
           <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required />
           <button type="submit">Login</button>          
         </form>
     </div>
+} @else {
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">Sustainable Products Shop</a>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          @if (isCustomer()) {
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/customer/products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/customer/cart">
+                Cart <i class="bi bi-cart"></i>
+              </a>
+            </li>
+          } @else if (isAdmin()) {
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/admin/products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/admin/logs">Logs</a>
+            </li>
+          }
+        </ul>
+        <button class="btn btn-outline-danger" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
 }
+
+<router-outlet></router-outlet>

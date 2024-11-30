@@ -50,6 +50,8 @@ public class ProductService implements IProductService{
         long endTime = System.currentTimeMillis();
         logger.info("Successfully retrieved {} products in {} ms", productResponses.size(), (endTime - startTime));
 
+        //TODO: Messaging client implementeren, verandering sturen naar message service via feign client -> message service stuurt naar logbookservice (controller nog implementeren)
+
         return productResponses;
     }
 
