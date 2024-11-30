@@ -1,11 +1,15 @@
 package be.pxl.services.controller;
 
+import be.pxl.services.domain.dto.CartRequest;
+import be.pxl.services.domain.dto.OrderCartRequest;
 import be.pxl.services.services.CartService;
 import be.pxl.services.services.ICartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.math.BigDecimal;
 
 @RestController
 @RequestMapping("/api/cart")
@@ -23,19 +27,19 @@ public class CartController {
         return new ResponseEntity(cartService.createCart(), HttpStatus.CREATED);
     }
 
-    @PostMapping("/{id}/add/{productId}")
-    public ResponseEntity addItemToCart(@PathVariable Long id, @PathVariable Long productId) {
-        return new ResponseEntity(cartService.addItemToCart(id, productId), HttpStatus.OK);
+    @PostMapping("/product/add/{productId}")
+    public ResponseEntity addItemToCart(@PathVariable Long productId, @RequestBody CartRequest cartRequest) {
+        return new ResponseEntity(cartService.addItemToCart(productId, cartRequest), HttpStatus.OK);
     }
 
-    @PostMapping("/{id}/remove/{productId}")
-    public ResponseEntity removeItemFromCart(@PathVariable Long id, @PathVariable Long productId) {
-        return new ResponseEntity(cartService.removeItemFromCart(id, productId), HttpStatus.OK);
+    @PostMapping("/product/remove/{productId}")
+    public ResponseEntity removeItemFromCart(@PathVariable Long productId, @RequestBody CartRequest cartRequest) {
+        return new ResponseEntity(cartService.removeItemFromCart(productId, cartRequest), HttpStatus.OK);
     }
 
     @PatchMapping("/{id}/order")
-    public ResponseEntity orderCart(@PathVariable Long id, @RequestBody Boolean ordered) {
-        return new ResponseEntity(cartService.order(id, ordered), HttpStatus.OK);
+    public ResponseEntity orderCart(@PathVariable Long id, @RequestBody OrderCartRequest orderCartRequest) {
+        return new ResponseEntity(cartService.order(id, orderCartRequest.getTotal(), orderCartRequest.getOrdered()), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")

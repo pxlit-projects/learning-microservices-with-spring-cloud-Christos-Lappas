@@ -16,8 +16,11 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CartRequest {
+    private Long id;
     private String customer;
     private List<Product> items = new ArrayList<>();
+    private BigDecimal total;
+    private boolean ordered;
 
     public void addItem(Product item) {
         items.add(item);
@@ -26,6 +29,4 @@ public class CartRequest {
     public void removeItem(Product item) {
         items.remove(item);
     }
-    private BigDecimal total;
-    private boolean ordered;
 }

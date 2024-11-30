@@ -1,0 +1,221 @@
+2024-11-29T15:29:21.840+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 75200 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T15:29:21.847+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T15:29:21.847+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T15:29:26.321+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.449 seconds (process running for 6.124)
+2024-11-29T15:29:47.072+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 29976 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T15:29:47.074+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T15:29:47.074+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T15:29:51.323+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 5.223 seconds (process running for 5.892)
+2024-11-29T15:30:03.486+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 67072 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T15:30:03.487+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T15:30:03.488+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T15:30:07.723+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.183 seconds (process running for 5.818)
+2024-11-29T15:32:13.841+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Starting to add a new product with name: Kaars
+2024-11-29T15:32:13.905+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Product with name 'Kaars' successfully added to the database
+2024-11-29T15:34:18.633+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Attempting to add geur label to product with ID 1
+2024-11-29T15:34:18.679+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-11-29T15:34:18.694+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully added  geur label to product with ID 1
+2024-11-29T15:34:29.983+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Attempting to add kamer label to product with ID 1
+2024-11-29T15:34:29.987+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-11-29T15:34:29.990+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully added  kamer label to product with ID 1
+2024-11-29T15:34:57.220+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Attempting to add keuken label to product with ID 1
+2024-11-29T15:34:57.223+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-11-29T15:34:57.226+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully added  keuken label to product with ID 1
+2024-11-29T15:35:27.387+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Attempting to delete keuken label from product with ID 1
+2024-11-29T15:35:27.390+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-11-29T15:35:27.393+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully deleted keuken label from product with ID 1
+2024-11-29T15:36:11.437+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: kamer
+2024-11-29T15:36:11.563+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-11-29T15:36:11.564+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-29T15:36:16.785+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: kame
+2024-11-29T15:36:16.790+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-11-29T15:36:16.790+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-29T15:36:21.532+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: kam
+2024-11-29T15:36:21.535+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-11-29T15:36:21.536+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-29T15:36:36.056+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: null, Name: null, Label: kam
+2024-11-29T15:36:36.067+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-11-29T15:36:36.067+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-29T15:36:47.352+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: null, Name: null, Label: deur
+2024-11-29T15:36:47.355+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-11-29T15:36:47.355+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-29T15:37:05.100+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: deur
+2024-11-29T15:37:05.104+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-11-29T15:37:05.104+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-11-29T15:38:07.740+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Attempting to add keuken label to product with ID 5
+2024-11-29T15:38:07.747+0100 ERROR              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Error occurred while adding keuken label to product with ID 5: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$addLabelToProduct$4(ProductService.java:247)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.addLabelToProduct(ProductService.java:247)
+	at be.pxl.services.controller.ProductController.addLabelToProduct(ProductController.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 58 common frames omitted
+2024-11-29T15:39:35.222+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Starting to add a new product with name: Kaars
+2024-11-29T15:39:35.228+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Product with name 'Kaars' successfully added to the database
+2024-11-29T15:39:46.124+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Attempting to delete product with ID 2
+2024-11-29T15:39:46.127+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully fetched product with ID 2
+2024-11-29T15:39:46.135+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully deleted product with ID 2
+2024-11-29T15:40:57.934+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-11-29T15:40:57.938+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-11-29T15:40:57.938+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 4 ms
+2024-11-29T15:42:19.963+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Starting to add a new product with name: Lippenstift
+2024-11-29T15:42:19.968+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Product with name 'Lippenstift' successfully added to the database
+2024-11-29T15:44:37.004+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Starting update for product with id: 3
+2024-11-29T15:44:37.007+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Updating product fields for id: 3
+2024-11-29T15:44:37.011+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Product with id 3 successfully updated
+2024-11-29T15:44:37.012+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Logging changes for product with id: 3
+2024-11-29T15:44:37.228+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Starting to add a new log entry for user: admin, product ID: 3
+2024-11-29T15:44:37.293+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Log entry for user 'admin' and product ID '3' successfully saved
+2024-11-29T15:44:37.298+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Changes for product with id: 3 logged
+2024-11-29T15:56:37.309+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-11-29T15:56:37.379+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 102
+2024-11-29T15:58:14.727+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Fetching shopping cart with ID: 102
+2024-11-29T15:58:14.769+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 102
+2024-11-29T16:04:24.507+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 69404 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T16:04:24.508+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T16:04:24.509+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T16:04:28.716+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.173 seconds (process running for 5.796)
+2024-11-29T16:04:41.231+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-11-29T16:04:41.292+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 1
+2024-11-29T16:04:49.880+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-11-29T16:04:49.921+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-11-29T16:04:59.058+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Adding product ID 1 to cart ID 1
+2024-11-29T16:04:59.061+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T16:04:59.144+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T16:04:59.158+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-29T16:04:59.158+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 1
+2024-11-29T16:04:59.161+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Updated cart ID 1 saved successfully
+2024-11-29T16:05:36.044+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Adding product ID 3 to cart ID 1
+2024-11-29T16:05:36.048+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T16:05:36.051+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T16:05:36.055+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-11-29T16:05:36.055+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Added product ID 3 to cart ID 1
+2024-11-29T16:05:36.056+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Updated cart ID 1 saved successfully
+2024-11-29T16:08:28.774+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removing product ID 3 from cart ID 1
+2024-11-29T16:08:28.778+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T16:08:28.782+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T16:08:28.786+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-11-29T16:08:28.786+0100 WARN               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Product ID 3 not found in cart ID 1, cannot remove
+2024-11-29T16:08:28.786+0100 WARN               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Invalid operation: Product not found in cart
+2024-11-29T16:13:27.410+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Updating order status for cart ID 1: ordered = true
+2024-11-29T16:13:27.413+0100 DEBUG              [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T16:13:27.413+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Cart ID 1: order status updated from false to true
+2024-11-29T16:13:27.424+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Cart ID 1 saved successfully with new order status: true
+2024-11-29T16:14:38.544+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-11-29T16:14:38.552+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 2
+2024-11-29T16:15:18.545+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Attempting to delete cart with ID 2
+2024-11-29T16:15:18.547+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-11-29T16:15:18.561+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully deleted cart with ID 2
+2024-11-29T20:18:43.619+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 50376 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T20:18:43.621+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T20:18:43.622+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T20:18:49.128+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 6.772 seconds (process running for 7.6)
+2024-11-29T20:19:00.179+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 53112 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T20:19:00.181+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T20:19:00.181+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T20:19:04.628+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.494 seconds (process running for 6.2)
+2024-11-29T20:27:45.244+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
+2024-11-29T20:27:45.330+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T20:27:45.559+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T20:27:45.660+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-11-29T20:27:45.660+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Added product ID 3 to cart ID 1
+2024-11-29T20:29:34.051+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-29T20:29:34.055+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T20:29:34.060+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T20:29:34.066+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-29T20:29:34.066+0100 WARN               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Product ID 1 not found in cart ID 1, cannot remove
+2024-11-29T20:29:34.067+0100 WARN               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Invalid operation: Product not found in cart
+2024-11-29T20:30:52.825+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 30988 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T20:30:52.826+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T20:30:52.827+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T20:30:57.740+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 6.105 seconds (process running for 6.929)
+2024-11-29T20:31:16.209+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-29T20:31:16.286+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T20:31:16.395+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T20:31:16.406+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-29T20:31:16.406+0100 WARN               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Product ID 1 not found in cart ID 1, cannot remove
+2024-11-29T20:31:16.406+0100 WARN               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Invalid operation: Product not found in cart
+2024-11-29T20:31:43.184+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-29T20:31:43.188+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T20:31:43.193+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T20:31:43.200+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-29T20:31:43.200+0100 WARN               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Product ID 1 not found in cart ID 1, cannot remove
+2024-11-29T20:31:43.200+0100 WARN               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Invalid operation: Product not found in cart
+2024-11-29T20:33:56.569+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 19972 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T20:33:56.571+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T20:33:56.572+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T20:34:01.545+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 6.183 seconds (process running for 7.038)
+2024-11-29T20:35:03.428+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-29T20:35:03.510+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T20:35:03.634+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Getting product...
+2024-11-29T20:35:03.646+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-29T20:35:03.646+0100 WARN               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Product ID 1 not found in cart ID 1, cannot remove
+2024-11-29T20:35:03.646+0100 WARN               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Invalid operation: Product not found in cart
+2024-11-29T20:38:53.420+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 77304 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-29T20:38:53.422+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-29T20:38:53.423+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-29T20:38:58.319+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 6.003 seconds (process running for 7.223)
+2024-11-29T20:40:21.450+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-29T20:40:21.541+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-29T20:41:03.354+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Getting product...
+2024-11-29T20:41:44.178+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-29T20:57:58.747+0100 WARN               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Product ID 1 not found in cart ID 1, cannot remove
+2024-11-29T20:57:58.748+0100 WARN               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Invalid operation: Product not found in cart
