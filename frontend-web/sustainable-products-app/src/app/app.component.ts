@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule, RouterOutlet } from '@angular/router';
+import { CartService } from './services/cart.service';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ export class AppComponent {
   username: string = '';
   password: string = '';
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private cartService: CartService) {}
 
   setUserRole(): void {
     if (this.username === 'admin' || this.username === 'customer') {
@@ -27,6 +28,10 @@ export class AppComponent {
   getUserRole(): 'admin' | 'customer' | null {
     const role = localStorage.getItem(this.storageKey);
     return role === 'admin' || role === 'customer' ? role : null;
+  }
+
+  clearUserRole(): void {
+    localStorage.removeItem('userRole');
   }
 
 
@@ -51,11 +56,7 @@ export class AppComponent {
       this.router.navigate(['/customer'])
     }
 
-  }
-
-  clearUserRole(): void {
-    localStorage.removeItem('userRole');
-  }
+  }  
 
   logout() {
     this.clearUserRole();

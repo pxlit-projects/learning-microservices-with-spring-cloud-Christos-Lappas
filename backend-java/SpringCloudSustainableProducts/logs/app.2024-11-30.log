@@ -1,0 +1,187 @@
+2024-11-30T10:18:41.117+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 63048 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T10:18:41.126+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T10:18:41.126+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T10:18:46.666+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 6.91 seconds (process running for 7.828)
+2024-11-30T10:19:05.226+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 84304 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T10:19:05.228+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T10:19:05.229+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T10:19:09.705+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.711 seconds (process running for 6.556)
+2024-11-30T10:19:31.003+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Updating order status for cart ID 1: total = 158.99, ordered = true
+2024-11-30T10:19:31.089+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:19:31.089+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Cart ID 1: order status updated from true to true
+2024-11-30T10:19:31.089+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Cart ID 1: total price updated to 158.99
+2024-11-30T10:19:31.132+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Cart ID 1 saved successfully with new order status: true
+2024-11-30T10:20:46.205+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-30T10:20:46.209+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:20:46.210+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-30T10:20:46.210+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 1
+2024-11-30T10:20:53.539+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-30T10:20:53.543+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:20:53.543+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-30T10:20:53.543+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 1
+2024-11-30T10:21:04.419+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
+2024-11-30T10:21:04.422+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:21:04.423+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-30T10:21:04.423+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 1
+2024-11-30T10:21:24.093+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
+2024-11-30T10:21:24.098+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:21:24.325+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Getting product...
+2024-11-30T10:21:24.427+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-11-30T10:21:24.428+0100 ERROR              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Error occurred while adding product ID 3 to cart ID 1: Cannot invoke "java.lang.Long.equals(Object)" because the return value of "be.pxl.services.domain.Product.getId()" is null
+java.lang.NullPointerException: Cannot invoke "java.lang.Long.equals(Object)" because the return value of "be.pxl.services.domain.Product.getId()" is null
+	at be.pxl.services.services.CartService.lambda$addItemToCart$2(CartService.java:117)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:118)
+	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-11-30T10:22:18.376+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
+2024-11-30T10:22:18.380+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:22:18.383+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Getting product...
+2024-11-30T10:22:18.390+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-11-30T10:22:18.390+0100 ERROR              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Error occurred while adding product ID 3 to cart ID 1: No value present
+java.util.NoSuchElementException: No value present
+	at java.base/java.util.Optional.get(Optional.java:143)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:118)
+	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:32)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-11-30T10:26:23.784+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 24324 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T10:26:23.786+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T10:26:23.787+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T10:26:28.603+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 6.021 seconds (process running for 6.819)
+2024-11-30T10:27:10.575+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
+2024-11-30T10:27:10.658+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:27:10.783+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Getting product...
+2024-11-30T10:27:10.795+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-11-30T10:27:10.795+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Added product ID 3 to cart ID 1
+2024-11-30T10:27:26.459+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 1
+2024-11-30T10:27:26.463+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-11-30T10:27:26.468+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Getting product...
+2024-11-30T10:27:26.473+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-11-30T10:27:26.473+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 1
+2024-11-30T10:30:57.309+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 75800 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T10:30:57.311+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T10:30:57.312+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T10:31:02.975+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 6.956 seconds (process running for 7.785)
+2024-11-30T10:33:18.879+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 56984 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T10:33:18.881+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T10:33:18.882+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T10:33:24.147+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 6.68 seconds (process running for 7.496)
+2024-11-30T10:34:52.431+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-11-30T10:34:52.621+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetched 11 logs from the database
+2024-11-30T10:34:52.623+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Successfully retrieved 11 logs in 192 ms
+2024-11-30T20:35:43.375+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 51220 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T20:35:43.377+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T20:35:43.377+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T20:35:47.614+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.191 seconds (process running for 5.896)
+2024-11-30T20:36:37.624+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-11-30T20:36:37.757+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-11-30T20:36:37.758+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 134 ms
+2024-11-30T20:39:35.918+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 61212 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-11-30T20:39:35.919+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-11-30T20:39:35.920+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-11-30T20:39:40.180+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.219 seconds (process running for 5.861)
+2024-11-30T20:41:13.395+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-11-30T20:41:13.536+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-11-30T20:41:13.537+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 142 ms

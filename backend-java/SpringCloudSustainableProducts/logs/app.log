@@ -1,45 +1,166 @@
-2024-11-30T10:18:41.117+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 63048 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-11-30T10:18:41.126+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-30T10:18:41.126+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
-2024-11-30T10:18:46.666+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 6.91 seconds (process running for 7.828)
-2024-11-30T10:19:05.226+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 84304 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-11-30T10:19:05.228+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-30T10:19:05.229+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
-2024-11-30T10:19:09.705+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.711 seconds (process running for 6.556)
-2024-11-30T10:19:31.003+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Updating order status for cart ID 1: total = 158.99, ordered = true
-2024-11-30T10:19:31.089+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:19:31.089+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Cart ID 1: order status updated from true to true
-2024-11-30T10:19:31.089+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Cart ID 1: total price updated to 158.99
-2024-11-30T10:19:31.132+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Cart ID 1 saved successfully with new order status: true
-2024-11-30T10:20:46.205+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
-2024-11-30T10:20:46.209+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:20:46.210+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
-2024-11-30T10:20:46.210+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 1
-2024-11-30T10:20:53.539+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
-2024-11-30T10:20:53.543+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:20:53.543+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
-2024-11-30T10:20:53.543+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 1
-2024-11-30T10:21:04.419+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 1
-2024-11-30T10:21:04.422+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:21:04.423+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
-2024-11-30T10:21:04.423+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 1
-2024-11-30T10:21:24.093+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
-2024-11-30T10:21:24.098+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:21:24.325+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Getting product...
-2024-11-30T10:21:24.427+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
-2024-11-30T10:21:24.428+0100 ERROR              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Error occurred while adding product ID 3 to cart ID 1: Cannot invoke "java.lang.Long.equals(Object)" because the return value of "be.pxl.services.domain.Product.getId()" is null
-java.lang.NullPointerException: Cannot invoke "java.lang.Long.equals(Object)" because the return value of "be.pxl.services.domain.Product.getId()" is null
-	at be.pxl.services.services.CartService.lambda$addItemToCart$2(CartService.java:117)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.tryAdvance(ArrayList.java:1685)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
-	at be.pxl.services.services.CartService.addItemToCart(CartService.java:118)
+2024-12-02T09:40:23.796+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 40472 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-02T09:40:23.803+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02T09:40:23.804+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-02T09:40:28.759+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 6.077 seconds (process running for 7.547)
+2024-12-02T09:40:45.426+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 26592 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-02T09:40:45.428+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02T09:40:45.429+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-12-02T09:40:50.181+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.82 seconds (process running for 6.548)
+2024-12-02T09:41:09.618+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 2160 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-02T09:41:09.619+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02T09:41:09.620+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-12-02T09:41:15.019+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 6.655 seconds (process running for 7.501)
+2024-12-02T09:44:06.861+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T09:44:07.040+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T09:44:07.041+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 180 ms
+2024-12-02T09:50:15.648+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Removing product ID 3 from cart ID 312
+2024-12-02T09:50:15.724+0100 ERROR              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Error occurred while removing product ID 3 from cart ID 312: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.CartService.lambda$removeItemFromCart$3(CartService.java:145)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.CartService.removeItemFromCart(CartService.java:145)
+	at be.pxl.services.controller.CartController.removeItemFromCart(CartController.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 58 common frames omitted
+2024-12-02T09:51:08.584+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Removing product ID 3 from cart ID 312
+2024-12-02T09:51:08.588+0100 ERROR              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Error occurred while removing product ID 3 from cart ID 312: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.CartService.lambda$removeItemFromCart$3(CartService.java:145)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.CartService.removeItemFromCart(CartService.java:145)
+	at be.pxl.services.controller.CartController.removeItemFromCart(CartController.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 58 common frames omitted
+2024-12-02T09:51:29.545+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T09:51:29.551+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T09:51:29.551+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T09:51:30.713+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 312
+2024-12-02T09:51:30.718+0100 ERROR              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Error occurred while adding product ID 1 to cart ID 312: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.CartService.lambda$addItemToCart$1(CartService.java:107)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:107)
 	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:32)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -89,15 +210,28 @@ java.lang.NullPointerException: Cannot invoke "java.lang.Long.equals(Object)" be
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2024-11-30T10:22:18.376+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
-2024-11-30T10:22:18.380+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:22:18.383+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Getting product...
-2024-11-30T10:22:18.390+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
-2024-11-30T10:22:18.390+0100 ERROR              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Error occurred while adding product ID 3 to cart ID 1: No value present
-java.util.NoSuchElementException: No value present
-	at java.base/java.util.Optional.get(Optional.java:143)
-	at be.pxl.services.services.CartService.addItemToCart(CartService.java:118)
-	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:32)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 58 common frames omitted
+2024-12-02T09:54:49.131+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 14008 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-02T09:54:49.133+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02T09:54:49.133+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-12-02T09:54:54.422+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 6.655 seconds (process running for 7.987)
+2024-12-02T09:57:29.269+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Removing product ID 3 from cart ID 312
+2024-12-02T09:57:29.342+0100 ERROR              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Error occurred while removing product ID 3 from cart ID 312: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.CartService.lambda$removeItemFromCart$3(CartService.java:145)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.CartService.removeItemFromCart(CartService.java:145)
+	at be.pxl.services.controller.CartController.removeItemFromCart(CartController.java:37)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
@@ -146,28 +280,428 @@ java.util.NoSuchElementException: No value present
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-2024-11-30T10:26:23.784+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 24324 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-11-30T10:26:23.786+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-30T10:26:23.787+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
-2024-11-30T10:26:28.603+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 6.021 seconds (process running for 6.819)
-2024-11-30T10:27:10.575+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 1
-2024-11-30T10:27:10.658+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:27:10.783+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Getting product...
-2024-11-30T10:27:10.795+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
-2024-11-30T10:27:10.795+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Added product ID 3 to cart ID 1
-2024-11-30T10:27:26.459+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 1
-2024-11-30T10:27:26.463+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
-2024-11-30T10:27:26.468+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Getting product...
-2024-11-30T10:27:26.473+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
-2024-11-30T10:27:26.473+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 1
-2024-11-30T10:30:57.309+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 75800 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-11-30T10:30:57.311+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-30T10:30:57.312+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
-2024-11-30T10:31:02.975+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 6.956 seconds (process running for 7.785)
-2024-11-30T10:33:18.879+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 56984 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-11-30T10:33:18.881+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-11-30T10:33:18.882+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
-2024-11-30T10:33:24.147+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 6.68 seconds (process running for 7.496)
-2024-11-30T10:34:52.431+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetching all logs from the database
-2024-11-30T10:34:52.621+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetched 11 logs from the database
-2024-11-30T10:34:52.623+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Successfully retrieved 11 logs in 192 ms
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 58 common frames omitted
+2024-12-02T09:58:15.354+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Updating order status for cart ID 312: total = 37.98, ordered = true
+2024-12-02T09:58:15.360+0100 ERROR              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Error occurred while updating order status for cart ID 312: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.CartService.lambda$order$6(CartService.java:190)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.CartService.order(CartService.java:190)
+	at be.pxl.services.controller.CartController.orderCart(CartController.java:42)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:888)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 56 common frames omitted
+2024-12-02T09:58:30.615+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T09:58:30.620+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T09:58:30.621+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:00:54.188+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:00:54.193+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:00:54.193+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:00:55.607+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-02T10:00:55.698+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 352
+2024-12-02T10:00:55.725+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 352
+2024-12-02T10:00:55.733+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched cart with ID 352
+2024-12-02T10:00:55.851+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Getting product...
+2024-12-02T10:00:55.873+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:00:55.873+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 352
+2024-12-02T10:01:23.094+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:01:23.098+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:01:23.098+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T10:01:40.460+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:01:40.465+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:01:40.466+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:01:41.963+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 352
+2024-12-02T10:01:41.968+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 352
+2024-12-02T10:01:41.972+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Getting product...
+2024-12-02T10:01:41.979+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:01:41.979+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 352
+2024-12-02T10:01:44.864+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:01:44.869+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:01:44.870+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:01:45.983+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Adding product ID 3 to cart with ID 352
+2024-12-02T10:01:45.987+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched cart with ID 352
+2024-12-02T10:01:45.992+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Getting product...
+2024-12-02T10:01:45.999+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 3
+2024-12-02T10:01:45.999+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Added product ID 3 to cart ID 352
+2024-12-02T10:01:52.278+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 352
+2024-12-02T10:01:52.282+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched cart with ID 352
+2024-12-02T10:01:52.283+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:01:52.283+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 352
+2024-12-02T10:01:55.923+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 352
+2024-12-02T10:01:55.927+0100 DEBUG              [http-nio-8082-exec-8]         be.pxl.services.services.CartService - Successfully fetched cart with ID 352
+2024-12-02T10:01:55.927+0100 DEBUG              [http-nio-8082-exec-8]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:01:55.928+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 352
+2024-12-02T10:02:17.002+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Updating order status for cart ID 352: total = 9.99, ordered = true
+2024-12-02T10:02:17.006+0100 DEBUG              [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Successfully fetched cart with ID 352
+2024-12-02T10:02:17.007+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Cart ID 352: order status updated from false to true
+2024-12-02T10:02:17.007+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Cart ID 352: total price updated to 9.99
+2024-12-02T10:02:17.023+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CartService - Cart ID 352 saved successfully with new order status: true
+2024-12-02T10:05:03.688+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:05:03.693+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:05:03.693+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:05:04.641+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-02T10:05:04.647+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 353
+2024-12-02T10:05:04.659+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 353
+2024-12-02T10:05:04.663+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched cart with ID 353
+2024-12-02T10:05:04.668+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Getting product...
+2024-12-02T10:05:04.674+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:05:04.675+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 353
+2024-12-02T10:05:09.054+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 353
+2024-12-02T10:05:09.057+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched cart with ID 353
+2024-12-02T10:05:09.058+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:05:09.058+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 353
+2024-12-02T10:06:15.967+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:06:15.971+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:06:15.971+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T10:08:16.016+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:08:16.021+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:08:16.022+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:08:18.010+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:08:18.016+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:08:18.016+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:08:32.844+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:08:32.849+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:08:32.850+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:12:06.761+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:12:06.767+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:12:06.767+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:12:07.870+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 353
+2024-12-02T10:12:07.875+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 353
+2024-12-02T10:12:07.880+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Getting product...
+2024-12-02T10:12:07.887+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:12:07.887+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 353
+2024-12-02T10:12:10.078+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 353
+2024-12-02T10:12:10.081+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched cart with ID 353
+2024-12-02T10:12:10.081+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T10:12:10.081+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 353
+2024-12-02T10:12:13.043+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:12:13.047+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:12:13.047+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T10:24:44.707+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:24:44.714+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:24:44.715+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 7 ms
+2024-12-02T10:26:17.869+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:26:17.874+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:26:17.874+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T10:26:23.884+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:26:23.889+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:26:23.889+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:26:27.773+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:26:27.778+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:26:27.778+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:26:35.937+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:26:35.942+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:26:35.942+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:27:10.493+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:27:10.499+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:27:10.500+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 7 ms
+2024-12-02T10:27:28.371+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:27:28.389+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:27:28.389+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 17 ms
+2024-12-02T10:27:49.039+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:27:49.045+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:27:49.046+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 7 ms
+2024-12-02T10:27:53.344+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:27:53.351+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:27:53.352+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 7 ms
+2024-12-02T10:27:56.321+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:27:56.326+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:27:56.327+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:28:01.032+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:28:01.039+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:28:01.039+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 7 ms
+2024-12-02T10:28:42.718+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:28:42.729+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:28:42.730+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 12 ms
+2024-12-02T10:28:45.505+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:28:45.511+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:28:45.511+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:28:46.594+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:28:46.599+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:28:46.600+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:31:31.315+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:31:31.322+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:31:31.322+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T10:32:45.339+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:32:45.345+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:32:45.345+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T10:33:08.693+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:33:08.706+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:33:08.706+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 13 ms
+2024-12-02T10:33:22.308+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: kaa, Label: kaa
+2024-12-02T10:33:22.367+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T10:33:22.368+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:35:47.343+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: ka, Label: ka
+2024-12-02T10:35:47.349+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T10:35:47.349+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:35:57.998+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: geur, Label: geur
+2024-12-02T10:35:58.003+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T10:35:58.003+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:37:59.392+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 45952 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-02T10:37:59.393+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02T10:37:59.394+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-02T10:38:04.285+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 6.104 seconds (process running for 6.912)
+2024-12-02T10:38:44.790+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: geur, Label: geur
+2024-12-02T10:38:45.042+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T10:38:45.042+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:38:52.681+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: ka, Label: ka
+2024-12-02T10:38:52.687+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T10:38:52.688+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:39:29.383+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: aars, Label: aars
+2024-12-02T10:39:29.389+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T10:39:29.390+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:40:24.636+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: s, Label: s
+2024-12-02T10:40:24.643+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Found 2 products matching the filter criteria
+2024-12-02T10:40:24.643+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:40:34.992+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: st, Label: st
+2024-12-02T10:40:34.997+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T10:40:34.998+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T10:40:37.539+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T10:40:37.547+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T10:40:37.548+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 9 ms
+2024-12-02T11:01:35.498+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:01:35.503+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:01:35.503+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:01:37.867+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:01:37.872+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:01:37.872+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:01:40.916+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:01:40.921+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:01:40.921+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:02:48.990+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:02:48.996+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:02:48.996+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:03:27.068+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:03:27.073+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:03:27.073+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:06:11.900+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:06:11.905+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:06:11.905+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:06:20.879+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:06:20.883+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:06:20.883+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T11:06:35.912+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:06:35.920+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:06:35.921+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 8 ms
+2024-12-02T11:06:47.919+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:06:47.924+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:06:47.924+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:06:53.914+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:06:53.921+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:06:53.921+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T11:07:01.874+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:07:01.879+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:07:01.879+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:08:24.903+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:24.910+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:24.911+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 7 ms
+2024-12-02T11:08:29.940+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:29.945+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:29.945+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:08:35.879+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:35.884+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:35.884+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:08:45.880+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:45.885+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:45.886+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:08:49.914+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:49.919+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:49.920+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T11:08:55.896+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:55.901+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:55.902+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 6 ms
+2024-12-02T11:08:59.878+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:08:59.882+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:08:59.883+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T11:09:40.908+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:09:40.915+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:09:40.916+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 8 ms
+2024-12-02T11:09:53.489+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T11:09:53.494+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T11:09:53.494+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T11:10:03.140+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: null, Name: null, Label: null
+2024-12-02T11:10:03.152+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:03.153+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:06.664+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: null, Name: null, Label: null
+2024-12-02T11:10:06.670+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:06.670+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:10.401+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: B, Name: null, Label: null
+2024-12-02T11:10:10.407+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:10.407+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:13.017+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: C, Name: null, Label: null
+2024-12-02T11:10:13.021+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:13.022+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:14.220+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: D, Name: null, Label: null
+2024-12-02T11:10:14.225+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:14.225+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:14.814+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: E, Name: null, Label: null
+2024-12-02T11:10:14.819+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:14.819+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:15.313+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: F, Name: null, Label: null
+2024-12-02T11:10:15.318+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:15.319+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:15.813+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: B, Name: null, Label: null
+2024-12-02T11:10:15.818+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:15.818+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:16.233+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: A, Name: null, Label: null
+2024-12-02T11:10:16.238+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:16.238+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:16.808+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BEAUTY, Score: B, Name: null, Label: null
+2024-12-02T11:10:16.813+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:16.813+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:18.972+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: null, Label: null
+2024-12-02T11:10:18.978+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:18.978+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:20.338+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: C, Name: null, Label: null
+2024-12-02T11:10:20.343+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:20.343+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:20.837+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: null, Label: null
+2024-12-02T11:10:20.841+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:20.842+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:21.640+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: null, Label: null
+2024-12-02T11:10:21.645+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:21.645+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:22.024+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: C, Name: null, Label: null
+2024-12-02T11:10:22.029+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:22.029+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:22.398+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: D, Name: null, Label: null
+2024-12-02T11:10:22.404+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:22.404+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:23.130+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: F, Name: null, Label: null
+2024-12-02T11:10:23.136+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:23.136+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:23.506+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: E, Name: null, Label: null
+2024-12-02T11:10:23.511+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T11:10:23.511+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:24.216+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: null, Label: null
+2024-12-02T11:10:24.221+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:24.221+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T11:10:30.650+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: geur, Label: geur
+2024-12-02T11:10:30.657+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T11:10:30.657+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:19:49.788+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:19:49.792+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:19:49.792+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:20:02.489+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BOOKS, Score: null, Name: null, Label: null
+2024-12-02T12:20:02.492+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T12:20:02.492+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:20:04.944+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BOOKS, Score: B, Name: null, Label: null
+2024-12-02T12:20:04.946+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T12:20:04.946+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:20:39.861+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:20:39.864+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:20:39.864+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:20:41.913+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:20:41.916+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:20:41.916+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:20:42.960+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BOOKS, Score: null, Name: null, Label: null
+2024-12-02T12:20:42.963+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T12:20:42.963+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:20:44.634+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: BOOKS, Score: B, Name: null, Label: null
+2024-12-02T12:20:44.636+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Found 0 products matching the filter criteria
+2024-12-02T12:20:44.637+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:20:48.028+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:20:48.031+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:20:48.031+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:23:48.539+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: geur, Label: geur
+2024-12-02T12:23:48.542+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T12:23:48.542+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:23:52.212+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: kamer, Label: kamer
+2024-12-02T12:23:52.214+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-02T12:23:52.215+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-02T12:25:11.406+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 23204 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-02T12:25:11.407+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-02T12:25:11.408+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-12-02T12:25:15.495+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.051 seconds (process running for 5.748)
+2024-12-02T12:33:59.825+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:33:59.828+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:33:59.828+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:34:02.133+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:34:02.136+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:34:02.137+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:34:03.255+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 353
+2024-12-02T12:34:03.314+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched cart with ID 353
+2024-12-02T12:34:03.395+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Getting product...
+2024-12-02T12:34:03.412+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-02T12:34:03.413+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 353
+2024-12-02T12:34:47.346+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:34:47.349+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:34:47.349+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:36:21.085+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:36:21.089+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:36:21.089+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T12:38:25.172+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:38:25.175+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:38:25.175+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms
+2024-12-02T12:39:28.791+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:39:28.795+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:39:28.795+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T12:39:32.855+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:39:32.860+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:39:32.860+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 5 ms
+2024-12-02T12:39:36.852+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:39:36.856+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:39:36.856+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T12:39:57.867+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:39:57.871+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:39:57.871+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 4 ms
+2024-12-02T12:42:14.525+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-02T12:42:14.528+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 2 products from the database
+2024-12-02T12:42:14.528+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 2 products in 3 ms

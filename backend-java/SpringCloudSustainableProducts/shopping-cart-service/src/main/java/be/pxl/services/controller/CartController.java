@@ -28,8 +28,8 @@ public class CartController {
     }
 
     @PostMapping("/product/add/{productId}")
-    public ResponseEntity addItemToCart(@PathVariable Long productId, @RequestBody CartRequest cartRequest) {
-        return new ResponseEntity(cartService.addItemToCart(productId, cartRequest), HttpStatus.OK);
+    public ResponseEntity addItemToCart(@PathVariable Long productId, @RequestBody CartRequest cart) {
+        return new ResponseEntity(cartService.addItemToCart(productId, cart), HttpStatus.OK);
     }
 
     @PostMapping("/product/remove/{productId}")

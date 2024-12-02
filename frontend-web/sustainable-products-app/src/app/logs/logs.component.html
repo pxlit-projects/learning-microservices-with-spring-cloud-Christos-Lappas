@@ -1,1 +1,26 @@
-<p>logs works!</p>
+<div class="container mt-4">
+    <h1>Logs</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Time</th>
+                <th scope="col">User</th>
+                <th scope="col">Product ID</th>
+                <th scope="col">Changes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @for (log of logs; track $index) {
+                    <th scope="row">{{ $index + 1 }}</th>
+                    <td>{{ log.time | date: 'medium' }}</td>
+                    <td>{{ log.user }}</td>
+                    <td>{{ log.productId }}</td>
+                    <td>{{ log.changes }}</td>
+                }
+            </tr>
+        </tbody>
+    </table>
+</div>
+

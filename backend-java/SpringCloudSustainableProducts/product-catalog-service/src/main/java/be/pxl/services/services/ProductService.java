@@ -57,6 +57,7 @@ public class ProductService implements IProductService{
 
     private ProductResponse mapToProductResponse(Product product) {
         return ProductResponse.builder()
+                .id(product.getId())
                 .name(product.getName())
                 .description(product.getDescription())
                 .price(product.getPrice())
@@ -212,6 +213,7 @@ public class ProductService implements IProductService{
         return mapToProductResponse(product);
     }
 
+    //TODO: Filteren op prijs
     @Override
     public List<ProductResponse> getFilteredProducts(Category category, Score score, String name, String label) {
         logger.info("Fetching filtered products with criteria - Category: {}, Score: {}, Name: {}, Label: {}",
@@ -220,7 +222,7 @@ public class ProductService implements IProductService{
         Specification<Product> spec = Specification.where(ProductSpecification.hasCategory(category))
                 .and(ProductSpecification.hasScore(score))
                 .and(ProductSpecification.hasName(name))
-                .and(ProductSpecification.hasLabel(label));
+                .or(ProductSpecification.hasLabel(label));
 
         List<ProductResponse> productResponses;
         try {

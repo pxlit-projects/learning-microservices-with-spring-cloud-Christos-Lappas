@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { Product } from '../models/product';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-admin-products',
@@ -8,5 +10,27 @@ import { Component } from '@angular/core';
   styleUrl: './admin-products.component.css'
 })
 export class AdminProductsComponent {
+  products = signal<Product[]>([]);
 
+  constructor(private productService: ProductService) {}
+
+  ngOnInit(): void {
+    this.fetchProducts();
+  }
+
+  fetchProducts(): void {
+    this.productService.getProducts()
+    .subscribe({
+      next: (response) => {
+        this.products.set(response ?? [])      
+      },
+      error: (err) => {
+        console.error('Failed to fetch products', err)
+      }
+    });
+  }
+
+  editProduct(productId: number) {
+    
+  }
 }

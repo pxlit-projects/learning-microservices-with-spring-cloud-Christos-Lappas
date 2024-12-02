@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { catchError, of } from 'rxjs';
+import { Log } from '../models/log';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ export class LogService {
 
   getLogs() {
     return this.http
-      .get(
+      .get<Log[]>(
         `${this.url}`
       )
     .pipe(

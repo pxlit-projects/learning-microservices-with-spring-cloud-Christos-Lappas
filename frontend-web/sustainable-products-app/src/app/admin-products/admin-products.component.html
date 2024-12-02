@@ -1,1 +1,22 @@
-<p>admin-products works!</p>
+<div class="container mt-4">
+    <h1>Products</h1>
+    <div class="row">
+        @for (product of products(); track $index) {
+            <div class="card" style="width: 30%;margin: 20px;">
+                <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">{{ product.description }}</p>
+                <p class="card-text">
+                    <strong>Price:</strong> €{{ product.price }}
+                </p>
+                <p class="card-text">
+                    <strong>Category:</strong> {{ product.category }}
+                </p>
+                <button class="btn btn-primary" (click)="editProduct(product.id!)">
+                    Edit product <i class="bi bi-pen"></i>
+                </button>
+                </div>
+            </div>                      
+        }    
+    </div>
+</div>

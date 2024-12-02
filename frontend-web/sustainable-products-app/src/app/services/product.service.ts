@@ -15,7 +15,7 @@ export class ProductService {
 
   getProducts() {
     return this.http
-      .get(
+      .get<Product[]>(
         `${this.url}`
       )
       .pipe(
@@ -84,7 +84,7 @@ export class ProductService {
     if (label) params = params.set('label', label);
 
     return this.http
-      .get(
+      .get<Product[]>(
         `${this.url}/filter`,
         { params }
       )

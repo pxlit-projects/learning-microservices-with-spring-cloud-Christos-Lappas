@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { catchError, of } from 'rxjs';
 import { Cart } from '../models/cart';
 
@@ -8,24 +8,61 @@ import { Cart } from '../models/cart';
 })
 export class CartService {
   private url = "http://localhost:8087/cart/api/cart";
+  cartSignal = signal<Cart | null>(this.getCartFromLocalStorage());
+
+  get cart() {
+    return this.cartSignal();
+  }
 
   constructor(private http: HttpClient) {}
 
+  cartIsNull(): boolean {
+    return this.cart == null ? true : false;
+  }
+
+  setCartNull() {
+    this.cartSignal.set(null);
+  }
+
+  private saveCartToLocalStorage(cart: Cart | null): void {
+    if (cart) {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    } else {
+      localStorage.removeItem('cart');
+    }
+  }
+
+  private getCartFromLocalStorage(): Cart | null {
+    const cartString = localStorage.getItem('cart');
+    return cartString ? JSON.parse(cartString) : null;
+  }
+
   getCart(id: number) {
     return this.http
-      .get(
+      .get<Cart>(
         `${this.url}/${id}`
       )
       .pipe(
         catchError(() => {
           return of(null);
         })
-      );
+      )
+      .subscribe((response) => {
+        console.log(response);
+        if (response) {
+          this.cartSignal.set(response);
+          this.saveCartToLocalStorage(this.cart);
+          return response;
+        } else {
+          return null;
+        }
+      }
+    );
   }
 
   createCart() {
     return this.http
-      .post(
+      .post<Cart>(
         `${this.url}`,
         {}
       )
@@ -38,34 +75,54 @@ export class CartService {
 
   addItem(productId: number, cart: Cart) {
     return this.http
-      .post(
+      .post<Cart>(
         `${this.url}/product/add/${productId}`,
-        {cart}
+        cart
       )
       .pipe(
-        catchError(() => {
+        catchError((err) => {
+          console.log(err);
           return of(null);
         })
-      );      
+      )
+      .subscribe((response) => {
+        if (response) {
+          this.cartSignal.set(response);
+          this.saveCartToLocalStorage(this.cart);
+          return response;
+        } else {
+          return null;
+        }
+      }); 
+            
   }
 
   removeItem(productId: number, cart: Cart) {
     return this.http
-      .post(
+      .post<Cart>(
         `${this.url}/product/remove/${productId}`,
-        {cart}
+        cart
       )
       .pipe(
         catchError(() => {
           return of(null);
         })
-      );      
+      )
+      .subscribe((response) => {
+        if (response) {
+          this.cartSignal.set(response);
+          this.saveCartToLocalStorage(this.cart);
+          return response;
+        } else {
+          return null;
+        }
+      });      
   }
 
 
   orderCart(id: number, total: number, ordered: boolean) {
     return this.http
-      .patch(
+      .patch<Cart>(
         `${this.url}/${id}/order`,
         {total, ordered}
       )
@@ -73,7 +130,16 @@ export class CartService {
         catchError(() => {
           return of(null);
         })
-      );    
+      )
+      .subscribe((response) => {
+        if (response) {
+          this.setCartNull();
+          this.saveCartToLocalStorage(null);
+          return response;
+        } else {
+          return null;
+        }
+      });    
   }
 
   deleteCart(id: number) {

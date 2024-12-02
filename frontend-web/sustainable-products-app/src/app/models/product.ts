@@ -9,5 +9,5 @@ export class Product {
     category: Category | null = null;
     score: Score | null = null; 
     labels: string = ''; 
-    quantity: number | null = null; 
+    quantity: number = 1; 
   }
