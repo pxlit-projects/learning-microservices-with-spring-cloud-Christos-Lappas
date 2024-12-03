@@ -24,7 +24,7 @@ export class CartService {
     this.cartSignal.set(null);
   }
 
-  private saveCartToLocalStorage(cart: Cart | null): void {
+  saveCartToLocalStorage(cart: Cart | null): void {
     if (cart) {
       localStorage.setItem('cart', JSON.stringify(cart));
     } else {
@@ -32,7 +32,7 @@ export class CartService {
     }
   }
 
-  private getCartFromLocalStorage(): Cart | null {
+  getCartFromLocalStorage(): Cart | null {
     const cartString = localStorage.getItem('cart');
     return cartString ? JSON.parse(cartString) : null;
   }

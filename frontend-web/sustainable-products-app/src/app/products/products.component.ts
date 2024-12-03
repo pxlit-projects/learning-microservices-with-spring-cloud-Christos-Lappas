@@ -24,6 +24,11 @@ export class ProductsComponent {
   selectedCategory: Category | undefined = undefined;
   selectedScore: Score | undefined = undefined;
 
+  showToast = false;
+  toastMessage = '';
+
+  selectedPriceRange: [number, number] = [0, 200];
+
   constructor(private productService: ProductService, private cartService: CartService) {}
 
   ngOnInit(): void {
@@ -47,17 +52,32 @@ export class ProductsComponent {
       this.cartService.createCart()
         .subscribe((cart) => {
           if(cart) {
-            this.cartService.addItem(productId, cart);
+            this.cartService.addItem(productId, cart);            
+            setTimeout(() => {
+              this.toastMessage = 'Product successfully added to cart!';
+              this.showToast = true;
+        
+              setTimeout(() => {
+                this.showToast = false;
+              }, 3000);
+            }, 500);
           }
         })
-    } else {
-      console.log(this.cartService.cart);
-      this.cartService.addItem(productId, this.cartService.cart!);      
+    } else { 
+      this.cartService.addItem(productId, this.cartService.cart!);   
+      setTimeout(() => {
+        this.toastMessage = 'Product successfully added to cart!';
+        this.showToast = true;
+  
+        setTimeout(() => {
+          this.showToast = false;
+        }, 3000);
+      }, 500);  
     }    
   }
 
   filterProducts() {
-    this.productService.searchProducts(this.selectedCategory, this.selectedScore, this.searchQuery, this.searchQuery)
+    this.productService.searchProducts(this.selectedCategory, this.selectedScore, this.searchQuery, this.searchQuery, this.selectedPriceRange[1])
     .subscribe({
       next: (response) => {
         this.products.set(response ?? [])      
@@ -72,8 +92,12 @@ export class ProductsComponent {
     this.searchQuery = undefined;
     this.selectedCategory = undefined;
     this.selectedScore = undefined;
+    this.selectedPriceRange = [0, 200];
     this.fetchProducts();
   }
 
+  hideToast() {
+    this.showToast = false;
+  }
 
 }

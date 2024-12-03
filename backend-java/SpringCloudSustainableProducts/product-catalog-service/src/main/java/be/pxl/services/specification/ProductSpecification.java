@@ -5,6 +5,8 @@ import be.pxl.services.domain.Product;
 import be.pxl.services.domain.Score;
 import org.springframework.data.jpa.domain.Specification;
 
+import java.math.BigDecimal;
+
 public class ProductSpecification {
     public static Specification<Product> hasCategory(Category category) {
         return (root, query, criteriaBuilder) ->
@@ -24,5 +26,10 @@ public class ProductSpecification {
     public static Specification<Product> hasLabel(String label) {
         return (root, query, criteriaBuilder) ->
                 (label == null || label.isEmpty()) ? null : criteriaBuilder.like(criteriaBuilder.lower(root.get("labels")), "%" + label.toLowerCase() + "%");
+    }
+
+    public static Specification<Product> hasPriceBelow(BigDecimal maxPrice) {
+        return (root, query, criteriaBuilder) ->
+                maxPrice == null ? null : criteriaBuilder.between(root.get("price"), BigDecimal.ZERO, maxPrice);
     }
 }

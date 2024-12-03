@@ -37,11 +37,11 @@ export class ProductService {
       );
   }
 
-  addProduct() {
+  addProduct(product: Product) {
     return this.http
       .post(
         `${this.url}`,
-        {}
+        product
       )
       .pipe(
         catchError(() => {
@@ -66,7 +66,7 @@ export class ProductService {
     return this.http
       .put(
         `${this.url}/${id}`,
-        {product}
+        product
       )
       .pipe(
         catchError(() => {
@@ -75,13 +75,16 @@ export class ProductService {
       );      
   }
   
-  searchProducts(category?: Category, score?: Score, name?: string, label?: string) {
+  searchProducts(category?: Category, score?: Score, name?: string, label?: string, maxPrice?: number) {
     let params = new HttpParams();
 
     if (category) params = params.set('category', category);
     if (score) params = params.set('score', score);
     if (name) params = params.set('name', name);
     if (label) params = params.set('label', label);
+    if (maxPrice) params = params.set('maxPrice', maxPrice);
+
+    console.log(params);
 
     return this.http
       .get<Product[]>(
@@ -100,9 +103,9 @@ export class ProductService {
     params = params.set('label', label);
 
     return this.http
-      .post(
+      .post<Product>(
         `${this.url}/${id}/labels`,
-        {params}
+        params
       )
       .pipe(
         catchError(() => {
@@ -116,7 +119,7 @@ export class ProductService {
     params = params.set('label', label);
 
     return this.http
-      .post(
+      .delete<Product>(
         `${this.url}/${id}/labels`,
         {params}
       )

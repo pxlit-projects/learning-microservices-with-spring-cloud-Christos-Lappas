@@ -1,5 +1,29 @@
 <div class="container mt-4">
     <h1>Products</h1>
+
+    <div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1050;">
+      <div
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        [class.show]="showToast"
+      >
+        <div class="d-flex">
+          <div class="toast-body">
+            {{ toastMessage }}
+          </div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            aria-label="Close"
+            (click)="hideToast()"
+          ></button>
+        </div>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" (click)="openCreateProductModal()">Add product <i class="bi bi-plus"></i></button>
     <div class="row">
         @for (product of products(); track $index) {
             <div class="card" style="width: 30%;margin: 20px;">
@@ -12,11 +36,223 @@
                 <p class="card-text">
                     <strong>Category:</strong> {{ product.category }}
                 </p>
-                <button class="btn btn-primary" (click)="editProduct(product.id!)">
+                <p class="card-text">
+                    <strong>Score:</strong> {{ product.score }}
+                </p>
+                <button class="btn btn-primary" (click)="openEditProductModal(product)">
                     Edit product <i class="bi bi-pen"></i>
                 </button>
                 </div>
             </div>                      
         }    
     </div>
+
+    <div
+    class="modal fade"
+    id="createProductModal"
+    tabindex="-1"
+    aria-labelledby="createProductModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="createProductModalLabel">Create Product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form (ngSubmit)="addProduct()">
+            <div class="mb-3">
+              <label for="productName" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="productName"
+                [(ngModel)]="newProduct.name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="productDescription" class="form-label">Description</label>
+              <textarea
+                class="form-control"
+                id="productDescription"
+                [(ngModel)]="newProduct.description"
+                name="description"
+                required
+              ></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="productPrice" class="form-label">Price</label>
+              <input
+                type="number"
+                class="form-control"
+                id="productPrice"
+                [(ngModel)]="newProduct.price"
+                name="price"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="productCategory" class="form-label">Category</label>
+              <select
+                class="form-select"
+                id="productCategory"
+                [(ngModel)]="newProduct.category"
+                name="category"
+                required
+              >
+              @for (category of categories; track $index) {
+                <option [value]="category">{{ category }}</option>
+              }
+            </select>
+            </div>
+            <div class="mb-3">
+                <label for="productScore" class="form-label">Score</label>
+                <select
+                  class="form-select"
+                  id="productScore"
+                  [(ngModel)]="newProduct.score"
+                  name="score"
+                  required
+                >                  
+                  @for (score of scores; track $index) {
+                    <option [value]="score">{{ score }}</option>
+                  }
+                </select>
+              </div>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+            <button type="submit" class="btn btn-primary">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+  class="modal fade"
+  id="editProductModal"
+  tabindex="-1"
+  aria-labelledby="editProductModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="editProductModalLabel">Edit Product</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form (ngSubmit)="updateProduct()">
+          <div class="mb-3">
+            <label for="productName" class="form-label">Product Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="productName"
+              [(ngModel)]="currentProduct.name"
+              name="productName"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="productDescription" class="form-label">Description</label>
+            <textarea
+              class="form-control"
+              id="productDescription"
+              rows="3"
+              [(ngModel)]="currentProduct.description"
+              name="productDescription"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="productPrice" class="form-label">Price (€)</label>
+            <input
+              type="number"
+              class="form-control"
+              id="productPrice"
+              [(ngModel)]="currentProduct.price"
+              name="productPrice"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="productCategory" class="form-label">Category</label>
+            <select
+              class="form-select"
+              id="productCategory"
+              [(ngModel)]="currentProduct.category"
+              name="productCategory"
+            >
+              @for (category of categories; track $index) {
+                <option [value]="category">{{ category }}</option>
+              }
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="productScore" class="form-label">Score</label>
+            <select
+              class="form-select"
+              id="productScore"
+              [(ngModel)]="currentProduct.score"
+              name="score"
+              required
+            >                  
+              @for (score of scores; track $index) {
+                <option [value]="score">{{ score }}</option>
+              }
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="productLabels" class="form-label">Labels</label>
+            <div class="mb-2">
+                @for (label of labelsList; track $index) {
+                    <span>
+                        <span class="badge bg-primary me-2">
+                            {{ label }} 
+                            <button
+                            type="button"
+                            class="btn btn-sm"  
+                            (click)="removeLabel(label)"                          
+                          >
+                            <i class="bi bi-trash3-fill" style="color: red; font-weight: bold;"></i>
+                          </button>
+                        </span>                        
+                    </span>
+                }              
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                [(ngModel)]="newLabel"
+                placeholder="Add a label"
+                name="newLabel"
+              />
+              <button
+                type="button"
+                class="btn btn-success"
+                (click)="addLabel()"
+              >
+                Add Label
+              </button>
+            </div>
+          </div>      
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">
+            Save Changes
+          </button>
+        </form>
+      </div>      
+    </div>
+  </div>
+</div>
 </div>

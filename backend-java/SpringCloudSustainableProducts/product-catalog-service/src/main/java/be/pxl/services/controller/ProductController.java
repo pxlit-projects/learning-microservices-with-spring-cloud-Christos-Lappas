@@ -10,6 +10,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+
 @RestController
 @RequestMapping("/api/product")
 @RequiredArgsConstructor
@@ -47,9 +49,11 @@ public class ProductController {
             @RequestParam(required = false) Category category,
             @RequestParam(required = false) Score score,
             @RequestParam(required = false) String name,
-            @RequestParam(required = false) String label) {
+            @RequestParam(required = false) String label,
+            @RequestParam(required = false) BigDecimal maxPrice
+    ) {
 
-        return new ResponseEntity(productService.getFilteredProducts(category, score, name, label), HttpStatus.OK);
+        return new ResponseEntity(productService.getFilteredProducts(category, score, name, label, maxPrice), HttpStatus.OK);
     }
 
     @PostMapping("/{id}/labels")
@@ -65,8 +69,8 @@ public class ProductController {
             @PathVariable Long id,
             @RequestParam String label
     ) {
-        productService.removeLabelFromProduct(id, label);
-        return new ResponseEntity(HttpStatus.OK);
+
+        return new ResponseEntity(productService.removeLabelFromProduct(id, label), HttpStatus.OK);
     }
 
 

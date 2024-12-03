@@ -50,10 +50,10 @@ export class AppComponent {
   login() {
     if(this.username === 'admin') {
       this.setUserRole();
-      this.router.navigate(['/admin'])
+      this.router.navigate(['/admin/products'])
     } else if (this.username === 'customer') {
       this.setUserRole();
-      this.router.navigate(['/customer'])
+      this.router.navigate(['/customer/products'])
     }
 
   }  

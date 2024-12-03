@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.math.BigDecimal;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -213,15 +214,15 @@ public class ProductService implements IProductService{
         return mapToProductResponse(product);
     }
 
-    //TODO: Filteren op prijs
     @Override
-    public List<ProductResponse> getFilteredProducts(Category category, Score score, String name, String label) {
+    public List<ProductResponse> getFilteredProducts(Category category, Score score, String name, String label, BigDecimal maxPrice) {
         logger.info("Fetching filtered products with criteria - Category: {}, Score: {}, Name: {}, Label: {}",
                 category, score, name, label);
 
         Specification<Product> spec = Specification.where(ProductSpecification.hasCategory(category))
                 .and(ProductSpecification.hasScore(score))
                 .and(ProductSpecification.hasName(name))
+                .and(ProductSpecification.hasPriceBelow(maxPrice))
                 .or(ProductSpecification.hasLabel(label));
 
         List<ProductResponse> productResponses;
@@ -267,7 +268,7 @@ public class ProductService implements IProductService{
     }
 
     @Override
-    public void removeLabelFromProduct(Long id, String label) {
+    public ProductResponse removeLabelFromProduct(Long id, String label) {
         logger.info("Attempting to delete {} label from product with ID {}",label, id);
 
         Product product;
@@ -287,6 +288,8 @@ public class ProductService implements IProductService{
             logger.error("Error occurred while deleting {} label from product with ID {}: {}",label, id, e.getMessage(), e);
             throw e;
         }
+
+        return mapToProductResponse(product);
 
     }
 }

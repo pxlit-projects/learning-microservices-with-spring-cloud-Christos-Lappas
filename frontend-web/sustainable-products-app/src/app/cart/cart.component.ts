@@ -11,6 +11,9 @@ import { CartService } from '../services/cart.service';
 export class CartComponent {
   constructor(public cartService: CartService) {}
 
+  showToast = false;
+  toastMessage = '';
+
   calculateTotal(): number {
     const total = this.cartService.cart!.items.reduce(
       (sum, product) => sum + product.price * product.quantity,
@@ -22,11 +25,23 @@ export class CartComponent {
 
   removeProduct(productId: number) {
     this.cartService.removeItem(productId, this.cartService.cart!);
+    setTimeout(() => {
+      this.toastMessage = 'Product successfully deleted from cart!';
+      this.showToast = true;
+
+      setTimeout(() => {
+        this.showToast = false;
+      }, 3000);
+    }, 500);  
   }
 
   order() {
     this.cartService.orderCart(this.cartService.cart?.id!, this.cartService.cart?.total!, true);
     this.cartService.setCartNull();
+  }
+
+  hideToast() {
+    this.showToast = false;
   }
 
 }
