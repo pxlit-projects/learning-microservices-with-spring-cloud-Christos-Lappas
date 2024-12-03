@@ -37,6 +37,14 @@ export class CartComponent {
 
   order() {
     this.cartService.orderCart(this.cartService.cart?.id!, this.cartService.cart?.total!, true);
+    setTimeout(() => {
+      this.toastMessage = 'Order completed, we will send your order as soon as possible';
+      this.showToast = true;
+
+      setTimeout(() => {
+        this.showToast = false;
+      }, 5000);
+    }, 500);  
     this.cartService.setCartNull();
   }
 

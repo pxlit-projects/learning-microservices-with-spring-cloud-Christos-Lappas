@@ -68,7 +68,28 @@ export class AdminProductsComponent {
           }
         });
     }
-  }  
+  } 
+  
+  deleteProduct(productId: number) {
+    this.productService.deleteProduct(productId)
+      .subscribe({
+        next: (response) => {
+          console.log(response);
+          setTimeout(() => {
+            this.toastMessage = 'Product successfully deleted!';
+            this.showToast = true;
+      
+            setTimeout(() => {
+              this.showToast = false;
+            }, 3000);
+          }, 500);  
+          this.fetchProducts();            
+        },
+        error: (err) => {
+          console.error('Failed to delete product', err)
+        }
+      });
+  }
 
   openCreateProductModal(): void {
     const modal = document.getElementById('createProductModal');

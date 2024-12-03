@@ -39,9 +39,10 @@
                 <p class="card-text">
                     <strong>Score:</strong> {{ product.score }}
                 </p>
-                <button class="btn btn-primary" (click)="openEditProductModal(product)">
-                    Edit product <i class="bi bi-pen"></i>
+                <button class="btn btn-primary m-1" (click)="openEditProductModal(product)">
+                    Edit <i class="bi bi-pen"></i>
                 </button>
+                <button class="btn btn-danger" (click)="deleteProduct(product.id!)">Delete <i class="bi bi-trash-fill"></i></button>
                 </div>
             </div>                      
         }    

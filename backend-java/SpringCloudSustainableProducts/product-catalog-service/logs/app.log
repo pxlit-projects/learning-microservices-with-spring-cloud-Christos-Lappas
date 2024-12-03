@@ -1,0 +1,26 @@
+2024-12-03T15:47:06.446+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 13436 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-03T15:47:06.447+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T15:47:06.448+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T15:47:11.790+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 6.362 seconds (process running for 20.987)
+2024-12-03T15:47:12.402+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-03T15:47:12.403+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: B, Name: mid, Label: null, MaxPrice: null
+2024-12-03T15:47:12.403+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-03T15:47:12.403+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: mid, Label: null
+2024-12-03T15:47:12.567+0100 INFO               [main]                         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-03T15:47:12.567+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-03T15:47:12.567+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-03T15:47:12.685+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-03T15:47:12.686+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Wasmiddel, description=Beste wasmiddel, price=12.99, stock=18, category=HOME, score=B, labels=null)
+2024-12-03T15:47:12.688+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting to add a new product with name: Wasmiddel
+2024-12-03T15:47:12.702+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with name 'Wasmiddel' successfully added to the database
+2024-12-03T15:47:12.702+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added product: Wasmiddel
+2024-12-03T15:47:12.731+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/3
+2024-12-03T15:47:12.731+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 3
+2024-12-03T15:47:12.731+0100 INFO               [main]                         be.pxl.services.services.ProductService - Getting product...
+2024-12-03T15:47:12.745+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 3
+2024-12-03T15:47:12.774+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-03T15:47:12.774+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-03T15:47:12.774+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-03T15:47:12.781+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-12-03T15:47:12.781+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 7 ms
+2024-12-03T15:47:12.781+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved 1 products
