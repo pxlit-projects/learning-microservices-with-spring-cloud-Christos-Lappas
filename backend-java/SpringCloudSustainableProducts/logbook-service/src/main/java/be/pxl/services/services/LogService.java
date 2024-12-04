@@ -46,30 +46,24 @@ public class LogService implements ILogService{
         return LogResponse.builder()
                 .time(log.getTime())
                 .user(log.getUser())
-                .productId(log.getProductId())
                 .changes(log.getChanges())
                 .build();
     }
 
     @Override
-    public void addLog(LogRequest logRequest) {
-        logger.info("Starting to add a new log entry for user: {}, product ID: {}",
-                logRequest.getUser(), logRequest.getProductId());
+    public void addLog(String changes) {
+        logger.info("Starting to add a new log entry");
 
-        Log log = Log.builder()
-                .time(logRequest.getTime())
-                .user(logRequest.getUser())
-                .productId(logRequest.getProductId())
-                .changes(logRequest.getChanges())
-                .build();
+        Log log = new Log();
+        log.setChanges(changes);
 
         try {
             logRepository.save(log);
-            logger.info("Log entry for user '{}' and product ID '{}' successfully saved",
-                    logRequest.getUser(), logRequest.getProductId());
+            logger.info("Log entry for user '{}' successfully saved",
+                    log.getUser());
         } catch (Exception e) {
-            logger.error("Failed to save log entry for user '{}', product ID '{}': {}",
-                    logRequest.getUser(), logRequest.getProductId(), e.getMessage(), e);
+            logger.error("Failed to save log entry for user '{}': {}",
+                    log.getUser(), e.getMessage(), e);
             throw e;
         }
 

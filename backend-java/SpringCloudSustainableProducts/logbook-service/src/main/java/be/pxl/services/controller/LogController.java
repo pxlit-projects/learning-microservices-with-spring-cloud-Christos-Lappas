@@ -35,15 +35,13 @@ public class LogController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void addLog(@RequestBody LogRequest logRequest) {
+    public void addLog(@RequestBody String changes) {
         logger.info("Received POST request at /api/log to add a log entry");
 
         try {
-            logger.debug("Request body: User={}, ProductId={}, Update={}",
-                    logRequest.getUser(), logRequest.getProductId(), logRequest.getChanges());
-            logService.addLog(logRequest);
-            logger.info("Successfully added log entry for user: {} and product ID: {}",
-                    logRequest.getUser(), logRequest.getProductId());
+            logger.debug("Request body: Update={}", changes);
+            logService.addLog(changes);
+            logger.info("Successfully added log entry");
         } catch (Exception e) {
             logger.error("Error occurred while adding log entry: {}", e.getMessage(), e);
         }

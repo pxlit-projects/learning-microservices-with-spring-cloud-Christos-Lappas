@@ -1,6 +1,5 @@
 package be.pxl.services.services;
 
-import be.pxl.services.client.LogbookClient;
 import be.pxl.services.domain.Category;
 import be.pxl.services.domain.Product;
 import be.pxl.services.domain.Score;
@@ -9,9 +8,10 @@ import be.pxl.services.domain.dto.ProductRequest;
 import be.pxl.services.domain.dto.ProductResponse;
 import be.pxl.services.repository.ProductRepository;
 import be.pxl.services.specification.ProductSpecification;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.slf4j.Logger;
@@ -27,7 +27,7 @@ import java.util.Objects;
 @RequiredArgsConstructor
 public class ProductService implements IProductService{
     private final ProductRepository productRepository;
-    private final LogbookClient logbookClient;
+    private final RabbitTemplate rabbitTemplate;
     private static final Logger logger = LoggerFactory.getLogger(ProductService.class);
     @Override
     public List<ProductResponse> getAllProducts() {
@@ -50,8 +50,6 @@ public class ProductService implements IProductService{
 
         long endTime = System.currentTimeMillis();
         logger.info("Successfully retrieved {} products in {} ms", productResponses.size(), (endTime - startTime));
-
-        //TODO: Messaging client implementeren, verandering sturen naar message service via feign client -> message service stuurt naar logbookservice (controller nog implementeren)
 
         return productResponses;
     }
@@ -187,7 +185,7 @@ public class ProductService implements IProductService{
 
         logger.debug("Updating product fields for id: {}", id);
         product.setName(productRequest.getName());
-        product.setDescription(productRequest.getDescription()); // fixed typo
+        product.setDescription(productRequest.getDescription());
         product.setPrice(productRequest.getPrice());
         product.setStock(productRequest.getStock());
         product.setCategory(productRequest.getCategory());
@@ -200,12 +198,9 @@ public class ProductService implements IProductService{
 
         logger.info("Logging changes for product with id: {}", id);
         try {
-            LogRequest logRequest = new LogRequest();
-            logRequest.setProductId(product.getId());
-            logRequest.setChanges(updateLog.toString());
-            logbookClient.addLog(logRequest);
+            rabbitTemplate.convertAndSend("myQueue", updateLog.toString());
         } catch (Exception e) {
-            logger.error("Error serializing changes map to JSON: {}", e.getMessage(), e);
+            logger.error("Error logging changes to messaging-service: {}", e.getMessage(), e);
             throw new RuntimeException("Failed to log changes", e);
         }
 

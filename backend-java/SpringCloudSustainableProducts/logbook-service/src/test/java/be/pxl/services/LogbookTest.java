@@ -53,18 +53,11 @@ public class LogbookTest {
 
     @Test
     public void testCreateLog() throws Exception {
-        Log log = Log.builder()
-                .time(LocalDateTime.now())
-                .user("customer")
-                .productId(8L)
-                .changes("Product updated")
-                .build();
-
-        String logString = objectMapper.writeValueAsString(log);
+        String changes = "Changed price from 10.99 to 12.99";
 
         mockMvc.perform(MockMvcRequestBuilders.post("/api/log")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(logString))
+                        .content(changes))
                 .andExpect(status().isCreated());
 
         assertEquals(1, logRepository.findAll().size());
@@ -75,14 +68,12 @@ public class LogbookTest {
         Log log = Log.builder()
                 .time(LocalDateTime.now())
                 .user("customer")
-                .productId(8L)
                 .changes("Product updated")
                 .build();
 
         Log log2 = Log.builder()
                 .time(LocalDateTime.now())
                 .user("customer")
-                .productId(1L)
                 .changes("Product updated")
                 .build();
 

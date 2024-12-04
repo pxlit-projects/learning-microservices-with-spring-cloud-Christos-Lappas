@@ -19,9 +19,9 @@ public class Log {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private LocalDateTime time;
-    private String user;
-    private Long productId;
+    private LocalDateTime time = LocalDateTime.now();
+    private String user = "admin";
+    //private Long productId;
     @Column(length = 1000)
     private String changes;
 

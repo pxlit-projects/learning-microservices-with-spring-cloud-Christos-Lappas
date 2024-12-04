@@ -1,6 +1,6 @@
 package be.pxl.services;
 
-import be.pxl.services.client.LogbookClient;
+
 import be.pxl.services.domain.Category;
 import be.pxl.services.domain.Product;
 import be.pxl.services.domain.Score;
@@ -12,6 +12,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -47,7 +48,7 @@ public class ProductTest {
     private ProductRepository productRepository;
 
     @MockBean
-    private LogbookClient logbookClient;
+    private RabbitTemplate rabbitTemplate;
 
     @Container
     private static MySQLContainer sqlContainer =
@@ -199,16 +200,9 @@ public class ProductTest {
                 .score(Score.A)
                 .build();
 
-        LogRequest logRequest = LogRequest.builder()
-                .user("customer")
-                .changes("test")
-                .time(LocalDateTime.now())
-                .productId(1L)
-                .build();
 
 
-
-        doNothing().when(logbookClient).addLog(logRequest);
+        doNothing().when(rabbitTemplate).convertAndSend("myQueue", String.class);
 
         mockMvc.perform(MockMvcRequestBuilders.put("/api/product/" + product.getId())
                         .contentType(MediaType.APPLICATION_JSON)

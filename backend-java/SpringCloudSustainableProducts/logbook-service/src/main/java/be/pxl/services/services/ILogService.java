@@ -9,5 +9,5 @@ import java.util.List;
 public interface ILogService {
     List<LogResponse> getAllLogs();
 
-    void addLog(LogRequest logRequest);
+    void addLog(String changes);
 }

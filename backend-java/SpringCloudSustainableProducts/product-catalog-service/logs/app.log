@@ -104,3 +104,69 @@
 2024-12-04T08:54:39.650+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 8
 2024-12-04T08:54:39.655+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully added  Eco-Friendly label to product with ID 8
 2024-12-04T08:54:39.655+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added label 'Eco-Friendly' to product with id: 8
+2024-12-04T12:57:29.388+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 57028 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-04T12:57:29.389+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T12:57:29.390+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T12:57:38.578+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 11.149 seconds (process running for 22.831)
+2024-12-04T12:57:38.920+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received PUT request at /api/product/1 to update product
+2024-12-04T12:57:38.920+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Updated Detergent, description=Even better cleaning power, price=12.99, stock=30, category=HOME, score=A, labels=null)
+2024-12-04T12:57:38.923+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 1
+2024-12-04T12:57:38.923+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting update for product with id: 1
+2024-12-04T12:57:38.940+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Updating product fields for id: 1
+2024-12-04T12:57:38.952+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with id 1 successfully updated
+2024-12-04T12:57:38.953+0100 INFO               [main]                         be.pxl.services.services.ProductService - Logging changes for product with id: 1
+2024-12-04T12:57:38.955+0100 INFO               [main]                         be.pxl.services.services.ProductService - Changes for product with id: 1 logged
+2024-12-04T12:57:38.956+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully updated product with id: 1
+2024-12-04T12:58:56.753+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 14940 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-04T12:58:56.754+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T12:58:56.755+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T12:59:05.326+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 10.54 seconds (process running for 22.5)
+2024-12-04T12:59:05.499+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-04T12:59:05.500+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: B, Name: mid, Label: null, MaxPrice: null
+2024-12-04T12:59:05.500+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-04T12:59:05.500+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: mid, Label: null
+2024-12-04T12:59:05.670+0100 INFO               [main]                         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-04T12:59:05.670+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-04T12:59:05.670+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-04T12:59:05.787+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-04T12:59:05.787+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Wasmiddel, description=Beste wasmiddel, price=12.99, stock=18, category=HOME, score=B, labels=null)
+2024-12-04T12:59:05.790+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting to add a new product with name: Wasmiddel
+2024-12-04T12:59:05.803+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with name 'Wasmiddel' successfully added to the database
+2024-12-04T12:59:05.803+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added product: Wasmiddel
+2024-12-04T12:59:05.833+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/3
+2024-12-04T12:59:05.833+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 3
+2024-12-04T12:59:05.834+0100 INFO               [main]                         be.pxl.services.services.ProductService - Getting product...
+2024-12-04T12:59:05.847+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 3
+2024-12-04T12:59:05.894+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received PUT request at /api/product/4 to update product
+2024-12-04T12:59:05.894+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Updated Detergent, description=Even better cleaning power, price=12.99, stock=30, category=HOME, score=A, labels=null)
+2024-12-04T12:59:05.894+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 4
+2024-12-04T12:59:05.894+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting update for product with id: 4
+2024-12-04T12:59:05.901+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Updating product fields for id: 4
+2024-12-04T12:59:05.914+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with id 4 successfully updated
+2024-12-04T12:59:05.914+0100 INFO               [main]                         be.pxl.services.services.ProductService - Logging changes for product with id: 4
+2024-12-04T12:59:05.916+0100 INFO               [main]                         be.pxl.services.services.ProductService - Changes for product with id: 4 logged
+2024-12-04T12:59:05.916+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully updated product with id: 4
+2024-12-04T12:59:05.943+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T12:59:05.944+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T12:59:05.944+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T12:59:05.950+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-12-04T12:59:05.950+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 6 ms
+2024-12-04T12:59:05.951+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved 1 products
+2024-12-04T12:59:05.985+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/6/labels to remove label
+2024-12-04T12:59:05.985+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-04T12:59:05.985+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 6
+2024-12-04T12:59:05.990+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 6
+2024-12-04T12:59:05.996+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Eco-Friendly label from product with ID 6
+2024-12-04T12:59:05.997+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Eco-Friendly' from product with id: 6
+2024-12-04T12:59:06.029+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/7 to remove a product
+2024-12-04T12:59:06.029+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.removeProduct() with id: 7
+2024-12-04T12:59:06.029+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete product with ID 7
+2024-12-04T12:59:06.035+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 7
+2024-12-04T12:59:06.041+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted product with ID 7
+2024-12-04T12:59:06.042+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed product with id: 7
+2024-12-04T12:59:06.074+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product/8/labels to add label
+2024-12-04T12:59:06.074+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be added: Eco-Friendly
+2024-12-04T12:59:06.074+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to add Eco-Friendly label to product with ID 8
+2024-12-04T12:59:06.080+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 8
+2024-12-04T12:59:06.086+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully added  Eco-Friendly label to product with ID 8
+2024-12-04T12:59:06.086+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added label 'Eco-Friendly' to product with id: 8
