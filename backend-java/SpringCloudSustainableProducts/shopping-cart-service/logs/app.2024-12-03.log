@@ -1,0 +1,1063 @@
+2024-12-03T20:00:07.698+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 9116 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:00:07.700+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:00:07.701+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:00:14.521+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 8.12 seconds (process running for 22.403)
+2024-12-03T20:00:15.107+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T20:00:15.107+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T20:00:15.107+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T20:00:15.191+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 1
+2024-12-03T20:00:15.192+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 1
+2024-12-03T20:04:24.961+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 23220 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:04:24.962+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:04:24.963+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:04:31.576+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 7.857 seconds (process running for 21.987)
+2024-12-03T20:04:32.351+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-03T20:04:32.352+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-03T20:04:32.352+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-03T20:04:32.369+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-03T20:04:32.369+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-03T20:29:14.761+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 54952 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:29:14.763+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:29:14.764+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:29:15.506+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 2.17 seconds (process running for 16.518)
+2024-12-03T20:41:44.591+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 19516 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:41:44.592+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:41:44.593+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:41:49.698+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 6.032 seconds (process running for 17.699)
+2024-12-03T20:41:50.363+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T20:41:50.363+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T20:41:50.363+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T20:41:50.371+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while creating a new shopping cart: error performing isolated work [Table 'test.cart_seq' doesn't exist] [n/a]; SQL [n/a]
+org.springframework.dao.InvalidDataAccessResourceUsageException: error performing isolated work [Table 'test.cart_seq' doesn't exist] [n/a]; SQL [n/a]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:277)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy154.save(Unknown Source)
+	at be.pxl.services.services.CartService.createCart(CartService.java:86)
+	at be.pxl.services.controller.CartController.createCart(CartController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.CartTest.testCreateCart(CartTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.hibernate.exception.SQLGrammarException: error performing isolated work [Table 'test.cart_seq' doesn't exist] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:92)
+	at org.hibernate.id.enhanced.TableStructure$1.getNextValue(TableStructure.java:135)
+	at org.hibernate.id.enhanced.PooledOptimizer.generate(PooledOptimizer.java:76)
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.generate(SequenceStyleGenerator.java:570)
+	at org.hibernate.id.IdentifierGenerator.generate(IdentifierGenerator.java:147)
+	at org.hibernate.event.internal.AbstractSaveEventListener.generateId(AbstractSaveEventListener.java:156)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:127)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy149.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy149.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:173)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 109 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.cart_seq' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:968)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.id.enhanced.TableStructure.executeQuery(TableStructure.java:250)
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:149)
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:136)
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:58)
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:70)
+	... 150 common frames omitted
+2024-12-03T20:41:50.372+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while creating a new cart: error performing isolated work [Table 'test.cart_seq' doesn't exist] [n/a]; SQL [n/a]
+org.springframework.dao.InvalidDataAccessResourceUsageException: error performing isolated work [Table 'test.cart_seq' doesn't exist] [n/a]; SQL [n/a]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:277)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy154.save(Unknown Source)
+	at be.pxl.services.services.CartService.createCart(CartService.java:86)
+	at be.pxl.services.controller.CartController.createCart(CartController.java:46)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.CartTest.testCreateCart(CartTest.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.hibernate.exception.SQLGrammarException: error performing isolated work [Table 'test.cart_seq' doesn't exist] [n/a]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:66)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:92)
+	at org.hibernate.id.enhanced.TableStructure$1.getNextValue(TableStructure.java:135)
+	at org.hibernate.id.enhanced.PooledOptimizer.generate(PooledOptimizer.java:76)
+	at org.hibernate.id.enhanced.SequenceStyleGenerator.generate(SequenceStyleGenerator.java:570)
+	at org.hibernate.id.IdentifierGenerator.generate(IdentifierGenerator.java:147)
+	at org.hibernate.event.internal.AbstractSaveEventListener.generateId(AbstractSaveEventListener.java:156)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:127)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:757)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:741)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:364)
+	at jdk.proxy2/jdk.proxy2.$Proxy149.persist(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:319)
+	at jdk.proxy2/jdk.proxy2.$Proxy149.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:628)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:173)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 109 common frames omitted
+Caused by: java.sql.SQLSyntaxErrorException: Table 'test.cart_seq' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:968)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.id.enhanced.TableStructure.executeQuery(TableStructure.java:250)
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:149)
+	at org.hibernate.id.enhanced.TableStructure$1$1.execute(TableStructure.java:136)
+	at org.hibernate.jdbc.WorkExecutor.executeReturningWork(WorkExecutor.java:58)
+	at org.hibernate.jdbc.AbstractReturningWork.accept(AbstractReturningWork.java:34)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:70)
+	... 150 common frames omitted
+2024-12-03T20:47:58.926+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 28496 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:47:58.927+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:47:58.927+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:48:04.133+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 6.317 seconds (process running for 17.823)
+2024-12-03T20:48:04.882+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-03T20:48:04.882+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-03T20:48:04.882+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-03T20:48:04.900+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-03T20:48:04.900+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-03T20:48:05.013+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T20:48:05.014+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T20:48:05.019+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
+2024-12-03T20:48:05.027+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-12-03T20:48:05.148+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while adding product ID 1 to cart ID 2: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)
+	at feign.InvocationContext.decodeError(InvocationContext.java:126)
+	at feign.InvocationContext.proceed(InvocationContext.java:72)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)
+	at jdk.proxy2/jdk.proxy2.$Proxy162.getProduct(Unknown Source)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:110)
+	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.CartTest.testAddItemToCart(CartTest.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-12-03T20:48:05.149+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while adding product with ID: 1 to cart: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)
+	at feign.InvocationContext.decodeError(InvocationContext.java:126)
+	at feign.InvocationContext.proceed(InvocationContext.java:72)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)
+	at jdk.proxy2/jdk.proxy2.$Proxy162.getProduct(Unknown Source)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:110)
+	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.CartTest.testAddItemToCart(CartTest.java:101)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-12-03T20:48:05.176+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
+2024-12-03T20:48:05.176+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
+2024-12-03T20:48:05.176+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
+2024-12-03T20:48:05.182+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
+2024-12-03T20:48:05.183+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
+2024-12-03T20:48:05.183+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
+2024-12-03T20:48:05.196+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
+2024-12-03T20:48:05.197+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
+2024-12-03T20:48:05.220+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-03T20:48:05.220+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T20:48:05.220+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
+2024-12-03T20:48:05.228+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
+2024-12-03T20:48:05.229+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T20:48:05.229+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
+2024-12-03T20:48:05.229+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-03T20:48:05.244+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T20:48:05.244+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T20:48:05.244+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T20:48:05.254+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
+2024-12-03T20:48:05.254+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
+2024-12-03T20:49:38.814+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 37004 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:49:38.815+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:49:38.816+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:49:44.000+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 6.19 seconds (process running for 17.619)
+2024-12-03T20:49:44.704+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-03T20:49:44.704+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-03T20:49:44.704+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-03T20:49:44.722+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-03T20:49:44.722+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-03T20:49:44.854+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T20:49:44.854+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T20:49:44.859+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
+2024-12-03T20:49:44.865+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-12-03T20:49:44.969+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while adding product ID 1 to cart ID 2: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)
+	at feign.InvocationContext.decodeError(InvocationContext.java:126)
+	at feign.InvocationContext.proceed(InvocationContext.java:72)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)
+	at jdk.proxy2/jdk.proxy2.$Proxy163.getProduct(Unknown Source)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:110)
+	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.CartTest.testAddItemToCart(CartTest.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-12-03T20:49:44.970+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while adding product with ID: 1 to cart: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+feign.FeignException$ServiceUnavailable: [503] during [GET] to [http://product-catalog-service/api/product/1] [ProductClient#getProduct(Long)]: [Load balancer does not contain an instance for the service product-catalog-service]
+	at feign.FeignException.serverErrorStatus(FeignException.java:265)
+	at feign.FeignException.errorStatus(FeignException.java:206)
+	at feign.FeignException.errorStatus(FeignException.java:194)
+	at feign.codec.ErrorDecoder$Default.decode(ErrorDecoder.java:103)
+	at feign.InvocationContext.decodeError(InvocationContext.java:126)
+	at feign.InvocationContext.proceed(InvocationContext.java:72)
+	at feign.ResponseHandler.handleResponse(ResponseHandler.java:63)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:114)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:70)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:99)
+	at jdk.proxy2/jdk.proxy2.$Proxy163.getProduct(Unknown Source)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:110)
+	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.CartTest.testAddItemToCart(CartTest.java:107)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+2024-12-03T20:49:45.009+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
+2024-12-03T20:49:45.009+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
+2024-12-03T20:49:45.009+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
+2024-12-03T20:49:45.015+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
+2024-12-03T20:49:45.015+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
+2024-12-03T20:49:45.015+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
+2024-12-03T20:49:45.028+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
+2024-12-03T20:49:45.028+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
+2024-12-03T20:49:45.056+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-03T20:49:45.056+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T20:49:45.056+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
+2024-12-03T20:49:45.063+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
+2024-12-03T20:49:45.063+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T20:49:45.063+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
+2024-12-03T20:49:45.064+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-03T20:49:45.084+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T20:49:45.084+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T20:49:45.084+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T20:49:45.092+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
+2024-12-03T20:49:45.092+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
+2024-12-03T20:49:45.128+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received DELETE request at /api/cart/6 to delete cart
+2024-12-03T20:49:45.128+0100 INFO               [main]                         be.pxl.services.services.CartService - Attempting to delete cart with ID 6
+2024-12-03T20:49:45.134+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 6
+2024-12-03T20:49:45.140+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully deleted cart with ID 6
+2024-12-03T20:49:45.140+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully deleted cart with ID: 6
+2024-12-03T20:57:41.852+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 28396 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T20:57:41.853+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T20:57:41.853+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T20:57:48.583+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 7.746 seconds (process running for 18.843)
+2024-12-03T20:57:48.782+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T20:57:48.782+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=1, customer=null, items=[], total=null, ordered=false)
+2024-12-03T20:57:48.784+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 1
+2024-12-03T20:57:48.833+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-12-03T20:57:48.837+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T20:57:48.837+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 1
+2024-12-03T20:57:48.838+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-03T21:04:23.683+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 39584 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T21:04:23.684+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T21:04:23.685+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T21:04:30.938+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 8.309 seconds (process running for 20.031)
+2024-12-03T21:04:31.142+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T21:04:31.142+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=1, customer=null, items=[], total=null, ordered=false)
+2024-12-03T21:04:31.146+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 1
+2024-12-03T21:04:31.201+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 1
+2024-12-03T21:04:31.206+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:04:31.206+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 1
+2024-12-03T21:04:31.207+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-03T21:05:49.849+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 35436 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T21:05:49.850+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T21:05:49.851+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T21:05:55.938+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 7.102 seconds (process running for 19.553)
+2024-12-03T21:05:56.284+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-03T21:05:56.285+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-03T21:05:56.285+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-03T21:05:56.315+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-03T21:05:56.315+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-03T21:05:56.496+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T21:05:56.496+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[], total=null, ordered=false)
+2024-12-03T21:05:56.498+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
+2024-12-03T21:05:56.508+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-12-03T21:05:56.512+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:05:56.513+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 2
+2024-12-03T21:05:56.513+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-03T21:05:56.561+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
+2024-12-03T21:05:56.561+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
+2024-12-03T21:05:56.561+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
+2024-12-03T21:05:56.576+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
+2024-12-03T21:05:56.577+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
+2024-12-03T21:05:56.577+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
+2024-12-03T21:05:56.600+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
+2024-12-03T21:05:56.600+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
+2024-12-03T21:05:56.643+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-03T21:05:56.644+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T21:05:56.650+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
+2024-12-03T21:05:56.661+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
+2024-12-03T21:05:56.662+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:05:56.662+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
+2024-12-03T21:05:56.662+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-03T21:05:56.695+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T21:05:56.695+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T21:05:56.695+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T21:05:56.709+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
+2024-12-03T21:05:56.709+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
+2024-12-03T21:05:56.760+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received DELETE request at /api/cart/6 to delete cart
+2024-12-03T21:05:56.760+0100 INFO               [main]                         be.pxl.services.services.CartService - Attempting to delete cart with ID 6
+2024-12-03T21:05:56.770+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 6
+2024-12-03T21:05:56.779+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully deleted cart with ID 6
+2024-12-03T21:05:56.779+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully deleted cart with ID: 6
+2024-12-03T21:22:01.999+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 58888 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T21:22:02.000+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T21:22:02.000+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T21:22:07.970+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 6.997 seconds (process running for 18.886)
+2024-12-03T21:22:08.275+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-03T21:22:08.276+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-03T21:22:08.276+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-03T21:22:08.299+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-03T21:22:08.299+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-03T21:22:08.475+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T21:22:08.476+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[], total=null, ordered=false)
+2024-12-03T21:22:08.478+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
+2024-12-03T21:22:08.486+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-12-03T21:22:08.490+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:22:08.491+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 2
+2024-12-03T21:22:08.491+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-03T21:22:08.546+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
+2024-12-03T21:22:08.546+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
+2024-12-03T21:22:08.546+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
+2024-12-03T21:22:08.553+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
+2024-12-03T21:22:08.554+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
+2024-12-03T21:22:08.554+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
+2024-12-03T21:22:08.568+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
+2024-12-03T21:22:08.569+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
+2024-12-03T21:22:08.618+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-03T21:22:08.618+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T21:22:08.622+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
+2024-12-03T21:22:08.630+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
+2024-12-03T21:22:08.631+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:22:08.631+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
+2024-12-03T21:22:08.631+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-03T21:22:08.661+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T21:22:08.661+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T21:22:08.661+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T21:22:08.672+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
+2024-12-03T21:22:08.673+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
+2024-12-03T21:22:08.724+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received DELETE request at /api/cart/6 to delete cart
+2024-12-03T21:22:08.724+0100 INFO               [main]                         be.pxl.services.services.CartService - Attempting to delete cart with ID 6
+2024-12-03T21:22:08.731+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 6
+2024-12-03T21:22:08.739+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully deleted cart with ID 6
+2024-12-03T21:22:08.739+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully deleted cart with ID: 6
+2024-12-03T21:31:37.591+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 16048 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-03T21:31:37.592+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-03T21:31:37.592+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-03T21:31:43.723+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 7.368 seconds (process running for 19.471)
+2024-12-03T21:31:44.052+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-03T21:31:44.053+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-03T21:31:44.053+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-03T21:31:44.079+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-03T21:31:44.079+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-03T21:31:44.305+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-03T21:31:44.305+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[], total=null, ordered=false)
+2024-12-03T21:31:44.308+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
+2024-12-03T21:31:44.318+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-12-03T21:31:44.323+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:31:44.324+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 2
+2024-12-03T21:31:44.324+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-03T21:31:44.372+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
+2024-12-03T21:31:44.372+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
+2024-12-03T21:31:44.372+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
+2024-12-03T21:31:44.382+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
+2024-12-03T21:31:44.382+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
+2024-12-03T21:31:44.382+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
+2024-12-03T21:31:44.408+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
+2024-12-03T21:31:44.408+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
+2024-12-03T21:31:44.454+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-03T21:31:44.454+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-03T21:31:44.458+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
+2024-12-03T21:31:44.468+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
+2024-12-03T21:31:44.469+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-03T21:31:44.469+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
+2024-12-03T21:31:44.469+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-03T21:31:44.504+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-03T21:31:44.504+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-03T21:31:44.504+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-03T21:31:44.517+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
+2024-12-03T21:31:44.517+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
+2024-12-03T21:31:44.568+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received DELETE request at /api/cart/6 to delete cart
+2024-12-03T21:31:44.568+0100 INFO               [main]                         be.pxl.services.services.CartService - Attempting to delete cart with ID 6
+2024-12-03T21:31:44.576+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 6
+2024-12-03T21:31:44.583+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully deleted cart with ID 6
+2024-12-03T21:31:44.583+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully deleted cart with ID: 6

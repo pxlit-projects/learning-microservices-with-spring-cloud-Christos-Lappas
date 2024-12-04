@@ -55,9 +55,9 @@ public class LogbookTest {
     public void testCreateLog() throws Exception {
         Log log = Log.builder()
                 .time(LocalDateTime.now())
-                .userId(1L)
+                .user("customer")
                 .productId(8L)
-                .update("Product updated")
+                .changes("Product updated")
                 .build();
 
         String logString = objectMapper.writeValueAsString(log);
@@ -74,18 +74,26 @@ public class LogbookTest {
     public void testGetLogs() throws Exception {
         Log log = Log.builder()
                 .time(LocalDateTime.now())
-                .userId(1L)
+                .user("customer")
                 .productId(8L)
-                .update("Product updated")
+                .changes("Product updated")
+                .build();
+
+        Log log2 = Log.builder()
+                .time(LocalDateTime.now())
+                .user("customer")
+                .productId(1L)
+                .changes("Product updated")
                 .build();
 
         logRepository.save(log);
+        logRepository.save(log2);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/product")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/log")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
 
-        assertEquals(1, logRepository.findAll().size());
+        assertEquals(2, logRepository.findAll().size());
     }
 }

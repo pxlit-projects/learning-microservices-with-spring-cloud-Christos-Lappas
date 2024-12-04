@@ -1,16 +1,21 @@
 package be.pxl.services;
 
+import be.pxl.services.client.LogbookClient;
 import be.pxl.services.domain.Category;
 import be.pxl.services.domain.Product;
 import be.pxl.services.domain.Score;
+import be.pxl.services.domain.dto.LogRequest;
+import be.pxl.services.domain.dto.ProductRequest;
 import be.pxl.services.repository.ProductRepository;
+import be.pxl.services.services.ProductService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
@@ -22,8 +27,10 @@ import org.testcontainers.junit.jupiter.Container;
 import org.testcontainers.junit.jupiter.Testcontainers;
 
 import java.math.BigDecimal;
+import java.time.LocalDateTime;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.doNothing;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -38,6 +45,9 @@ public class ProductTest {
 
     @Autowired
     private ProductRepository productRepository;
+
+    @MockBean
+    private LogbookClient logbookClient;
 
     @Container
     private static MySQLContainer sqlContainer =
@@ -140,5 +150,128 @@ public class ProductTest {
         assertEquals(1, productRepository.findAll().size());
     }
 
-    // TODO: Write more tests
+    @Test
+    public void testDeleteProduct() throws Exception {
+        Product product = Product.builder()
+                .name("Laundry Detergent")
+                .description("Cleans clothes effectively")
+                .price(BigDecimal.valueOf(10.99))
+                .stock(25)
+                .category(Category.HOME)
+                .score(Score.A)
+                .build();
+
+        productRepository.save(product);
+
+
+        assertEquals(1, productRepository.findAll().size());
+
+
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/product/" + product.getId())
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+
+
+        assertEquals(0, productRepository.findAll().size());
+    }
+
+    @Test
+    public void testUpdateProduct() throws Exception {
+        Product product = Product.builder()
+                .name("Laundry Detergent")
+                .description("Cleans clothes effectively")
+                .price(BigDecimal.valueOf(10.99))
+                .stock(25)
+                .category(Category.HOME)
+                .score(Score.A)
+                .build();
+
+        productRepository.save(product);
+
+        assertEquals(1, productRepository.findAll().size());
+
+        ProductRequest updatedRequest = ProductRequest.builder()
+                .name("Updated Detergent")
+                .description("Even better cleaning power")
+                .price(BigDecimal.valueOf(12.99))
+                .stock(30)
+                .category(Category.HOME)
+                .score(Score.A)
+                .build();
+
+        LogRequest logRequest = LogRequest.builder()
+                .user("customer")
+                .changes("test")
+                .time(LocalDateTime.now())
+                .productId(1L)
+                .build();
+
+
+
+        doNothing().when(logbookClient).addLog(logRequest);
+
+        mockMvc.perform(MockMvcRequestBuilders.put("/api/product/" + product.getId())
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .content(new ObjectMapper().writeValueAsString(updatedRequest)))
+                .andExpect(status().isOk());
+
+        Product updatedProduct = productRepository.findById(product.getId()).get();
+        assertEquals("Updated Detergent", updatedProduct.getName());
+        assertEquals("Even better cleaning power", updatedProduct.getDescription());
+        assertEquals(BigDecimal.valueOf(12.99), updatedProduct.getPrice());
+        assertEquals(30, updatedProduct.getStock());
+    }
+
+    @Test
+    public void testAddLabelToProduct() throws Exception {
+        Product product = Product.builder()
+                .name("Laundry Detergent")
+                .description("Cleans clothes effectively")
+                .price(BigDecimal.valueOf(10.99))
+                .stock(25)
+                .category(Category.HOME)
+                .score(Score.A)
+                .build();
+
+        productRepository.save(product);
+
+        assertEquals(1, productRepository.findAll().size());
+
+        String label = "Eco-Friendly";
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/product/" + product.getId() + "/labels")
+                        .param("label", label)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+
+        Product updatedProduct = productRepository.findById(product.getId()).get();
+        assertTrue(updatedProduct.getLabels().contains(label));
+    }
+
+    @Test
+    public void testRemoveLabelFromProduct() throws Exception {
+        String label = "Eco-Friendly";
+
+        Product product = Product.builder()
+                .name("Laundry Detergent")
+                .description("Cleans clothes effectively")
+                .price(BigDecimal.valueOf(10.99))
+                .stock(25)
+                .category(Category.HOME)
+                .score(Score.A)
+                .labels(label)
+                .build();
+
+        productRepository.save(product);
+
+        assertTrue(productRepository.findById(product.getId()).get().getLabels().contains(label));
+
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/product/" + product.getId() + "/labels")
+                        .param("label", label)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isOk());
+
+        Product updatedProduct = productRepository.findById(product.getId()).get();
+        assertFalse(updatedProduct.getLabels().contains(label));
+    }
 }
