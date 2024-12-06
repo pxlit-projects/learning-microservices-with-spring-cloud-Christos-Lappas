@@ -21,7 +21,6 @@ public class Log {
     private Long id;
     private LocalDateTime time = LocalDateTime.now();
     private String user = "admin";
-    //private Long productId;
     @Column(length = 1000)
     private String changes;
 

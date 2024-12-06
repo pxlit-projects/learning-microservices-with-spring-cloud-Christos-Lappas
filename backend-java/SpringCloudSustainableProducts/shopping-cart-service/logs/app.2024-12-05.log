@@ -1,64 +1,52 @@
-2024-12-06T19:37:46.452+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 56192 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
-2024-12-06T19:37:46.459+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-06T19:37:46.460+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
-2024-12-06T19:37:52.078+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 6.635 seconds (process running for 17.974)
-2024-12-06T19:37:52.372+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
-2024-12-06T19:37:52.373+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
-2024-12-06T19:37:52.373+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
-2024-12-06T19:37:52.393+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
-2024-12-06T19:37:52.393+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
-2024-12-06T19:37:52.564+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
-2024-12-06T19:37:52.564+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[], total=null, ordered=false)
-2024-12-06T19:37:52.568+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
-2024-12-06T19:37:52.571+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
-2024-12-06T19:37:52.574+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
-2024-12-06T19:37:52.575+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 2
-2024-12-06T19:37:52.577+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
-2024-12-06T19:37:52.609+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
-2024-12-06T19:37:52.609+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
-2024-12-06T19:37:52.609+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
-2024-12-06T19:37:52.615+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
-2024-12-06T19:37:52.616+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
-2024-12-06T19:37:52.616+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
-2024-12-06T19:37:52.629+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
-2024-12-06T19:37:52.630+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
-2024-12-06T19:37:52.658+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
-2024-12-06T19:37:52.659+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
-2024-12-06T19:37:52.662+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
-2024-12-06T19:37:52.668+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
-2024-12-06T19:37:52.669+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
-2024-12-06T19:37:52.669+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
-2024-12-06T19:37:52.669+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
-2024-12-06T19:37:52.689+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
-2024-12-06T19:37:52.690+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
-2024-12-06T19:37:52.690+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
-2024-12-06T19:37:52.697+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
-2024-12-06T19:37:52.697+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
-2024-12-06T19:37:52.737+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received DELETE request at /api/cart/6 to delete cart
-2024-12-06T19:37:52.737+0100 INFO               [main]                         be.pxl.services.services.CartService - Attempting to delete cart with ID 6
-2024-12-06T19:37:52.744+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 6
-2024-12-06T19:37:52.750+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully deleted cart with ID 6
-2024-12-06T19:37:52.750+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully deleted cart with ID: 6
-2024-12-06T19:37:52.775+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/2 to add item to cart
-2024-12-06T19:37:52.775+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=7, customer=null, items=[], total=null, ordered=false)
-2024-12-06T19:37:52.776+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 2 to cart with ID 7
-2024-12-06T19:37:52.778+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 7
-2024-12-06T19:37:52.779+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while adding product ID 2 to cart ID 7: Cannot invoke "be.pxl.services.domain.Product.getId()" because "product" is null
+2024-12-05T10:44:51.149+0100 INFO               [main]                         be.pxl.services.CartTest      - Starting CartTest using Java 21.0.1 with PID 40792 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service)
+2024-12-05T10:44:51.155+0100 DEBUG              [main]                         be.pxl.services.CartTest      - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:44:51.156+0100 INFO               [main]                         be.pxl.services.CartTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:44:56.602+0100 INFO               [main]                         be.pxl.services.CartTest      - Started CartTest in 6.437 seconds (process running for 17.991)
+2024-12-05T10:44:56.890+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/1 to retrieve cart
+2024-12-05T10:44:56.890+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 1
+2024-12-05T10:44:56.890+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 1
+2024-12-05T10:44:56.911+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully retrieved shopping cart with ID: 1
+2024-12-05T10:44:56.911+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully fetched cart with ID: 1
+2024-12-05T10:44:57.070+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-05T10:44:57.070+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=2, customer=null, items=[], total=null, ordered=false)
+2024-12-05T10:44:57.073+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 2
+2024-12-05T10:44:57.080+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 2
+2024-12-05T10:44:57.084+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-05T10:44:57.085+0100 INFO               [main]                         be.pxl.services.services.CartService - Added product ID 1 to cart ID 2
+2024-12-05T10:44:57.085+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-05T10:44:57.124+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received PATCH request at /api/cart/3/order to order cart
+2024-12-05T10:44:57.124+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: Total=200.0, Ordered=true
+2024-12-05T10:44:57.124+0100 INFO               [main]                         be.pxl.services.services.CartService - Updating order status for cart ID 3: total = 200.0, ordered = true
+2024-12-05T10:44:57.132+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 3
+2024-12-05T10:44:57.133+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: order status updated from false to true
+2024-12-05T10:44:57.133+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3: total price updated to 200.0
+2024-12-05T10:44:57.148+0100 INFO               [main]                         be.pxl.services.services.CartService - Cart ID 3 saved successfully with new order status: true
+2024-12-05T10:44:57.148+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully updated cart with ID: 3 to ordered status: true
+2024-12-05T10:44:57.182+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-05T10:44:57.183+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=4, customer=null, items=[Product(id=1, name=Laptop, description=High-end laptop, price=1500.0, category=ELECTRONICS, score=A, labels=null, quantity=0)], total=null, ordered=false)
+2024-12-05T10:44:57.186+0100 INFO               [main]                         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 4
+2024-12-05T10:44:57.193+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 4
+2024-12-05T10:44:57.194+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-05T10:44:57.194+0100 INFO               [main]                         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 4
+2024-12-05T10:44:57.194+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-05T10:44:57.219+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-05T10:44:57.219+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-05T10:44:57.219+0100 INFO               [main]                         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-05T10:44:57.227+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 5
+2024-12-05T10:44:57.227+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 5
+2024-12-05T10:44:57.263+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received DELETE request at /api/cart/6 to delete cart
+2024-12-05T10:44:57.263+0100 INFO               [main]                         be.pxl.services.services.CartService - Attempting to delete cart with ID 6
+2024-12-05T10:44:57.269+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 6
+2024-12-05T10:44:57.275+0100 INFO               [main]                         be.pxl.services.services.CartService - Successfully deleted cart with ID 6
+2024-12-05T10:44:57.276+0100 INFO               [main]                         be.pxl.services.controller.CartController - Successfully deleted cart with ID: 6
+2024-12-05T10:44:57.301+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/2 to add item to cart
+2024-12-05T10:44:57.301+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Request body: CartRequest(id=7, customer=null, items=[], total=null, ordered=false)
+2024-12-05T10:44:57.301+0100 INFO               [main]                         be.pxl.services.services.CartService - Adding product ID 2 to cart with ID 7
+2024-12-05T10:44:57.307+0100 DEBUG              [main]                         be.pxl.services.services.CartService - Successfully fetched cart with ID 7
+2024-12-05T10:44:57.307+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while adding product ID 2 to cart ID 7: Cannot invoke "be.pxl.services.domain.Product.getId()" because "product" is null
 java.lang.NullPointerException: Cannot invoke "be.pxl.services.domain.Product.getId()" because "product" is null
-	at be.pxl.services.services.CartService.mapToProduct(CartService.java:70)
-	at be.pxl.services.services.CartService.addItemToCart(CartService.java:112)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
-	at be.pxl.services.services.CartService$$SpringCGLIB$$0.addItemToCart(<generated>)
+	at be.pxl.services.services.CartService.mapToProduct(CartService.java:69)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:110)
 	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:62)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -160,22 +148,10 @@ java.lang.NullPointerException: Cannot invoke "be.pxl.services.domain.Product.ge
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-2024-12-06T19:37:52.784+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while adding product with ID: 2 to cart: Cannot invoke "be.pxl.services.domain.Product.getId()" because "product" is null
+2024-12-05T10:44:57.308+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while adding product with ID: 2 to cart: Cannot invoke "be.pxl.services.domain.Product.getId()" because "product" is null
 java.lang.NullPointerException: Cannot invoke "be.pxl.services.domain.Product.getId()" because "product" is null
-	at be.pxl.services.services.CartService.mapToProduct(CartService.java:70)
-	at be.pxl.services.services.CartService.addItemToCart(CartService.java:112)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
-	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
-	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
-	at be.pxl.services.services.CartService$$SpringCGLIB$$0.addItemToCart(<generated>)
+	at be.pxl.services.services.CartService.mapToProduct(CartService.java:69)
+	at be.pxl.services.services.CartService.addItemToCart(CartService.java:110)
 	at be.pxl.services.controller.CartController.addItemToCart(CartController.java:62)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -277,10 +253,10 @@ java.lang.NullPointerException: Cannot invoke "be.pxl.services.domain.Product.ge
 	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
 	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
 	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
-2024-12-06T19:37:52.819+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/2 to retrieve cart
-2024-12-06T19:37:52.819+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 2
-2024-12-06T19:37:52.819+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 2
-2024-12-06T19:37:52.829+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while fetching shopping cart with ID '2': java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+2024-12-05T10:44:57.341+0100 INFO               [main]                         be.pxl.services.controller.CartController - Received GET request at /api/cart/2 to retrieve cart
+2024-12-05T10:44:57.342+0100 DEBUG              [main]                         be.pxl.services.controller.CartController - Fetching cart with ID: 2
+2024-12-05T10:44:57.342+0100 INFO               [main]                         be.pxl.services.services.CartService - Fetching shopping cart with ID: 2
+2024-12-05T10:44:57.351+0100 ERROR              [main]                         be.pxl.services.services.CartService - Error occurred while fetching shopping cart with ID '2': java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
 java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
 	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
 	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
@@ -289,14 +265,9 @@ java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakar
 	at jakarta.ws.rs.core.Response.status(Response.java:533)
 	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
 	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
-	at be.pxl.services.services.CartService.lambda$getById$0(CartService.java:34)
+	at be.pxl.services.services.CartService.lambda$getById$0(CartService.java:33)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at be.pxl.services.services.CartService.getById(CartService.java:34)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
-	at be.pxl.services.services.CartService$$SpringCGLIB$$0.getById(<generated>)
+	at be.pxl.services.services.CartService.getById(CartService.java:33)
 	at be.pxl.services.controller.CartController.getCart(CartController.java:30)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -401,8 +372,8 @@ java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakar
 Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
 	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
 	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
-	... 115 common frames omitted
-2024-12-06T19:37:52.830+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while retrieving cart with ID: 2: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	... 110 common frames omitted
+2024-12-05T10:44:57.352+0100 ERROR              [main]                         be.pxl.services.controller.CartController - Error occurred while retrieving cart with ID: 2: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
 java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
 	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
 	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
@@ -411,14 +382,9 @@ java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakar
 	at jakarta.ws.rs.core.Response.status(Response.java:533)
 	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
 	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
-	at be.pxl.services.services.CartService.lambda$getById$0(CartService.java:34)
+	at be.pxl.services.services.CartService.lambda$getById$0(CartService.java:33)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-	at be.pxl.services.services.CartService.getById(CartService.java:34)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
-	at be.pxl.services.services.CartService$$SpringCGLIB$$0.getById(<generated>)
+	at be.pxl.services.services.CartService.getById(CartService.java:33)
 	at be.pxl.services.controller.CartController.getCart(CartController.java:30)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -523,4 +489,4 @@ java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakar
 Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
 	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
 	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
-	... 115 common frames omitted
+	... 110 common frames omitted

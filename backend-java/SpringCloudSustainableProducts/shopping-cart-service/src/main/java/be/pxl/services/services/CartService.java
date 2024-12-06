@@ -6,6 +6,7 @@ import be.pxl.services.domain.Product;
 import be.pxl.services.domain.dto.CartRequest;
 import be.pxl.services.domain.dto.CartResponse;
 import be.pxl.services.repository.CartRepository;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -96,6 +97,7 @@ public class CartService implements ICartService {
     }
 
     @Override
+    @Transactional
     public CartResponse addItemToCart(Long productId, CartRequest cartRequest) {
         logger.info("Adding product ID {} to cart with ID {}", productId, cartRequest.getId());
 

@@ -1,0 +1,297 @@
+2024-12-04T10:39:25.662+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 41260 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T10:39:25.668+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T10:39:25.669+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T10:39:32.988+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 9.3 seconds (process running for 10.074)
+2024-12-04T10:39:48.384+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 53048 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T10:39:48.386+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T10:39:48.386+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T10:39:55.863+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 9.455 seconds (process running for 10.084)
+2024-12-04T10:40:10.944+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 40552 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T10:40:10.945+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T10:40:10.946+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T10:40:18.491+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.518 seconds (process running for 10.217)
+2024-12-04T11:26:27.968+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T11:26:27.968+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T11:26:27.969+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T11:26:28.112+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T11:26:28.114+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 145 ms
+2024-12-04T11:26:28.114+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T11:26:34.510+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T11:26:34.510+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T11:26:34.510+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T11:26:34.514+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T11:26:34.514+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-04T11:26:34.514+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T11:26:52.400+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/54 to update product
+2024-12-04T11:26:52.400+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Vaatwastabletten, description=100% natuurlijke tabletten., price=10.99, stock=0, category=HOME, score=A, labels=borden)
+2024-12-04T11:26:52.402+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 54
+2024-12-04T11:26:52.402+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Starting update for product with id: 54
+2024-12-04T11:26:52.413+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Updating product fields for id: 54
+2024-12-04T11:26:52.443+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Product with id 54 successfully updated
+2024-12-04T11:26:52.443+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Logging changes for product with id: 54
+2024-12-04T11:26:52.506+0100 ERROR              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Error logging changes to messaging-service: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+org.springframework.amqp.AmqpAuthenticationException: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:64)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1122)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1188)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1169)
+	at be.pxl.services.services.ProductService.updateProduct(ProductService.java:208)
+	at be.pxl.services.controller.ProductController.updateProduct(ProductController.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:395)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584)
+	... 57 common frames omitted
+2024-12-04T11:26:52.508+0100 ERROR              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Error occurred while updating product with id: 54: Failed to log changes
+java.lang.RuntimeException: Failed to log changes
+	at be.pxl.services.services.ProductService.updateProduct(ProductService.java:211)
+	at be.pxl.services.controller.ProductController.updateProduct(ProductController.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.springframework.amqp.AmqpAuthenticationException: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:64)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
+	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1122)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1188)
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1169)
+	at be.pxl.services.services.ProductService.updateProduct(ProductService.java:208)
+	... 49 common frames omitted
+Caused by: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
+	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:395)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637)
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584)
+	... 57 common frames omitted
+2024-12-04T11:36:34.320+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 61700 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T11:36:34.321+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T11:36:34.322+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T11:36:41.834+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.658 seconds (process running for 10.338)
+2024-12-04T11:37:25.672+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/54 to update product
+2024-12-04T11:37:25.673+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Vaatwastabletten, description=100% natuurlijke tabletten, price=10.99, stock=0, category=HOME, score=A, labels=borden)
+2024-12-04T11:37:25.675+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 54
+2024-12-04T11:37:25.675+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Starting update for product with id: 54
+2024-12-04T11:37:25.738+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Updating product fields for id: 54
+2024-12-04T11:37:25.768+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Product with id 54 successfully updated
+2024-12-04T11:37:25.768+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Logging changes for product with id: 54
+2024-12-04T11:37:25.860+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Changes for product with id: 54 logged
+2024-12-04T11:37:25.862+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully updated product with id: 54
+2024-12-04T11:37:25.888+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T11:37:25.888+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T11:37:25.888+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T11:37:25.991+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T11:37:25.992+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 104 ms
+2024-12-04T11:37:25.992+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T11:37:26.186+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-04T11:37:26.186+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 54: Description changed from '100% natuurlijke tabletten.' to '100% natuurlijke tabletten'. 
+2024-12-04T11:37:26.186+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-04T11:37:26.249+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Log entry for user 'null' successfully saved
+2024-12-04T11:37:26.250+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-04T11:38:00.283+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T11:38:00.283+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T11:38:00.412+0100 DEBUG              [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Fetched 22 logs from the database
+2024-12-04T11:38:00.413+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 130 ms
+2024-12-04T11:38:00.413+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
+2024-12-04T12:20:16.660+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T12:20:16.660+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T12:20:16.668+0100 DEBUG              [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Fetched 22 logs from the database
+2024-12-04T12:20:16.668+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 8 ms
+2024-12-04T12:20:16.668+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
+2024-12-04T12:21:59.547+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 60892 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T12:21:59.548+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T12:21:59.549+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T12:22:07.060+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 9.485 seconds (process running for 11.038)
+2024-12-04T12:23:47.057+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T12:23:47.057+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T12:23:47.203+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetched 22 logs from the database
+2024-12-04T12:23:47.204+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 147 ms
+2024-12-04T12:23:47.204+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
+2024-12-04T12:23:51.065+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T12:23:51.065+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T12:23:51.065+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T12:23:51.069+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T12:23:51.070+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 5 ms
+2024-12-04T12:23:51.070+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T12:24:13.063+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/3 to update product
+2024-12-04T12:24:13.063+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Lippenstift, description=Rode, lippenstift., price=9.99, stock=85, category=BEAUTY, score=B, labels=schoonheid)
+2024-12-04T12:24:13.063+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 3
+2024-12-04T12:24:13.063+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Starting update for product with id: 3
+2024-12-04T12:24:13.065+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Updating product fields for id: 3
+2024-12-04T12:24:13.069+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Product with id 3 successfully updated
+2024-12-04T12:24:13.069+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Logging changes for product with id: 3
+2024-12-04T12:24:13.070+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Changes for product with id: 3 logged
+2024-12-04T12:24:13.070+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully updated product with id: 3
+2024-12-04T12:24:13.079+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T12:24:13.079+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T12:24:13.079+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T12:24:13.082+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T12:24:13.082+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 3 ms
+2024-12-04T12:24:13.082+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T12:24:13.089+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-04T12:24:13.089+0100 DEBUG              [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 3: Description changed from 'Rode, duurzame lippenstift.' to 'Rode, lippenstift.'. 
+2024-12-04T12:24:13.090+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-04T12:24:13.132+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-04T12:24:13.133+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-04T12:24:16.008+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T12:24:16.008+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T12:24:16.014+0100 DEBUG              [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetched 23 logs from the database
+2024-12-04T12:24:16.014+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Successfully retrieved 23 logs in 6 ms
+2024-12-04T12:24:16.014+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Successfully retrieved 23 logs
+2024-12-04T12:34:19.454+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 60916 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T12:34:19.456+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T12:34:19.457+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T12:34:26.916+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.493 seconds (process running for 10.138)
+2024-12-04T12:34:56.001+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T12:34:56.001+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T12:34:56.001+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T12:34:56.140+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T12:34:56.141+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 140 ms
+2024-12-04T12:34:56.141+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T12:35:13.336+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/52 to update product
+2024-12-04T12:35:13.336+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Shampoo, description=Voor elk haartype , geen microplastics, price=14.99, stock=0, category=BEAUTY, score=A, labels=)
+2024-12-04T12:35:13.338+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 52
+2024-12-04T12:35:13.338+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Starting update for product with id: 52
+2024-12-04T12:35:13.350+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Updating product fields for id: 52
+2024-12-04T12:35:13.378+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Product with id 52 successfully updated
+2024-12-04T12:35:13.378+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Logging changes for product with id: 52
+2024-12-04T12:35:13.466+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Changes for product with id: 52 logged
+2024-12-04T12:35:13.466+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully updated product with id: 52
+2024-12-04T12:35:13.475+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T12:35:13.475+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T12:35:13.475+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T12:35:13.479+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T12:35:13.480+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 5 ms
+2024-12-04T12:35:13.480+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T12:35:13.653+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-04T12:35:13.653+0100 DEBUG              [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 52: Description changed from 'Voor elk haar type , geen microplastics' to 'Voor elk haartype , geen microplastics'. 
+2024-12-04T12:35:13.653+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-04T12:35:13.656+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-04T12:35:13.656+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-04T12:35:16.525+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T12:35:16.526+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T12:35:16.532+0100 DEBUG              [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Fetched 24 logs from the database
+2024-12-04T12:35:16.532+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Successfully retrieved 24 logs in 6 ms
+2024-12-04T12:35:16.532+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Successfully retrieved 24 logs
+2024-12-04T12:35:27.751+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T12:35:27.752+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T12:35:27.752+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T12:35:27.757+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T12:35:27.757+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 5 ms
+2024-12-04T12:35:27.757+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-04T12:48:37.043+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 46636 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-04T12:48:37.044+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T12:48:37.045+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T12:48:44.578+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.532 seconds (process running for 10.185)
+2024-12-04T14:57:51.007+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-04T14:57:51.008+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-04T14:57:51.008+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-04T14:57:51.255+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-04T14:57:51.268+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 260 ms
+2024-12-04T14:57:51.268+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products

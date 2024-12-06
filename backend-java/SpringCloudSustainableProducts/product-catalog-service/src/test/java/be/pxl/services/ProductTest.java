@@ -69,8 +69,8 @@ public class ProductTest {
     @Test
     public void testGetProduct() throws Exception {
         Product product = Product.builder()
-                .name("Wasmiddel")
-                .description("Beste wasmiddel")
+                .name("Pampers")
+                .description("Best pampers")
                 .price(BigDecimal.valueOf(12.99))
                 .stock(18)
                 .category(Category.HOME)
@@ -85,14 +85,14 @@ public class ProductTest {
 
         String name = productRepository.findById(product.getId()).get().getName();
 
-        assertEquals("Wasmiddel", name);
+        assertEquals("Pampers", name);
     }
 
     @Test
     public void testCreateProduct() throws Exception {
         Product product = Product.builder()
-                .name("Wasmiddel")
-                .description("Beste wasmiddel")
+                .name("Pampers")
+                .description("Best pampers")
                 .price(BigDecimal.valueOf(12.99))
                 .stock(18)
                 .category(Category.HOME)
@@ -112,8 +112,8 @@ public class ProductTest {
     @Test
     public void testGetProducts() throws Exception {
         Product product = Product.builder()
-                .name("Wasmiddel")
-                .description("Beste wasmiddel")
+                .name("Pampers")
+                .description("Best Pampers")
                 .price(BigDecimal.valueOf(12.99))
                 .stock(18)
                 .category(Category.HOME)
@@ -133,8 +133,8 @@ public class ProductTest {
     @Test
     public void testSearchProduct() throws Exception {
         Product product = Product.builder()
-                .name("Wasmiddel")
-                .description("Beste wasmiddel")
+                .name("Pampers")
+                .description("Best Pampers")
                 .price(BigDecimal.valueOf(12.99))
                 .stock(18)
                 .category(Category.HOME)
@@ -143,10 +143,10 @@ public class ProductTest {
 
         productRepository.save(product);
 
-        mockMvc.perform(MockMvcRequestBuilders.get("/api/product/filter?category=HOME&score=B&name=mid")
+        mockMvc.perform(MockMvcRequestBuilders.get("/api/product/filter?category=HOME&score=B&name=pamp")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("$[0].name").value("Wasmiddel"));
+                .andExpect(jsonPath("$[0].name").value("Pampers"));
 
         assertEquals(1, productRepository.findAll().size());
     }
@@ -267,5 +267,54 @@ public class ProductTest {
 
         Product updatedProduct = productRepository.findById(product.getId()).get();
         assertFalse(updatedProduct.getLabels().contains(label));
+    }
+
+    @Test
+    public void testRemoveLabelFromProductFailure() throws Exception {
+        String label = "Eco-Friendly";
+
+        Product product = Product.builder()
+                .name("Laundry Detergent")
+                .description("Cleans clothes effectively")
+                .price(BigDecimal.valueOf(10.99))
+                .stock(25)
+                .category(Category.HOME)
+                .score(Score.A)
+                .labels(label)
+                .build();
+
+        productRepository.save(product);
+
+        mockMvc.perform(MockMvcRequestBuilders.delete("/api/product/" + 58L + "/labels")
+                        .param("label", label)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isInternalServerError());
+
+
+    }
+
+    @Test
+    public void testAddLabelToProductFailure() throws Exception {
+        Product product = Product.builder()
+                .name("Laundry Detergent")
+                .description("Cleans clothes effectively")
+                .price(BigDecimal.valueOf(10.99))
+                .stock(25)
+                .category(Category.HOME)
+                .score(Score.A)
+                .build();
+
+        productRepository.save(product);
+
+        assertEquals(1, productRepository.findAll().size());
+
+        String label = "Eco-Friendly";
+
+        mockMvc.perform(MockMvcRequestBuilders.post("/api/product/" + 88L + "/labels")
+                        .param("label", label)
+                        .contentType(MediaType.APPLICATION_JSON))
+                .andExpect(status().isInternalServerError());
+
+
     }
 }

@@ -8,6 +8,7 @@ import be.pxl.services.domain.dto.ProductRequest;
 import be.pxl.services.domain.dto.ProductResponse;
 import be.pxl.services.repository.ProductRepository;
 import be.pxl.services.specification.ProductSpecification;
+import jakarta.transaction.Transactional;
 import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -128,6 +129,7 @@ public class ProductService implements IProductService{
     }
 
     @Override
+    @Transactional
     public ProductResponse updateProduct(Long id, ProductRequest productRequest) {
         logger.info("Starting update for product with id: {}", id);
 

@@ -1,0 +1,1180 @@
+2024-12-05T10:29:32.134+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 45416 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-05T10:29:32.141+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:29:32.142+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:29:39.698+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 8.702 seconds (process running for 21.275)
+2024-12-05T10:29:39.881+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-05T10:29:39.881+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: B, Name: mid, Label: null, MaxPrice: null
+2024-12-05T10:29:39.881+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-05T10:29:39.881+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: mid, Label: null
+2024-12-05T10:29:40.068+0100 INFO               [main]                         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-05T10:29:40.068+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-05T10:29:40.068+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-05T10:29:40.199+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-05T10:29:40.199+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Wasmiddel, description=Beste wasmiddel, price=12.99, stock=18, category=HOME, score=B, labels=null)
+2024-12-05T10:29:40.202+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting to add a new product with name: Wasmiddel
+2024-12-05T10:29:40.215+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with name 'Wasmiddel' successfully added to the database
+2024-12-05T10:29:40.215+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added product: Wasmiddel
+2024-12-05T10:29:40.251+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/3
+2024-12-05T10:29:40.251+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 3
+2024-12-05T10:29:40.251+0100 INFO               [main]                         be.pxl.services.services.ProductService - Getting product...
+2024-12-05T10:29:40.268+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 3
+2024-12-05T10:29:40.323+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received PUT request at /api/product/4 to update product
+2024-12-05T10:29:40.323+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Updated Detergent, description=Even better cleaning power, price=12.99, stock=30, category=HOME, score=A, labels=null)
+2024-12-05T10:29:40.323+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 4
+2024-12-05T10:29:40.323+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting update for product with id: 4
+2024-12-05T10:29:40.332+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Updating product fields for id: 4
+2024-12-05T10:29:40.346+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with id 4 successfully updated
+2024-12-05T10:29:40.346+0100 INFO               [main]                         be.pxl.services.services.ProductService - Logging changes for product with id: 4
+2024-12-05T10:29:40.348+0100 INFO               [main]                         be.pxl.services.services.ProductService - Changes for product with id: 4 logged
+2024-12-05T10:29:40.349+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully updated product with id: 4
+2024-12-05T10:29:40.378+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-05T10:29:40.379+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-05T10:29:40.379+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-05T10:29:40.386+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-12-05T10:29:40.387+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 8 ms
+2024-12-05T10:29:40.387+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved 1 products
+2024-12-05T10:29:40.426+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/6/labels to remove label
+2024-12-05T10:29:40.426+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:29:40.426+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 6
+2024-12-05T10:29:40.434+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 6
+2024-12-05T10:29:40.441+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Eco-Friendly label from product with ID 6
+2024-12-05T10:29:40.441+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Eco-Friendly' from product with id: 6
+2024-12-05T10:29:40.485+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/7 to remove a product
+2024-12-05T10:29:40.486+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.removeProduct() with id: 7
+2024-12-05T10:29:40.486+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete product with ID 7
+2024-12-05T10:29:40.494+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 7
+2024-12-05T10:29:40.501+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted product with ID 7
+2024-12-05T10:29:40.502+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed product with id: 7
+2024-12-05T10:29:40.537+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product/8/labels to add label
+2024-12-05T10:29:40.537+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be added: Eco-Friendly
+2024-12-05T10:29:40.537+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to add Eco-Friendly label to product with ID 8
+2024-12-05T10:29:40.543+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 8
+2024-12-05T10:29:40.549+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully added  Eco-Friendly label to product with ID 8
+2024-12-05T10:29:40.550+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added label 'Eco-Friendly' to product with id: 8
+2024-12-05T10:34:05.812+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 8800 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-05T10:34:05.813+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:34:05.814+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:34:14.215+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 9.709 seconds (process running for 24.321)
+2024-12-05T10:34:14.396+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-05T10:34:14.396+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: B, Name: pamp, Label: null, MaxPrice: null
+2024-12-05T10:34:14.396+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-05T10:34:14.397+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: pamp, Label: null
+2024-12-05T10:34:14.584+0100 INFO               [main]                         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-05T10:34:14.584+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-05T10:34:14.584+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-05T10:34:14.701+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-05T10:34:14.702+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Pampers, description=Best pampers, price=12.99, stock=18, category=HOME, score=B, labels=null)
+2024-12-05T10:34:14.704+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting to add a new product with name: Pampers
+2024-12-05T10:34:14.719+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with name 'Pampers' successfully added to the database
+2024-12-05T10:34:14.719+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added product: Pampers
+2024-12-05T10:34:14.751+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/3
+2024-12-05T10:34:14.751+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 3
+2024-12-05T10:34:14.751+0100 INFO               [main]                         be.pxl.services.services.ProductService - Getting product...
+2024-12-05T10:34:14.766+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 3
+2024-12-05T10:34:14.817+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received PUT request at /api/product/4 to update product
+2024-12-05T10:34:14.817+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Updated Detergent, description=Even better cleaning power, price=12.99, stock=30, category=HOME, score=A, labels=null)
+2024-12-05T10:34:14.818+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 4
+2024-12-05T10:34:14.818+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting update for product with id: 4
+2024-12-05T10:34:14.825+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Updating product fields for id: 4
+2024-12-05T10:34:14.840+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with id 4 successfully updated
+2024-12-05T10:34:14.840+0100 INFO               [main]                         be.pxl.services.services.ProductService - Logging changes for product with id: 4
+2024-12-05T10:34:14.844+0100 INFO               [main]                         be.pxl.services.services.ProductService - Changes for product with id: 4 logged
+2024-12-05T10:34:14.844+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully updated product with id: 4
+2024-12-05T10:34:14.875+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-05T10:34:14.875+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-05T10:34:14.875+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-05T10:34:14.884+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-12-05T10:34:14.885+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 9 ms
+2024-12-05T10:34:14.885+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved 1 products
+2024-12-05T10:34:14.924+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/6/labels to remove label
+2024-12-05T10:34:14.925+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:34:14.925+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 6
+2024-12-05T10:34:14.932+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 6
+2024-12-05T10:34:14.939+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Eco-Friendly label from product with ID 6
+2024-12-05T10:34:14.939+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Eco-Friendly' from product with id: 6
+2024-12-05T10:34:14.979+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/7 to remove a product
+2024-12-05T10:34:14.979+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.removeProduct() with id: 7
+2024-12-05T10:34:14.979+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete product with ID 7
+2024-12-05T10:34:14.986+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 7
+2024-12-05T10:34:14.993+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted product with ID 7
+2024-12-05T10:34:14.993+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed product with id: 7
+2024-12-05T10:34:15.027+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product/8/labels to add label
+2024-12-05T10:34:15.027+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be added: Eco-Friendly
+2024-12-05T10:34:15.027+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to add Eco-Friendly label to product with ID 8
+2024-12-05T10:34:15.032+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 8
+2024-12-05T10:34:15.038+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully added  Eco-Friendly label to product with ID 8
+2024-12-05T10:34:15.038+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added label 'Eco-Friendly' to product with id: 8
+2024-12-05T10:34:15.069+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/9/labels to remove label
+2024-12-05T10:34:15.069+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Wrong label
+2024-12-05T10:34:15.069+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Wrong label label from product with ID 9
+2024-12-05T10:34:15.075+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 9
+2024-12-05T10:34:15.077+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Wrong label label from product with ID 9
+2024-12-05T10:34:15.078+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Wrong label' from product with id: 9
+2024-12-05T10:35:16.268+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 4328 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-05T10:35:16.269+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:35:16.269+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:35:24.381+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 9.216 seconds (process running for 22.544)
+2024-12-05T10:35:24.627+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/1/labels to remove label
+2024-12-05T10:35:24.627+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Wrong label
+2024-12-05T10:35:24.628+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Wrong label label from product with ID 1
+2024-12-05T10:35:24.637+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-12-05T10:35:24.642+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Wrong label label from product with ID 1
+2024-12-05T10:35:24.643+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Wrong label' from product with id: 1
+2024-12-05T10:40:03.604+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 24624 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-05T10:40:03.606+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:40:03.607+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:40:17.123+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 15.389 seconds (process running for 34.487)
+2024-12-05T10:40:17.563+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/58/labels to remove label
+2024-12-05T10:40:17.564+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:40:17.564+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 58
+2024-12-05T10:40:17.586+0100 ERROR              [main]                         be.pxl.services.services.ProductService - Error occurred while deleting Eco-Friendly label from product with ID 58: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$removeLabelFromProduct$5(ProductService.java:273)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.removeLabelFromProduct(ProductService.java:273)
+	at be.pxl.services.controller.ProductController.removeLabelFromProduct(ProductController.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testRemoveLabelFromProductFailure(ProductTest.java:290)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:40:17.588+0100 ERROR              [main]                         be.pxl.services.controller.ProductController - Error occurred while removing label 'Eco-Friendly' from product with id: 58: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$removeLabelFromProduct$5(ProductService.java:273)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.removeLabelFromProduct(ProductService.java:273)
+	at be.pxl.services.controller.ProductController.removeLabelFromProduct(ProductController.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testRemoveLabelFromProductFailure(ProductTest.java:290)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:40:52.494+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 13744 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-05T10:40:52.495+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:40:52.495+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:41:00.483+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 9.061 seconds (process running for 27.572)
+2024-12-05T10:41:00.676+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-05T10:41:00.677+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: B, Name: pamp, Label: null, MaxPrice: null
+2024-12-05T10:41:00.677+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-05T10:41:00.677+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: pamp, Label: null
+2024-12-05T10:41:00.861+0100 INFO               [main]                         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-05T10:41:00.861+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-05T10:41:00.861+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-05T10:41:00.985+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-05T10:41:00.985+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Pampers, description=Best pampers, price=12.99, stock=18, category=HOME, score=B, labels=null)
+2024-12-05T10:41:00.989+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting to add a new product with name: Pampers
+2024-12-05T10:41:01.002+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with name 'Pampers' successfully added to the database
+2024-12-05T10:41:01.002+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added product: Pampers
+2024-12-05T10:41:01.037+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/3
+2024-12-05T10:41:01.038+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 3
+2024-12-05T10:41:01.038+0100 INFO               [main]                         be.pxl.services.services.ProductService - Getting product...
+2024-12-05T10:41:01.053+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 3
+2024-12-05T10:41:01.111+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received PUT request at /api/product/4 to update product
+2024-12-05T10:41:01.112+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Updated Detergent, description=Even better cleaning power, price=12.99, stock=30, category=HOME, score=A, labels=null)
+2024-12-05T10:41:01.112+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 4
+2024-12-05T10:41:01.112+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting update for product with id: 4
+2024-12-05T10:41:01.118+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Updating product fields for id: 4
+2024-12-05T10:41:01.133+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with id 4 successfully updated
+2024-12-05T10:41:01.133+0100 INFO               [main]                         be.pxl.services.services.ProductService - Logging changes for product with id: 4
+2024-12-05T10:41:01.135+0100 INFO               [main]                         be.pxl.services.services.ProductService - Changes for product with id: 4 logged
+2024-12-05T10:41:01.135+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully updated product with id: 4
+2024-12-05T10:41:01.171+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-05T10:41:01.172+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-05T10:41:01.172+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-05T10:41:01.180+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-12-05T10:41:01.180+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 8 ms
+2024-12-05T10:41:01.180+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved 1 products
+2024-12-05T10:41:01.217+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/6/labels to remove label
+2024-12-05T10:41:01.217+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:41:01.217+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 6
+2024-12-05T10:41:01.223+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 6
+2024-12-05T10:41:01.228+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Eco-Friendly label from product with ID 6
+2024-12-05T10:41:01.228+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Eco-Friendly' from product with id: 6
+2024-12-05T10:41:01.262+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/7 to remove a product
+2024-12-05T10:41:01.262+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.removeProduct() with id: 7
+2024-12-05T10:41:01.262+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete product with ID 7
+2024-12-05T10:41:01.269+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 7
+2024-12-05T10:41:01.275+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted product with ID 7
+2024-12-05T10:41:01.276+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed product with id: 7
+2024-12-05T10:41:01.309+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product/8/labels to add label
+2024-12-05T10:41:01.309+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be added: Eco-Friendly
+2024-12-05T10:41:01.309+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to add Eco-Friendly label to product with ID 8
+2024-12-05T10:41:01.315+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 8
+2024-12-05T10:41:01.320+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully added  Eco-Friendly label to product with ID 8
+2024-12-05T10:41:01.321+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added label 'Eco-Friendly' to product with id: 8
+2024-12-05T10:41:01.351+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/58/labels to remove label
+2024-12-05T10:41:01.352+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:41:01.352+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 58
+2024-12-05T10:41:01.362+0100 ERROR              [main]                         be.pxl.services.services.ProductService - Error occurred while deleting Eco-Friendly label from product with ID 58: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$removeLabelFromProduct$5(ProductService.java:273)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.removeLabelFromProduct(ProductService.java:273)
+	at be.pxl.services.controller.ProductController.removeLabelFromProduct(ProductController.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testRemoveLabelFromProductFailure(ProductTest.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:41:01.363+0100 ERROR              [main]                         be.pxl.services.controller.ProductController - Error occurred while removing label 'Eco-Friendly' from product with id: 58: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$removeLabelFromProduct$5(ProductService.java:273)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.removeLabelFromProduct(ProductService.java:273)
+	at be.pxl.services.controller.ProductController.removeLabelFromProduct(ProductController.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testRemoveLabelFromProductFailure(ProductTest.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:43:05.924+0100 INFO               [main]                         be.pxl.services.ProductTest   - Starting ProductTest using Java 21.0.1 with PID 53088 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service)
+2024-12-05T10:43:05.925+0100 DEBUG              [main]                         be.pxl.services.ProductTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-05T10:43:05.926+0100 INFO               [main]                         be.pxl.services.ProductTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-05T10:43:12.774+0100 INFO               [main]                         be.pxl.services.ProductTest   - Started ProductTest in 7.843 seconds (process running for 19.233)
+2024-12-05T10:43:12.954+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-05T10:43:12.954+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: B, Name: pamp, Label: null, MaxPrice: null
+2024-12-05T10:43:12.954+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-05T10:43:12.954+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: B, Name: pamp, Label: null
+2024-12-05T10:43:13.130+0100 INFO               [main]                         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-05T10:43:13.130+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-05T10:43:13.130+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-05T10:43:13.244+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-05T10:43:13.244+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Pampers, description=Best pampers, price=12.99, stock=18, category=HOME, score=B, labels=null)
+2024-12-05T10:43:13.247+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting to add a new product with name: Pampers
+2024-12-05T10:43:13.259+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with name 'Pampers' successfully added to the database
+2024-12-05T10:43:13.259+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added product: Pampers
+2024-12-05T10:43:13.289+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product/3
+2024-12-05T10:43:13.289+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 3
+2024-12-05T10:43:13.289+0100 INFO               [main]                         be.pxl.services.services.ProductService - Getting product...
+2024-12-05T10:43:13.302+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 3
+2024-12-05T10:43:13.350+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received PUT request at /api/product/4 to update product
+2024-12-05T10:43:13.350+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Updated Detergent, description=Even better cleaning power, price=12.99, stock=30, category=HOME, score=A, labels=null)
+2024-12-05T10:43:13.350+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 4
+2024-12-05T10:43:13.350+0100 INFO               [main]                         be.pxl.services.services.ProductService - Starting update for product with id: 4
+2024-12-05T10:43:13.359+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Updating product fields for id: 4
+2024-12-05T10:43:13.375+0100 INFO               [main]                         be.pxl.services.services.ProductService - Product with id 4 successfully updated
+2024-12-05T10:43:13.375+0100 INFO               [main]                         be.pxl.services.services.ProductService - Logging changes for product with id: 4
+2024-12-05T10:43:13.378+0100 INFO               [main]                         be.pxl.services.services.ProductService - Changes for product with id: 4 logged
+2024-12-05T10:43:13.378+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully updated product with id: 4
+2024-12-05T10:43:13.406+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-05T10:43:13.406+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-05T10:43:13.406+0100 INFO               [main]                         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-05T10:43:13.414+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Fetched 1 products from the database
+2024-12-05T10:43:13.414+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully retrieved 1 products in 8 ms
+2024-12-05T10:43:13.414+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully retrieved 1 products
+2024-12-05T10:43:13.448+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product/88/labels to add label
+2024-12-05T10:43:13.449+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be added: Eco-Friendly
+2024-12-05T10:43:13.449+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to add Eco-Friendly label to product with ID 88
+2024-12-05T10:43:13.459+0100 ERROR              [main]                         be.pxl.services.services.ProductService - Error occurred while adding Eco-Friendly label to product with ID 88: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$addLabelToProduct$4(ProductService.java:247)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.addLabelToProduct(ProductService.java:247)
+	at be.pxl.services.controller.ProductController.addLabelToProduct(ProductController.java:141)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testAddLabelToProductFailure(ProductTest.java:313)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:43:13.460+0100 ERROR              [main]                         be.pxl.services.controller.ProductController - Error occurred while adding label 'Eco-Friendly' to product with id: 88: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$addLabelToProduct$4(ProductService.java:247)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.addLabelToProduct(ProductService.java:247)
+	at be.pxl.services.controller.ProductController.addLabelToProduct(ProductController.java:141)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testAddLabelToProductFailure(ProductTest.java:313)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:43:13.488+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/7/labels to remove label
+2024-12-05T10:43:13.489+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:43:13.489+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 7
+2024-12-05T10:43:13.494+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 7
+2024-12-05T10:43:13.501+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted Eco-Friendly label from product with ID 7
+2024-12-05T10:43:13.501+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed label 'Eco-Friendly' from product with id: 7
+2024-12-05T10:43:13.537+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/8 to remove a product
+2024-12-05T10:43:13.537+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Calling ProductService.removeProduct() with id: 8
+2024-12-05T10:43:13.537+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete product with ID 8
+2024-12-05T10:43:13.543+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 8
+2024-12-05T10:43:13.550+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully deleted product with ID 8
+2024-12-05T10:43:13.550+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully removed product with id: 8
+2024-12-05T10:43:13.579+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received POST request at /api/product/9/labels to add label
+2024-12-05T10:43:13.579+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be added: Eco-Friendly
+2024-12-05T10:43:13.579+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to add Eco-Friendly label to product with ID 9
+2024-12-05T10:43:13.585+0100 DEBUG              [main]                         be.pxl.services.services.ProductService - Successfully fetched product with ID 9
+2024-12-05T10:43:13.591+0100 INFO               [main]                         be.pxl.services.services.ProductService - Successfully added  Eco-Friendly label to product with ID 9
+2024-12-05T10:43:13.591+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Successfully added label 'Eco-Friendly' to product with id: 9
+2024-12-05T10:43:13.617+0100 INFO               [main]                         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/58/labels to remove label
+2024-12-05T10:43:13.617+0100 DEBUG              [main]                         be.pxl.services.controller.ProductController - Label to be removed: Eco-Friendly
+2024-12-05T10:43:13.618+0100 INFO               [main]                         be.pxl.services.services.ProductService - Attempting to delete Eco-Friendly label from product with ID 58
+2024-12-05T10:43:13.625+0100 ERROR              [main]                         be.pxl.services.services.ProductService - Error occurred while deleting Eco-Friendly label from product with ID 58: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$removeLabelFromProduct$5(ProductService.java:273)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.removeLabelFromProduct(ProductService.java:273)
+	at be.pxl.services.controller.ProductController.removeLabelFromProduct(ProductController.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testRemoveLabelFromProductFailure(ProductTest.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted
+2024-12-05T10:43:13.625+0100 ERROR              [main]                         be.pxl.services.controller.ProductController - Error occurred while removing label 'Eco-Friendly' from product with id: 58: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+java.lang.RuntimeException: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:118)
+	at jakarta.ws.rs.ext.RuntimeDelegate.getInstance(RuntimeDelegate.java:88)
+	at jakarta.ws.rs.core.Response$ResponseBuilder.newInstance(Response.java:776)
+	at jakarta.ws.rs.core.Response.status(Response.java:522)
+	at jakarta.ws.rs.core.Response.status(Response.java:533)
+	at jakarta.ws.rs.ClientErrorException.<init>(ClientErrorException.java:51)
+	at jakarta.ws.rs.NotFoundException.<init>(NotFoundException.java:46)
+	at be.pxl.services.services.ProductService.lambda$removeLabelFromProduct$5(ProductService.java:273)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at be.pxl.services.services.ProductService.removeLabelFromProduct(ProductService.java:273)
+	at be.pxl.services.controller.ProductController.removeLabelFromProduct(ProductController.java:161)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:936)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:596)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:151)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at be.pxl.services.ProductTest.testRemoveLabelFromProductFailure(ProductTest.java:288)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.ClassNotFoundException: Provider for jakarta.ws.rs.ext.RuntimeDelegate cannot be found
+	at jakarta.ws.rs.ext.FactoryFinder.find(FactoryFinder.java:163)
+	at jakarta.ws.rs.ext.RuntimeDelegate.findDelegate(RuntimeDelegate.java:103)
+	... 110 common frames omitted

@@ -1,0 +1,42 @@
+2024-12-04T08:53:08.391+0100 INFO               [main]                         be.pxl.services.LogbookTest   - Starting LogbookTest using Java 21.0.1 with PID 53524 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service)
+2024-12-04T08:53:08.399+0100 DEBUG              [main]                         be.pxl.services.LogbookTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T08:53:08.400+0100 INFO               [main]                         be.pxl.services.LogbookTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T08:53:15.380+0100 INFO               [main]                         be.pxl.services.LogbookTest   - Started LogbookTest in 8.305 seconds (process running for 22.822)
+2024-12-04T08:53:16.009+0100 INFO               [main]                         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T08:53:16.009+0100 INFO               [main]                         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T08:53:16.156+0100 DEBUG              [main]                         be.pxl.services.services.LogService - Fetched 2 logs from the database
+2024-12-04T08:53:16.158+0100 INFO               [main]                         be.pxl.services.services.LogService - Successfully retrieved 2 logs in 149 ms
+2024-12-04T08:53:16.158+0100 INFO               [main]                         be.pxl.services.controller.LogController - Successfully retrieved 2 logs
+2024-12-04T08:53:16.274+0100 INFO               [main]                         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-04T08:53:16.274+0100 DEBUG              [main]                         be.pxl.services.controller.LogController - Request body: User=customer, ProductId=8, Update=Product updated
+2024-12-04T08:53:16.275+0100 INFO               [main]                         be.pxl.services.services.LogService - Starting to add a new log entry for user: customer, product ID: 8
+2024-12-04T08:53:16.283+0100 INFO               [main]                         be.pxl.services.services.LogService - Log entry for user 'customer' and product ID '8' successfully saved
+2024-12-04T08:53:16.283+0100 INFO               [main]                         be.pxl.services.controller.LogController - Successfully added log entry for user: customer and product ID: 8
+2024-12-04T08:55:24.604+0100 INFO               [main]                         be.pxl.services.LogbookTest   - Starting LogbookTest using Java 21.0.1 with PID 27568 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service)
+2024-12-04T08:55:24.605+0100 DEBUG              [main]                         be.pxl.services.LogbookTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T08:55:24.607+0100 INFO               [main]                         be.pxl.services.LogbookTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T08:55:31.416+0100 INFO               [main]                         be.pxl.services.LogbookTest   - Started LogbookTest in 8.096 seconds (process running for 22.541)
+2024-12-04T08:55:32.133+0100 INFO               [main]                         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T08:55:32.134+0100 INFO               [main]                         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T08:55:32.280+0100 DEBUG              [main]                         be.pxl.services.services.LogService - Fetched 2 logs from the database
+2024-12-04T08:55:32.281+0100 INFO               [main]                         be.pxl.services.services.LogService - Successfully retrieved 2 logs in 147 ms
+2024-12-04T08:55:32.282+0100 INFO               [main]                         be.pxl.services.controller.LogController - Successfully retrieved 2 logs
+2024-12-04T08:55:32.371+0100 INFO               [main]                         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-04T08:55:32.371+0100 DEBUG              [main]                         be.pxl.services.controller.LogController - Request body: User=customer, ProductId=8, Update=Product updated
+2024-12-04T08:55:32.371+0100 INFO               [main]                         be.pxl.services.services.LogService - Starting to add a new log entry for user: customer, product ID: 8
+2024-12-04T08:55:32.380+0100 INFO               [main]                         be.pxl.services.services.LogService - Log entry for user 'customer' and product ID '8' successfully saved
+2024-12-04T08:55:32.380+0100 INFO               [main]                         be.pxl.services.controller.LogController - Successfully added log entry for user: customer and product ID: 8
+2024-12-04T13:02:20.037+0100 INFO               [main]                         be.pxl.services.LogbookTest   - Starting LogbookTest using Java 21.0.1 with PID 56236 (started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service)
+2024-12-04T13:02:20.038+0100 DEBUG              [main]                         be.pxl.services.LogbookTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-04T13:02:20.039+0100 INFO               [main]                         be.pxl.services.LogbookTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-04T13:02:27.308+0100 INFO               [main]                         be.pxl.services.LogbookTest   - Started LogbookTest in 9.226 seconds (process running for 20.901)
+2024-12-04T13:02:27.888+0100 INFO               [main]                         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-04T13:02:27.889+0100 INFO               [main]                         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-04T13:02:28.037+0100 DEBUG              [main]                         be.pxl.services.services.LogService - Fetched 2 logs from the database
+2024-12-04T13:02:28.039+0100 INFO               [main]                         be.pxl.services.services.LogService - Successfully retrieved 2 logs in 150 ms
+2024-12-04T13:02:28.040+0100 INFO               [main]                         be.pxl.services.controller.LogController - Successfully retrieved 2 logs
+2024-12-04T13:02:28.109+0100 INFO               [main]                         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-04T13:02:28.110+0100 DEBUG              [main]                         be.pxl.services.controller.LogController - Request body: Update=Changed price from 10.99 to 12.99
+2024-12-04T13:02:28.110+0100 INFO               [main]                         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-04T13:02:28.117+0100 INFO               [main]                         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-04T13:02:28.117+0100 INFO               [main]                         be.pxl.services.controller.LogController - Successfully added log entry

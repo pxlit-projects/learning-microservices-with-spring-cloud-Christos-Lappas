@@ -1,291 +1,715 @@
-2024-12-04T10:39:25.662+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 41260 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T10:39:25.668+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T10:39:25.669+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T10:39:32.988+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 9.3 seconds (process running for 10.074)
-2024-12-04T10:39:48.384+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 53048 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T10:39:48.386+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T10:39:48.386+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T10:39:55.863+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 9.455 seconds (process running for 10.084)
-2024-12-04T10:40:10.944+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 40552 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T10:40:10.945+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T10:40:10.946+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T10:40:18.491+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.518 seconds (process running for 10.217)
-2024-12-04T11:26:27.968+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T11:26:27.968+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T11:26:27.969+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T11:26:28.112+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T11:26:28.114+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 145 ms
-2024-12-04T11:26:28.114+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T11:26:34.510+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T11:26:34.510+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T11:26:34.510+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T11:26:34.514+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T11:26:34.514+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
-2024-12-04T11:26:34.514+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T11:26:52.400+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/54 to update product
-2024-12-04T11:26:52.400+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Vaatwastabletten, description=100% natuurlijke tabletten., price=10.99, stock=0, category=HOME, score=A, labels=borden)
-2024-12-04T11:26:52.402+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 54
-2024-12-04T11:26:52.402+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Starting update for product with id: 54
-2024-12-04T11:26:52.413+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Updating product fields for id: 54
-2024-12-04T11:26:52.443+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Product with id 54 successfully updated
-2024-12-04T11:26:52.443+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Logging changes for product with id: 54
-2024-12-04T11:26:52.506+0100 ERROR              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Error logging changes to messaging-service: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-org.springframework.amqp.AmqpAuthenticationException: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:64)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622)
-	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1122)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1188)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1169)
-	at be.pxl.services.services.ProductService.updateProduct(ProductService.java:208)
-	at be.pxl.services.controller.ProductController.updateProduct(ProductController.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:395)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584)
-	... 57 common frames omitted
-2024-12-04T11:26:52.508+0100 ERROR              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Error occurred while updating product with id: 54: Failed to log changes
-java.lang.RuntimeException: Failed to log changes
-	at be.pxl.services.services.ProductService.updateProduct(ProductService.java:211)
-	at be.pxl.services.controller.ProductController.updateProduct(ProductController.java:96)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: org.springframework.amqp.AmqpAuthenticationException: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:64)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:622)
-	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:726)
-	at org.springframework.amqp.rabbit.connection.ConnectionFactoryUtils.createConnection(ConnectionFactoryUtils.java:257)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2249)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2222)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.send(RabbitTemplate.java:1122)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1188)
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1169)
-	at be.pxl.services.services.ProductService.updateProduct(ProductService.java:208)
-	... 49 common frames omitted
-Caused by: com.rabbitmq.client.AuthenticationFailureException: ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile.
-	at com.rabbitmq.client.impl.AMQConnection.start(AMQConnection.java:395)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1251)
-	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1198)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connectAddresses(AbstractConnectionFactory.java:668)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:637)
-	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:584)
-	... 57 common frames omitted
-2024-12-04T11:36:34.320+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 61700 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T11:36:34.321+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T11:36:34.322+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T11:36:41.834+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.658 seconds (process running for 10.338)
-2024-12-04T11:37:25.672+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/54 to update product
-2024-12-04T11:37:25.673+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Vaatwastabletten, description=100% natuurlijke tabletten, price=10.99, stock=0, category=HOME, score=A, labels=borden)
-2024-12-04T11:37:25.675+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 54
-2024-12-04T11:37:25.675+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Starting update for product with id: 54
-2024-12-04T11:37:25.738+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Updating product fields for id: 54
-2024-12-04T11:37:25.768+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Product with id 54 successfully updated
-2024-12-04T11:37:25.768+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Logging changes for product with id: 54
-2024-12-04T11:37:25.860+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Changes for product with id: 54 logged
-2024-12-04T11:37:25.862+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully updated product with id: 54
-2024-12-04T11:37:25.888+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T11:37:25.888+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T11:37:25.888+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T11:37:25.991+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T11:37:25.992+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 104 ms
-2024-12-04T11:37:25.992+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T11:37:26.186+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
-2024-12-04T11:37:26.186+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 54: Description changed from '100% natuurlijke tabletten.' to '100% natuurlijke tabletten'. 
-2024-12-04T11:37:26.186+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Starting to add a new log entry
-2024-12-04T11:37:26.249+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Log entry for user 'null' successfully saved
-2024-12-04T11:37:26.250+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Successfully added log entry
-2024-12-04T11:38:00.283+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
-2024-12-04T11:38:00.283+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Fetching all logs from the database
-2024-12-04T11:38:00.412+0100 DEBUG              [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Fetched 22 logs from the database
-2024-12-04T11:38:00.413+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 130 ms
-2024-12-04T11:38:00.413+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
-2024-12-04T12:20:16.660+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
-2024-12-04T12:20:16.660+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Fetching all logs from the database
-2024-12-04T12:20:16.668+0100 DEBUG              [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Fetched 22 logs from the database
-2024-12-04T12:20:16.668+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 8 ms
-2024-12-04T12:20:16.668+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
-2024-12-04T12:21:59.547+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 60892 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T12:21:59.548+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T12:21:59.549+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T12:22:07.060+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 9.485 seconds (process running for 11.038)
-2024-12-04T12:23:47.057+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
-2024-12-04T12:23:47.057+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetching all logs from the database
-2024-12-04T12:23:47.203+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetched 22 logs from the database
-2024-12-04T12:23:47.204+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 147 ms
-2024-12-04T12:23:47.204+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
-2024-12-04T12:23:51.065+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T12:23:51.065+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T12:23:51.065+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T12:23:51.069+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T12:23:51.070+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 5 ms
-2024-12-04T12:23:51.070+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T12:24:13.063+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/3 to update product
-2024-12-04T12:24:13.063+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Lippenstift, description=Rode, lippenstift., price=9.99, stock=85, category=BEAUTY, score=B, labels=schoonheid)
-2024-12-04T12:24:13.063+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 3
-2024-12-04T12:24:13.063+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Starting update for product with id: 3
-2024-12-04T12:24:13.065+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Updating product fields for id: 3
-2024-12-04T12:24:13.069+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Product with id 3 successfully updated
-2024-12-04T12:24:13.069+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Logging changes for product with id: 3
-2024-12-04T12:24:13.070+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Changes for product with id: 3 logged
-2024-12-04T12:24:13.070+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully updated product with id: 3
-2024-12-04T12:24:13.079+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T12:24:13.079+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T12:24:13.079+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T12:24:13.082+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T12:24:13.082+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 3 ms
-2024-12-04T12:24:13.082+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T12:24:13.089+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
-2024-12-04T12:24:13.089+0100 DEBUG              [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 3: Description changed from 'Rode, duurzame lippenstift.' to 'Rode, lippenstift.'. 
-2024-12-04T12:24:13.090+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Starting to add a new log entry
-2024-12-04T12:24:13.132+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
-2024-12-04T12:24:13.133+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Successfully added log entry
-2024-12-04T12:24:16.008+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
-2024-12-04T12:24:16.008+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetching all logs from the database
-2024-12-04T12:24:16.014+0100 DEBUG              [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetched 23 logs from the database
-2024-12-04T12:24:16.014+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Successfully retrieved 23 logs in 6 ms
-2024-12-04T12:24:16.014+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Successfully retrieved 23 logs
-2024-12-04T12:34:19.454+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 60916 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T12:34:19.456+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T12:34:19.457+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T12:34:26.916+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.493 seconds (process running for 10.138)
-2024-12-04T12:34:56.001+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T12:34:56.001+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T12:34:56.001+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T12:34:56.140+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T12:34:56.141+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 140 ms
-2024-12-04T12:34:56.141+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T12:35:13.336+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/52 to update product
-2024-12-04T12:35:13.336+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Shampoo, description=Voor elk haartype , geen microplastics, price=14.99, stock=0, category=BEAUTY, score=A, labels=)
-2024-12-04T12:35:13.338+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 52
-2024-12-04T12:35:13.338+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Starting update for product with id: 52
-2024-12-04T12:35:13.350+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Updating product fields for id: 52
-2024-12-04T12:35:13.378+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Product with id 52 successfully updated
-2024-12-04T12:35:13.378+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Logging changes for product with id: 52
-2024-12-04T12:35:13.466+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Changes for product with id: 52 logged
-2024-12-04T12:35:13.466+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully updated product with id: 52
-2024-12-04T12:35:13.475+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T12:35:13.475+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T12:35:13.475+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T12:35:13.479+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T12:35:13.480+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 5 ms
-2024-12-04T12:35:13.480+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T12:35:13.653+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
-2024-12-04T12:35:13.653+0100 DEBUG              [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 52: Description changed from 'Voor elk haar type , geen microplastics' to 'Voor elk haartype , geen microplastics'. 
-2024-12-04T12:35:13.653+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Starting to add a new log entry
-2024-12-04T12:35:13.656+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
-2024-12-04T12:35:13.656+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Successfully added log entry
-2024-12-04T12:35:16.525+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
-2024-12-04T12:35:16.526+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Fetching all logs from the database
-2024-12-04T12:35:16.532+0100 DEBUG              [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Fetched 24 logs from the database
-2024-12-04T12:35:16.532+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Successfully retrieved 24 logs in 6 ms
-2024-12-04T12:35:16.532+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Successfully retrieved 24 logs
-2024-12-04T12:35:27.751+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
-2024-12-04T12:35:27.752+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
-2024-12-04T12:35:27.752+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
-2024-12-04T12:35:27.757+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 7 products from the database
-2024-12-04T12:35:27.757+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 5 ms
-2024-12-04T12:35:27.757+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
-2024-12-04T12:48:37.043+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 46636 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
-2024-12-04T12:48:37.044+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
-2024-12-04T12:48:37.045+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
-2024-12-04T12:48:44.578+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 9.532 seconds (process running for 10.185)
+2024-12-06T19:39:18.715+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Starting ProductCatalogService using Java 21.0.1 with PID 65724 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\product-catalog-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-06T19:39:18.721+0100 DEBUG              [main]                         be.pxl.services.ProductCatalogService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-06T19:39:18.722+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - No active profile set, falling back to 1 default profile: "default"
+2024-12-06T19:39:23.106+0100 INFO               [main]                         be.pxl.services.ProductCatalogService - Started ProductCatalogService in 5.369 seconds (process running for 6.026)
+2024-12-06T19:39:31.227+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Starting ShoppingCartService using Java 21.0.1 with PID 68336 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\shopping-cart-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-06T19:39:31.228+0100 DEBUG              [main]                         be.pxl.services.ShoppingCartService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-06T19:39:31.228+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - No active profile set, falling back to 1 default profile: "default"
+2024-12-06T19:39:35.382+0100 INFO               [main]                         be.pxl.services.ShoppingCartService - Started ShoppingCartService in 5.166 seconds (process running for 5.82)
+2024-12-06T19:39:47.888+0100 INFO               [main]                         be.pxl.services.LogbookService - Starting LogbookService using Java 21.0.1 with PID 47272 (C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts\logbook-service\target\classes started by Christo in C:\Users\Christo\Desktop\PXL\4de jaar\Fullstack Java\learning-microservices-with-spring-cloud-Christos-Lappas\backend-java\SpringCloudSustainableProducts)
+2024-12-06T19:39:47.889+0100 DEBUG              [main]                         be.pxl.services.LogbookService - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-06T19:39:47.890+0100 INFO               [main]                         be.pxl.services.LogbookService - No active profile set, falling back to 1 default profile: "default"
+2024-12-06T19:39:52.262+0100 INFO               [main]                         be.pxl.services.LogbookService - Started LogbookService in 5.342 seconds (process running for 6.013)
+2024-12-06T19:40:54.625+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:40:54.625+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:40:54.625+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:40:54.759+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:40:54.760+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 135 ms
+2024-12-06T19:40:54.761+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:41:10.333+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:41:10.333+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:41:10.333+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:41:10.337+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:41:10.337+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-06T19:41:10.337+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:41:11.583+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.controller.CartController - Received POST request at /api/cart to create a new cart
+2024-12-06T19:41:11.583+0100 DEBUG              [http-nio-8082-exec-1]         be.pxl.services.controller.CartController - Creating a new cart...
+2024-12-06T19:41:11.583+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Starting the creation of a new shopping cart
+2024-12-06T19:41:11.639+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CartService - Successfully created a new shopping cart with ID: 452
+2024-12-06T19:41:11.640+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.controller.CartController - Successfully created a new cart with ID: 452
+2024-12-06T19:41:11.684+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-06T19:41:11.684+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.controller.CartController - Request body: CartRequest(id=452, customer=customer, items=[], total=null, ordered=false)
+2024-12-06T19:41:11.686+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 452
+2024-12-06T19:41:11.724+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched cart with ID 452
+2024-12-06T19:41:11.815+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product/1
+2024-12-06T19:41:11.815+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 1
+2024-12-06T19:41:11.815+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Getting product...
+2024-12-06T19:41:11.826+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 1
+2024-12-06T19:41:11.834+0100 DEBUG              [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-06T19:41:11.835+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 452
+2024-12-06T19:41:11.835+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-06T19:41:16.427+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:41:16.428+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:41:16.428+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:41:16.432+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:41:16.432+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-06T19:41:16.432+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:41:17.784+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/1 to add item to cart
+2024-12-06T19:41:17.784+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.controller.CartController - Request body: CartRequest(id=452, customer=customer, items=[Product(id=1, name=Kaars, description=100% sojawas kaars., price=5.99, category=HOME, score=A, labels=null, quantity=1)], total=5.99, ordered=false)
+2024-12-06T19:41:17.787+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Adding product ID 1 to cart with ID 452
+2024-12-06T19:41:17.789+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched cart with ID 452
+2024-12-06T19:41:17.792+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received GET request at /api/product/1
+2024-12-06T19:41:17.792+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 1
+2024-12-06T19:41:17.792+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Getting product...
+2024-12-06T19:41:17.794+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 1
+2024-12-06T19:41:17.796+0100 DEBUG              [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-06T19:41:17.796+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CartService - Added product ID 1 to cart ID 452
+2024-12-06T19:41:17.797+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.controller.CartController - Successfully added product with ID: 1 to cart
+2024-12-06T19:41:20.674+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:41:20.674+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:41:20.674+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:41:20.678+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:41:20.678+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-06T19:41:20.678+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:41:22.031+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.controller.CartController - Received POST request at /api/carts/product/add/52 to add item to cart
+2024-12-06T19:41:22.031+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.controller.CartController - Request body: CartRequest(id=452, customer=customer, items=[Product(id=1, name=Kaars, description=100% sojawas kaars., price=5.99, category=HOME, score=A, labels=null, quantity=2)], total=11.98, ordered=false)
+2024-12-06T19:41:22.032+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Adding product ID 52 to cart with ID 452
+2024-12-06T19:41:22.033+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched cart with ID 452
+2024-12-06T19:41:22.035+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product/52
+2024-12-06T19:41:22.036+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getProduct() with id: 52
+2024-12-06T19:41:22.036+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Getting product...
+2024-12-06T19:41:22.038+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully retrieved product with id: 52
+2024-12-06T19:41:22.040+0100 DEBUG              [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 52
+2024-12-06T19:41:22.040+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CartService - Added product ID 52 to cart ID 452
+2024-12-06T19:41:22.041+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.controller.CartController - Successfully added product with ID: 52 to cart
+2024-12-06T19:41:26.641+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-06T19:41:26.641+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.controller.CartController - Request body: CartRequest(id=452, customer=customer, items=[Product(id=1, name=Kaars, description=100% sojawas kaars., price=5.99, category=HOME, score=A, labels=null, quantity=2), Product(id=52, name=Shampoo, description=Voor elk haartype , geen microplastics, price=14.99, category=BEAUTY, score=A, labels=null, quantity=1)], total=26.97, ordered=false)
+2024-12-06T19:41:26.641+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 452
+2024-12-06T19:41:26.645+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched cart with ID 452
+2024-12-06T19:41:26.645+0100 DEBUG              [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-06T19:41:26.645+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 452
+2024-12-06T19:41:26.645+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-06T19:41:27.981+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/1 to remove item from cart
+2024-12-06T19:41:27.981+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.controller.CartController - Request body: CartRequest(id=452, customer=customer, items=[Product(id=1, name=Kaars, description=100% sojawas kaars., price=5.99, category=HOME, score=A, labels=null, quantity=1), Product(id=52, name=Shampoo, description=Voor elk haartype , geen microplastics, price=14.99, category=BEAUTY, score=A, labels=null, quantity=1)], total=20.98, ordered=false)
+2024-12-06T19:41:27.981+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Removing product ID 1 from cart ID 452
+2024-12-06T19:41:27.983+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched cart with ID 452
+2024-12-06T19:41:27.984+0100 DEBUG              [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 1
+2024-12-06T19:41:27.984+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CartService - Removed product ID 1 from cart ID 452
+2024-12-06T19:41:27.984+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.controller.CartController - Successfully removed product with ID: 1 from the cart
+2024-12-06T19:41:30.270+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.controller.CartController - Received POST request at /api/cart/product/remove/52 to remove item from cart
+2024-12-06T19:41:30.270+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.controller.CartController - Request body: CartRequest(id=452, customer=customer, items=[Product(id=52, name=Shampoo, description=Voor elk haartype , geen microplastics, price=14.99, category=BEAUTY, score=A, labels=null, quantity=1)], total=14.99, ordered=false)
+2024-12-06T19:41:30.270+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Removing product ID 52 from cart ID 452
+2024-12-06T19:41:30.273+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched cart with ID 452
+2024-12-06T19:41:30.273+0100 DEBUG              [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Successfully fetched product details for product ID 52
+2024-12-06T19:41:30.273+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CartService - Removed product ID 52 from cart ID 452
+2024-12-06T19:41:30.273+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.controller.CartController - Successfully removed product with ID: 52 from the cart
+2024-12-06T19:41:34.887+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:41:34.888+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:41:34.888+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:41:34.891+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:41:34.892+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-06T19:41:34.892+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:41:43.981+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T19:41:43.981+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Filter parameters - Category: null, Score: null, Name: null, Label: null, MaxPrice: 199
+2024-12-06T19:41:43.981+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T19:41:43.982+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: null
+2024-12-06T19:41:44.008+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Found 7 products matching the filter criteria
+2024-12-06T19:41:44.008+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T19:41:44.008+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T19:41:46.185+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T19:41:46.185+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Filter parameters - Category: null, Score: null, Name: null, Label: null, MaxPrice: 11
+2024-12-06T19:41:46.185+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T19:41:46.185+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: null
+2024-12-06T19:41:46.189+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Found 4 products matching the filter criteria
+2024-12-06T19:41:46.189+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T19:41:46.189+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T19:41:50.906+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T19:41:50.907+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: null, Name: null, Label: null, MaxPrice: 11
+2024-12-06T19:41:50.907+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T19:41:50.907+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: null, Name: null, Label: null
+2024-12-06T19:41:50.916+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Found 3 products matching the filter criteria
+2024-12-06T19:41:50.916+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T19:41:50.916+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T19:41:55.714+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T19:41:55.714+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: null, Label: null, MaxPrice: 11
+2024-12-06T19:41:55.714+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T19:41:55.714+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: null, Label: null
+2024-12-06T19:41:55.718+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 2 products matching the filter criteria
+2024-12-06T19:41:55.718+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T19:41:55.718+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T19:42:10.113+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:42:10.114+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:42:10.114+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:42:10.118+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:42:10.118+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-06T19:42:10.118+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:42:13.868+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-06T19:42:13.869+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-06T19:42:14.010+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Fetched 24 logs from the database
+2024-12-06T19:42:14.011+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Successfully retrieved 24 logs in 142 ms
+2024-12-06T19:42:14.012+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Successfully retrieved 24 logs
+2024-12-06T19:43:41.362+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-06T19:43:41.362+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-06T19:43:41.368+0100 DEBUG              [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetched 19 logs from the database
+2024-12-06T19:43:41.368+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Successfully retrieved 19 logs in 6 ms
+2024-12-06T19:43:41.368+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Successfully retrieved 19 logs
+2024-12-06T19:43:50.506+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:43:50.507+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:43:50.507+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:43:50.511+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 7 products from the database
+2024-12-06T19:43:50.511+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 7 products in 4 ms
+2024-12-06T19:43:50.511+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 7 products
+2024-12-06T19:46:34.621+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-06T19:46:34.622+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Straws, description=Biodegradable straws, made from reed and wheat., price=9.99, stock=0, category=DRINK, score=A, labels=)
+2024-12-06T19:46:34.624+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Starting to add a new product with name: Straws
+2024-12-06T19:46:34.661+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Product with name 'Straws' successfully added to the database
+2024-12-06T19:46:34.661+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully added product: Straws
+2024-12-06T19:46:34.669+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:46:34.669+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:46:34.669+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:46:34.673+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:46:34.673+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:46:34.673+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:47:03.648+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received POST request at /api/product to add a new product
+2024-12-06T19:47:03.648+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=ggj, description=sgfjgsfj, price=3, stock=0, category=HOME, score=C, labels=)
+2024-12-06T19:47:03.648+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Starting to add a new product with name: ggj
+2024-12-06T19:47:03.652+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Product with name 'ggj' successfully added to the database
+2024-12-06T19:47:03.652+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully added product: ggj
+2024-12-06T19:47:03.658+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:47:03.659+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:47:03.659+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:47:03.662+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 9 products from the database
+2024-12-06T19:47:03.662+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 9 products in 3 ms
+2024-12-06T19:47:03.662+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 9 products
+2024-12-06T19:47:05.807+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/203 to remove a product
+2024-12-06T19:47:05.807+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.removeProduct() with id: 203
+2024-12-06T19:47:05.807+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Attempting to delete product with ID 203
+2024-12-06T19:47:05.810+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully fetched product with ID 203
+2024-12-06T19:47:05.818+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully deleted product with ID 203
+2024-12-06T19:47:05.818+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully removed product with id: 203
+2024-12-06T19:47:05.824+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:47:05.824+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:47:05.825+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:47:05.828+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:47:05.828+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:47:05.828+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:47:51.665+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/1/labels to remove label
+2024-12-06T19:47:51.665+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Label to be removed: kamer
+2024-12-06T19:47:51.665+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Attempting to delete kamer label from product with ID 1
+2024-12-06T19:47:51.668+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-12-06T19:47:51.677+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully deleted kamer label from product with ID 1
+2024-12-06T19:47:51.677+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully removed label 'kamer' from product with id: 1
+2024-12-06T19:47:52.670+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/1/labels to remove label
+2024-12-06T19:47:52.670+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Label to be removed: geur
+2024-12-06T19:47:52.671+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Attempting to delete geur label from product with ID 1
+2024-12-06T19:47:52.673+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-12-06T19:47:52.675+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully deleted geur label from product with ID 1
+2024-12-06T19:47:52.675+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully removed label 'geur' from product with id: 1
+2024-12-06T19:47:56.564+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/1 to update product
+2024-12-06T19:47:56.564+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Kaars, description=100% sojawas kaars., price=5.99, stock=0, category=HOME, score=A, labels=)
+2024-12-06T19:47:56.564+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 1
+2024-12-06T19:47:56.565+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Starting update for product with id: 1
+2024-12-06T19:47:56.566+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Updating product fields for id: 1
+2024-12-06T19:47:56.566+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Product with id 1 successfully updated
+2024-12-06T19:47:56.567+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Logging changes for product with id: 1
+2024-12-06T19:47:56.656+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Changes for product with id: 1 logged
+2024-12-06T19:47:56.656+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully updated product with id: 1
+2024-12-06T19:47:56.664+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:47:56.664+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:47:56.664+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:47:56.668+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:47:56.668+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:47:56.668+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:47:56.857+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:47:56.857+0100 DEBUG              [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 1: No changes were made.
+2024-12-06T19:47:56.857+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:47:56.897+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:47:56.897+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:48:01.632+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received POST request at /api/product/1/labels to add label
+2024-12-06T19:48:01.632+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Label to be added: room
+2024-12-06T19:48:01.632+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Attempting to add room label to product with ID 1
+2024-12-06T19:48:01.635+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-12-06T19:48:01.637+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully added  room label to product with ID 1
+2024-12-06T19:48:01.638+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully added label 'room' to product with id: 1
+2024-12-06T19:48:05.593+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received POST request at /api/product/1/labels to add label
+2024-12-06T19:48:05.593+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Label to be added: smell
+2024-12-06T19:48:05.593+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Attempting to add smell label to product with ID 1
+2024-12-06T19:48:05.595+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully fetched product with ID 1
+2024-12-06T19:48:05.600+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully added  smell label to product with ID 1
+2024-12-06T19:48:05.600+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully added label 'smell' to product with id: 1
+2024-12-06T19:48:07.884+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received PUT request at /api/product/1 to update product
+2024-12-06T19:48:07.884+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Kaars, description=100% sojawas kaars., price=5.99, stock=0, category=HOME, score=A, labels=smell,room)
+2024-12-06T19:48:07.885+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 1
+2024-12-06T19:48:07.885+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Starting update for product with id: 1
+2024-12-06T19:48:07.886+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Updating product fields for id: 1
+2024-12-06T19:48:07.887+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Product with id 1 successfully updated
+2024-12-06T19:48:07.887+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Logging changes for product with id: 1
+2024-12-06T19:48:07.887+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Changes for product with id: 1 logged
+2024-12-06T19:48:07.888+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully updated product with id: 1
+2024-12-06T19:48:07.895+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:48:07.895+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:48:07.895+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:48:07.898+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:48:07.898+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:48:07.898+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:48:07.907+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:48:07.907+0100 DEBUG              [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 1: No changes were made.
+2024-12-06T19:48:07.907+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:48:07.910+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:48:07.911+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:48:24.813+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/3/labels to remove label
+2024-12-06T19:48:24.813+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Label to be removed: schoonheid
+2024-12-06T19:48:24.813+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Attempting to delete schoonheid label from product with ID 3
+2024-12-06T19:48:24.815+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully fetched product with ID 3
+2024-12-06T19:48:24.817+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully deleted schoonheid label from product with ID 3
+2024-12-06T19:48:24.817+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully removed label 'schoonheid' from product with id: 3
+2024-12-06T19:48:34.866+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received POST request at /api/product/3/labels to add label
+2024-12-06T19:48:34.866+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Label to be added: make-up
+2024-12-06T19:48:34.866+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Attempting to add make-up label to product with ID 3
+2024-12-06T19:48:34.868+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully fetched product with ID 3
+2024-12-06T19:48:34.872+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully added  make-up label to product with ID 3
+2024-12-06T19:48:34.872+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully added label 'make-up' to product with id: 3
+2024-12-06T19:49:02.367+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received POST request at /api/product/3/labels to add label
+2024-12-06T19:49:02.367+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Label to be added: lips
+2024-12-06T19:49:02.367+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Attempting to add lips label to product with ID 3
+2024-12-06T19:49:02.369+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully fetched product with ID 3
+2024-12-06T19:49:02.371+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully added  lips label to product with ID 3
+2024-12-06T19:49:02.371+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully added label 'lips' to product with id: 3
+2024-12-06T19:49:16.078+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/3/labels to remove label
+2024-12-06T19:49:16.078+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Label to be removed: schoonheid
+2024-12-06T19:49:16.078+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Attempting to delete schoonheid label from product with ID 3
+2024-12-06T19:49:16.080+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully fetched product with ID 3
+2024-12-06T19:49:16.081+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully deleted schoonheid label from product with ID 3
+2024-12-06T19:49:16.081+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully removed label 'schoonheid' from product with id: 3
+2024-12-06T19:49:34.615+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/3 to update product
+2024-12-06T19:49:34.615+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Lipstick, description=Red lipstick., price=9.99, stock=85, category=BEAUTY, score=B, labels=lips,make-up)
+2024-12-06T19:49:34.615+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 3
+2024-12-06T19:49:34.616+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Starting update for product with id: 3
+2024-12-06T19:49:34.618+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Updating product fields for id: 3
+2024-12-06T19:49:34.618+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Product with id 3 successfully updated
+2024-12-06T19:49:34.618+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Logging changes for product with id: 3
+2024-12-06T19:49:34.619+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Changes for product with id: 3 logged
+2024-12-06T19:49:34.621+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully updated product with id: 3
+2024-12-06T19:49:34.624+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:49:34.624+0100 DEBUG              [http-nio-8084-exec-8]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 3: Name changed from 'Lippenstift' to 'Lipstick'. Description changed from 'Rode, lippenstift.' to 'Red lipstick.'. 
+2024-12-06T19:49:34.624+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:49:34.627+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:49:34.627+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:49:34.627+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:49:34.627+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:49:34.628+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:49:34.633+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:49:34.633+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 6 ms
+2024-12-06T19:49:34.633+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:49:37.848+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-06T19:49:37.849+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-06T19:49:37.854+0100 DEBUG              [http-nio-8084-exec-9]         be.pxl.services.services.LogService - Fetched 22 logs from the database
+2024-12-06T19:49:37.854+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.services.LogService - Successfully retrieved 22 logs in 5 ms
+2024-12-06T19:49:37.855+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.controller.LogController - Successfully retrieved 22 logs
+2024-12-06T19:49:52.144+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:49:52.144+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:49:52.144+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:49:52.149+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:49:52.149+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 5 ms
+2024-12-06T19:49:52.149+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:50:23.692+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received POST request at /api/product/52/labels to add label
+2024-12-06T19:50:23.692+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Label to be added: wash
+2024-12-06T19:50:23.692+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Attempting to add wash label to product with ID 52
+2024-12-06T19:50:23.694+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully fetched product with ID 52
+2024-12-06T19:50:23.699+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully added  wash label to product with ID 52
+2024-12-06T19:50:23.699+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully added label 'wash' to product with id: 52
+2024-12-06T19:50:30.698+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received POST request at /api/product/52/labels to add label
+2024-12-06T19:50:30.698+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Label to be added: hair
+2024-12-06T19:50:30.698+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Attempting to add hair label to product with ID 52
+2024-12-06T19:50:30.700+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully fetched product with ID 52
+2024-12-06T19:50:30.705+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully added  hair label to product with ID 52
+2024-12-06T19:50:30.705+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully added label 'hair' to product with id: 52
+2024-12-06T19:50:39.856+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received POST request at /api/product/52/labels to add label
+2024-12-06T19:50:39.856+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Label to be added: shower
+2024-12-06T19:50:39.856+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Attempting to add shower label to product with ID 52
+2024-12-06T19:50:39.858+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully fetched product with ID 52
+2024-12-06T19:50:39.861+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully added  shower label to product with ID 52
+2024-12-06T19:50:39.861+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully added label 'shower' to product with id: 52
+2024-12-06T19:50:41.986+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/52 to update product
+2024-12-06T19:50:41.986+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Shampoo, description=Voor elk haartype , geen microplastics, price=14.99, stock=0, category=BEAUTY, score=A, labels=shower,hair,wash)
+2024-12-06T19:50:41.986+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 52
+2024-12-06T19:50:41.987+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Starting update for product with id: 52
+2024-12-06T19:50:41.988+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Updating product fields for id: 52
+2024-12-06T19:50:41.989+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Product with id 52 successfully updated
+2024-12-06T19:50:41.989+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Logging changes for product with id: 52
+2024-12-06T19:50:41.989+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Changes for product with id: 52 logged
+2024-12-06T19:50:41.989+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully updated product with id: 52
+2024-12-06T19:50:41.995+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:50:41.996+0100 DEBUG              [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 52: No changes were made.
+2024-12-06T19:50:41.996+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:50:41.996+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:50:41.996+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:50:41.996+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:50:41.999+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:50:41.999+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:50:41.999+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:50:41.999+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:50:41.999+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:50:54.787+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:50:54.787+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:50:54.788+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:50:54.791+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:50:54.791+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:50:54.791+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:51:49.587+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/1 to update product
+2024-12-06T19:51:49.587+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Candle, description=100% soy wax candle., price=5.99, stock=0, category=HOME, score=A, labels=smell,room)
+2024-12-06T19:51:49.587+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 1
+2024-12-06T19:51:49.588+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Starting update for product with id: 1
+2024-12-06T19:51:49.589+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Updating product fields for id: 1
+2024-12-06T19:51:49.589+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Product with id 1 successfully updated
+2024-12-06T19:51:49.589+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Logging changes for product with id: 1
+2024-12-06T19:51:49.589+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Changes for product with id: 1 logged
+2024-12-06T19:51:49.594+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully updated product with id: 1
+2024-12-06T19:51:49.595+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:51:49.596+0100 DEBUG              [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 1: Name changed from 'Kaars' to 'Candle'. Description changed from '100% sojawas kaars.' to '100% soy wax candle.'. 
+2024-12-06T19:51:49.596+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:51:49.599+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:51:49.599+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:51:49.601+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:51:49.601+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:51:49.601+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:51:49.604+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:51:49.604+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:51:49.604+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:52:13.638+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/52 to update product
+2024-12-06T19:52:13.638+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Shampoo, description=For all hairtypes, no microplastics, price=14.99, stock=0, category=BEAUTY, score=A, labels=shower,hair,wash)
+2024-12-06T19:52:13.638+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 52
+2024-12-06T19:52:13.639+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Starting update for product with id: 52
+2024-12-06T19:52:13.640+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Updating product fields for id: 52
+2024-12-06T19:52:13.640+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Product with id 52 successfully updated
+2024-12-06T19:52:13.640+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Logging changes for product with id: 52
+2024-12-06T19:52:13.641+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Changes for product with id: 52 logged
+2024-12-06T19:52:13.644+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully updated product with id: 52
+2024-12-06T19:52:13.650+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:52:13.650+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:52:13.651+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:52:13.654+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:52:13.654+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:52:13.654+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:52:13.658+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:52:13.659+0100 DEBUG              [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 52: Description changed from 'Voor elk haartype , geen microplastics' to 'For all hairtypes, no microplastics'. 
+2024-12-06T19:52:13.659+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:52:13.662+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:52:13.662+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:52:17.015+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:52:17.016+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:52:17.016+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:52:17.020+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:52:17.020+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:52:17.020+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:53:05.501+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received PUT request at /api/product/53 to update product
+2024-12-06T19:53:05.501+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Soap, description=Soft on skin, hard on dirt., price=7.99, stock=0, category=HOME, score=D, labels=)
+2024-12-06T19:53:05.501+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 53
+2024-12-06T19:53:05.502+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Starting update for product with id: 53
+2024-12-06T19:53:05.503+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Updating product fields for id: 53
+2024-12-06T19:53:05.503+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Product with id 53 successfully updated
+2024-12-06T19:53:05.503+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Logging changes for product with id: 53
+2024-12-06T19:53:05.503+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Changes for product with id: 53 logged
+2024-12-06T19:53:05.506+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully updated product with id: 53
+2024-12-06T19:53:05.511+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:53:05.511+0100 DEBUG              [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 53: Name changed from 'Zeep' to 'Soap'. Description changed from 'Goed voor de huid, natuurlijke producten' to 'Soft on skin, hard on dirt.'. 
+2024-12-06T19:53:05.511+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:53:05.512+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:53:05.513+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:53:05.513+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:53:05.514+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:53:05.515+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:53:05.516+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:53:05.517+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:53:05.517+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:53:11.755+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received POST request at /api/product/53/labels to add label
+2024-12-06T19:53:11.755+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Label to be added: dirt
+2024-12-06T19:53:11.756+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Attempting to add dirt label to product with ID 53
+2024-12-06T19:53:11.759+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully fetched product with ID 53
+2024-12-06T19:53:11.762+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully added  dirt label to product with ID 53
+2024-12-06T19:53:11.762+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully added label 'dirt' to product with id: 53
+2024-12-06T19:53:15.666+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received POST request at /api/product/53/labels to add label
+2024-12-06T19:53:15.666+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Label to be added: clean
+2024-12-06T19:53:15.666+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Attempting to add clean label to product with ID 53
+2024-12-06T19:53:15.668+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully fetched product with ID 53
+2024-12-06T19:53:15.671+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully added  clean label to product with ID 53
+2024-12-06T19:53:15.671+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully added label 'clean' to product with id: 53
+2024-12-06T19:53:44.965+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:53:44.965+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:53:44.965+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:53:44.968+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:53:44.968+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:53:44.968+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:54:04.193+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/54/labels to remove label
+2024-12-06T19:54:04.193+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Label to be removed: borden
+2024-12-06T19:54:04.193+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Attempting to delete borden label from product with ID 54
+2024-12-06T19:54:04.195+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully fetched product with ID 54
+2024-12-06T19:54:04.198+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully deleted borden label from product with ID 54
+2024-12-06T19:54:04.198+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully removed label 'borden' from product with id: 54
+2024-12-06T19:54:07.811+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:54:07.811+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:54:07.811+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:54:07.815+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:54:07.815+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:54:07.815+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:55:09.296+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/54 to update product
+2024-12-06T19:55:09.296+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Dishwasher tablets, description=All in one with built in rinse aid and salt function., price=10.99, stock=0, category=HOME, score=A, labels=)
+2024-12-06T19:55:09.296+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 54
+2024-12-06T19:55:09.297+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Starting update for product with id: 54
+2024-12-06T19:55:09.298+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Updating product fields for id: 54
+2024-12-06T19:55:09.298+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Product with id 54 successfully updated
+2024-12-06T19:55:09.298+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Logging changes for product with id: 54
+2024-12-06T19:55:09.299+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Changes for product with id: 54 logged
+2024-12-06T19:55:09.301+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully updated product with id: 54
+2024-12-06T19:55:09.305+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:55:09.305+0100 DEBUG              [http-nio-8084-exec-8]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 54: Name changed from 'Vaatwastabletten' to 'Dishwasher tablets'. Description changed from '100% natuurlijke tabletten' to 'All in one with built in rinse aid and salt function.'. 
+2024-12-06T19:55:09.305+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:55:09.308+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:55:09.308+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:55:09.308+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:55:09.308+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:55:09.308+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:55:09.311+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:55:09.312+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:55:09.312+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:55:17.826+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received POST request at /api/product/54/labels to add label
+2024-12-06T19:55:17.826+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Label to be added: plates
+2024-12-06T19:55:17.826+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Attempting to add plates label to product with ID 54
+2024-12-06T19:55:17.828+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully fetched product with ID 54
+2024-12-06T19:55:17.831+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully added  plates label to product with ID 54
+2024-12-06T19:55:17.831+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully added label 'plates' to product with id: 54
+2024-12-06T19:55:22.889+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received POST request at /api/product/54/labels to add label
+2024-12-06T19:55:22.889+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Label to be added: detergent
+2024-12-06T19:55:22.889+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Attempting to add detergent label to product with ID 54
+2024-12-06T19:55:22.891+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully fetched product with ID 54
+2024-12-06T19:55:22.896+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully added  detergent label to product with ID 54
+2024-12-06T19:55:22.896+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully added label 'detergent' to product with id: 54
+2024-12-06T19:55:26.002+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received POST request at /api/product/54/labels to add label
+2024-12-06T19:55:26.002+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Label to be added: pods
+2024-12-06T19:55:26.002+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Attempting to add pods label to product with ID 54
+2024-12-06T19:55:26.004+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully fetched product with ID 54
+2024-12-06T19:55:26.008+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully added  pods label to product with ID 54
+2024-12-06T19:55:26.008+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully added label 'pods' to product with id: 54
+2024-12-06T19:55:43.025+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/55/labels to remove label
+2024-12-06T19:55:43.025+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Label to be removed: badkamer
+2024-12-06T19:55:43.025+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Attempting to delete badkamer label from product with ID 55
+2024-12-06T19:55:43.027+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully fetched product with ID 55
+2024-12-06T19:55:43.030+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully deleted badkamer label from product with ID 55
+2024-12-06T19:55:43.030+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully removed label 'badkamer' from product with id: 55
+2024-12-06T19:55:43.902+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/55/labels to remove label
+2024-12-06T19:55:43.902+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Label to be removed: wc
+2024-12-06T19:55:43.902+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Attempting to delete wc label from product with ID 55
+2024-12-06T19:55:43.904+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully fetched product with ID 55
+2024-12-06T19:55:43.907+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully deleted wc label from product with ID 55
+2024-12-06T19:55:43.907+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully removed label 'wc' from product with id: 55
+2024-12-06T19:55:49.756+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/55/labels to remove label
+2024-12-06T19:55:49.757+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Label to be removed: badkamer
+2024-12-06T19:55:49.757+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Attempting to delete badkamer label from product with ID 55
+2024-12-06T19:55:49.759+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully fetched product with ID 55
+2024-12-06T19:55:49.759+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully deleted badkamer label from product with ID 55
+2024-12-06T19:55:49.759+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully removed label 'badkamer' from product with id: 55
+2024-12-06T19:55:53.829+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:55:53.829+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:55:53.829+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:55:53.833+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:55:53.833+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:55:53.833+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:56:58.566+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/55 to update product
+2024-12-06T19:56:58.566+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Toiletcleaner, description=Powerful action against lime deposits. Free from harmful chemicals., price=14.99, stock=0, category=HOME, score=A, labels=)
+2024-12-06T19:56:58.566+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 55
+2024-12-06T19:56:58.567+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Starting update for product with id: 55
+2024-12-06T19:56:58.568+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Updating product fields for id: 55
+2024-12-06T19:56:58.568+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Product with id 55 successfully updated
+2024-12-06T19:56:58.568+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Logging changes for product with id: 55
+2024-12-06T19:56:58.568+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Changes for product with id: 55 logged
+2024-12-06T19:56:58.572+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully updated product with id: 55
+2024-12-06T19:56:58.575+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:56:58.575+0100 DEBUG              [http-nio-8084-exec-10]        be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 55: Name changed from 'Toiletreiniger' to 'Toiletcleaner'. Description changed from 'Maakt je toilet glanzend schoon' to 'Powerful action against lime deposits. Free from harmful chemicals.'. 
+2024-12-06T19:56:58.575+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:56:58.578+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:56:58.578+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:56:58.579+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:56:58.579+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:56:58.579+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:56:58.581+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:56:58.581+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 2 ms
+2024-12-06T19:56:58.581+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:57:07.013+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received POST request at /api/product/55/labels to add label
+2024-12-06T19:57:07.014+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Label to be added: wc
+2024-12-06T19:57:07.014+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Attempting to add wc label to product with ID 55
+2024-12-06T19:57:07.016+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully fetched product with ID 55
+2024-12-06T19:57:07.021+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully added  wc label to product with ID 55
+2024-12-06T19:57:07.021+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully added label 'wc' to product with id: 55
+2024-12-06T19:57:13.793+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received POST request at /api/product/55/labels to add label
+2024-12-06T19:57:13.794+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Label to be added: bathroom
+2024-12-06T19:57:13.794+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Attempting to add bathroom label to product with ID 55
+2024-12-06T19:57:13.796+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully fetched product with ID 55
+2024-12-06T19:57:13.798+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully added  bathroom label to product with ID 55
+2024-12-06T19:57:13.798+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully added label 'bathroom' to product with id: 55
+2024-12-06T19:57:17.280+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:57:17.280+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:57:17.280+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:57:17.283+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:57:17.283+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:57:17.283+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:57:51.423+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received PUT request at /api/product/102 to update product
+2024-12-06T19:57:51.423+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - ProductRequest received: ProductRequest(name=Pampers, description=Suitable for sensitive babyskin., price=49.99, stock=0, category=BABY, score=A, labels=)
+2024-12-06T19:57:51.423+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.updateProduct() with id: 102
+2024-12-06T19:57:51.424+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Starting update for product with id: 102
+2024-12-06T19:57:51.425+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Updating product fields for id: 102
+2024-12-06T19:57:51.426+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Product with id 102 successfully updated
+2024-12-06T19:57:51.426+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Logging changes for product with id: 102
+2024-12-06T19:57:51.426+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Changes for product with id: 102 logged
+2024-12-06T19:57:51.428+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully updated product with id: 102
+2024-12-06T19:57:51.436+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:57:51.436+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:57:51.436+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:57:51.440+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:57:51.441+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 5 ms
+2024-12-06T19:57:51.441+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:57:51.445+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Received POST request at /api/log to add a log entry
+2024-12-06T19:57:51.445+0100 DEBUG              [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Request body: Update=Following changes made for product with id 102: Description changed from 'Geschikt voor de meest gevoelige babyhuid' to 'Suitable for sensitive babyskin.'. 
+2024-12-06T19:57:51.445+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Starting to add a new log entry
+2024-12-06T19:57:51.449+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.LogService - Log entry for user 'admin' successfully saved
+2024-12-06T19:57:51.449+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.controller.LogController - Successfully added log entry
+2024-12-06T19:58:00.976+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received POST request at /api/product/102/labels to add label
+2024-12-06T19:58:00.976+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Label to be added: baby
+2024-12-06T19:58:00.976+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Attempting to add baby label to product with ID 102
+2024-12-06T19:58:00.979+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully fetched product with ID 102
+2024-12-06T19:58:00.981+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully added  baby label to product with ID 102
+2024-12-06T19:58:00.981+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully added label 'baby' to product with id: 102
+2024-12-06T19:58:32.329+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:58:32.329+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:58:32.329+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:58:32.333+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:58:32.333+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 4 ms
+2024-12-06T19:58:32.333+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:58:47.696+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received POST request at /api/product/102/labels to add label
+2024-12-06T19:58:47.696+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Label to be added: diaper
+2024-12-06T19:58:47.696+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Attempting to add diaper label to product with ID 102
+2024-12-06T19:58:47.698+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully fetched product with ID 102
+2024-12-06T19:58:47.700+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully added  diaper label to product with ID 102
+2024-12-06T19:58:47.700+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully added label 'diaper' to product with id: 102
+2024-12-06T19:58:53.991+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:58:53.992+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:58:53.992+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:58:53.995+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:58:53.995+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:58:53.995+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:59:21.551+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received POST request at /api/product/202/labels to add label
+2024-12-06T19:59:21.551+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Label to be added: drink
+2024-12-06T19:59:21.551+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Attempting to add drink label to product with ID 202
+2024-12-06T19:59:21.553+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully fetched product with ID 202
+2024-12-06T19:59:21.557+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully added  drink label to product with ID 202
+2024-12-06T19:59:21.557+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully added label 'drink' to product with id: 202
+2024-12-06T19:59:28.978+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received POST request at /api/product/202/labels to add label
+2024-12-06T19:59:28.978+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Label to be added: water
+2024-12-06T19:59:28.978+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Attempting to add water label to product with ID 202
+2024-12-06T19:59:28.980+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully fetched product with ID 202
+2024-12-06T19:59:28.983+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully added  water label to product with ID 202
+2024-12-06T19:59:28.983+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully added label 'water' to product with id: 202
+2024-12-06T19:59:31.072+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received DELETE request at /api/product/202/labels to remove label
+2024-12-06T19:59:31.073+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Label to be removed: water
+2024-12-06T19:59:31.073+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Attempting to delete water label from product with ID 202
+2024-12-06T19:59:31.074+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully fetched product with ID 202
+2024-12-06T19:59:31.079+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully deleted water label from product with ID 202
+2024-12-06T19:59:31.079+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully removed label 'water' from product with id: 202
+2024-12-06T19:59:33.845+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T19:59:33.845+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T19:59:33.845+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T19:59:33.848+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T19:59:33.848+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T19:59:33.848+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T19:59:46.583+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-06T19:59:46.583+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-06T19:59:46.589+0100 DEBUG              [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Fetched 29 logs from the database
+2024-12-06T19:59:46.589+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.LogService - Successfully retrieved 29 logs in 6 ms
+2024-12-06T19:59:46.589+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.controller.LogController - Successfully retrieved 29 logs
+2024-12-06T20:00:41.789+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Received GET request at /api/log to fetch logs
+2024-12-06T20:00:41.789+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Fetching all logs from the database
+2024-12-06T20:00:41.795+0100 DEBUG              [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Fetched 21 logs from the database
+2024-12-06T20:00:41.796+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.LogService - Successfully retrieved 21 logs in 7 ms
+2024-12-06T20:00:41.796+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.controller.LogController - Successfully retrieved 21 logs
+2024-12-06T20:00:46.187+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T20:00:46.187+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T20:00:46.187+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T20:00:46.190+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T20:00:46.190+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T20:00:46.190+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T20:00:50.327+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T20:00:50.327+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T20:00:50.327+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T20:00:50.330+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T20:00:50.330+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T20:00:50.330+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T20:00:54.932+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T20:00:54.932+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T20:00:54.932+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T20:00:54.936+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T20:00:54.936+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T20:00:54.936+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T20:01:00.085+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:00.085+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Filter parameters - Category: null, Score: null, Name: null, Label: null, MaxPrice: 11
+2024-12-06T20:01:00.085+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:00.085+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: null, Score: null, Name: null, Label: null
+2024-12-06T20:01:00.088+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Found 5 products matching the filter criteria
+2024-12-06T20:01:00.088+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:00.088+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:03.340+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:03.340+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: null, Name: null, Label: null, MaxPrice: 11
+2024-12-06T20:01:03.340+0100 DEBUG              [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:03.340+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: null, Name: null, Label: null
+2024-12-06T20:01:03.343+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Found 3 products matching the filter criteria
+2024-12-06T20:01:03.343+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:03.343+0100 INFO               [http-nio-8083-exec-8]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:09.472+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:09.472+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: null, Label: null, MaxPrice: 11
+2024-12-06T20:01:09.472+0100 DEBUG              [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:09.472+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: null, Label: null
+2024-12-06T20:01:09.475+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Found 2 products matching the filter criteria
+2024-12-06T20:01:09.475+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:09.475+0100 INFO               [http-nio-8083-exec-9]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:24.423+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:24.423+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: smell, Label: smell, MaxPrice: 11
+2024-12-06T20:01:24.423+0100 DEBUG              [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:24.423+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: smell, Label: smell
+2024-12-06T20:01:24.439+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-06T20:01:24.439+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:24.439+0100 INFO               [http-nio-8083-exec-10]        be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:33.536+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T20:01:33.536+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T20:01:33.536+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T20:01:33.539+0100 DEBUG              [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T20:01:33.539+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T20:01:33.539+0100 INFO               [http-nio-8083-exec-1]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
+2024-12-06T20:01:43.817+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:43.817+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: null, Name: null, Label: null, MaxPrice: 200
+2024-12-06T20:01:43.817+0100 DEBUG              [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:43.817+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: null, Name: null, Label: null
+2024-12-06T20:01:43.821+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Found 4 products matching the filter criteria
+2024-12-06T20:01:43.821+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:43.821+0100 INFO               [http-nio-8083-exec-2]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:44.560+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:44.560+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: null, Label: null, MaxPrice: 200
+2024-12-06T20:01:44.560+0100 DEBUG              [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:44.560+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: null, Label: null
+2024-12-06T20:01:44.563+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Found 3 products matching the filter criteria
+2024-12-06T20:01:44.563+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:44.563+0100 INFO               [http-nio-8083-exec-3]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:46.458+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:46.458+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: null, Label: null, MaxPrice: 10
+2024-12-06T20:01:46.458+0100 DEBUG              [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:46.458+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: null, Label: null
+2024-12-06T20:01:46.461+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Found 1 products matching the filter criteria
+2024-12-06T20:01:46.461+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:46.461+0100 INFO               [http-nio-8083-exec-4]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:50.252+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:50.252+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: null, Label: null, MaxPrice: 11
+2024-12-06T20:01:50.252+0100 DEBUG              [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:50.252+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: null, Label: null
+2024-12-06T20:01:50.255+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Found 2 products matching the filter criteria
+2024-12-06T20:01:50.255+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:50.256+0100 INFO               [http-nio-8083-exec-5]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:01:56.970+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Received GET request at /api/product/filter to search products
+2024-12-06T20:01:56.970+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Filter parameters - Category: HOME, Score: A, Name: a, Label: a, MaxPrice: 11
+2024-12-06T20:01:56.970+0100 DEBUG              [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Calling ProductService.getFilteredProducts() with provided filters
+2024-12-06T20:01:56.970+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Fetching filtered products with criteria - Category: HOME, Score: A, Name: a, Label: a
+2024-12-06T20:01:56.974+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Found 7 products matching the filter criteria
+2024-12-06T20:01:56.974+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.services.ProductService - Successfully retrieved filtered products
+2024-12-06T20:01:56.974+0100 INFO               [http-nio-8083-exec-6]         be.pxl.services.controller.ProductController - Successfully fetched filtered products
+2024-12-06T20:02:17.219+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Received GET request at /api/product
+2024-12-06T20:02:17.219+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Calling ProductService.getAllProducts()
+2024-12-06T20:02:17.220+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetching all products from the database
+2024-12-06T20:02:17.222+0100 DEBUG              [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Fetched 8 products from the database
+2024-12-06T20:02:17.223+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.services.ProductService - Successfully retrieved 8 products in 3 ms
+2024-12-06T20:02:17.223+0100 INFO               [http-nio-8083-exec-7]         be.pxl.services.controller.ProductController - Successfully retrieved 8 products
